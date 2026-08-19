@@ -64,13 +64,7 @@ static for readers who ask for that.
 Each icon is a readable file whose keyframes are plain data. Retune the motion or
 replace it outright; nothing points back here.
 
-## Inspired by
-
-- [phosphor-icons/core](https://github.com/phosphor-icons/core) — the icons
-  themselves. All geometry here is derived from Phosphor's raw sources, MIT.
-- [pqoqubbw/icons](https://github.com/pqoqubbw/icons) — the motion design behind
-  a handful of these animations, also MIT. No code or artwork was copied; icons
-  drawing on that work carry an inline note.
+Inspired by [hugeicons-animated](https://github.com/enesgules/hugeicons-animated) and [lucide-animated](https://github.com/pqoqubbw/icons)
 
 > Unofficial and independent. Not affiliated with or endorsed by Phosphor Icons.
 > Full attribution in [LICENSE](./LICENSE).
