@@ -1,0 +1,10 @@
+# The tuning studio is a local authoring tool for this repo's own sources, not
+# part of the published site. It is absent from the repository, but `vercel
+# deploy` uploads the working directory and reads this file rather than
+# .gitignore — without these lines a local deploy would build the studio back
+# into the site from disk.
+/src/app/studio/
+/src/app/api/studio/
+/src/components/studio/
+/data/generated/studio.json
+data/triage.json
