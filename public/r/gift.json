@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gift",
+  "type": "registry:component",
+  "title": "Gift",
+  "description": "What's inside? — the box rocks from its base while the bows flutter.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/gift.tsx",
+      "type": "registry:component",
+      "target": "components/icons/gift.tsx",
+      "content": "\"use client\";\n\n/**\n * Gift — animated Phosphor icon.\n *\n * What's inside? — the box rocks from its base while the bows flutter.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"rect\", { x: \"32\", y: \"80\", width: \"192\", height: \"48\", rx: \"8\" }],\n    [\"path\", { d: \"M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128\" }],\n    [\"line\", { x1: \"128\", y1: \"80\", x2: \"128\", y2: \"208\" }],\n    [\"path\", { d: \"M176.79,31.21c9.34,9.34,9.89,25.06,0,33.82C159.88,80,128,80,128,80s0-31.88,15-48.79C151.73,21.32,167.45,21.87,176.79,31.21Z\" }],\n    [\"path\", { d: \"M79.21,31.21c-9.34,9.34-9.89,25.06,0,33.82C96.12,80,128,80,128,80s0-31.88-15-48.79C104.27,21.32,88.55,21.87,79.21,31.21Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.7,\n  whole: { rotate: [0, -3.5, 1.8, -0.9, 0], origin: [128, 208], ease: [\"easeOut\", \"easeInOut\", \"easeInOut\", \"easeInOut\"] },\n  parts: {\n    3: {\n      rotate: [0, -9, 4.7, 0],\n      origin: [128, 78],\n      delay: 0.08,\n      duration: 0.55,\n      ease: [\"easeOut\", \"easeInOut\", \"easeInOut\"]\n    },\n    4: {\n      rotate: [0, 9, -4.7, 0],\n      origin: [128, 78],\n      delay: 0.12,\n      duration: 0.55,\n      ease: [\"easeOut\", \"easeInOut\", \"easeInOut\"]\n    }\n  }\n};\n\nexport const Gift = createAnimatedIcon(\n  \"Gift\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Gift;\n"
+    }
+  ],
+  "meta": {
+    "category": "Commerce",
+    "component": "Gift"
+  }
+}

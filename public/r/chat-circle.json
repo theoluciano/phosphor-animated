@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chat-circle",
+  "type": "registry:component",
+  "title": "ChatCircle",
+  "description": "Perks up — the bubble swells and shakes on its tail.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/chat-circle.tsx",
+      "type": "registry:component",
+      "target": "components/icons/chat-circle.tsx",
+      "content": "\"use client\";\n\n/**\n * ChatCircle — animated Phosphor icon.\n *\n * Perks up — the bubble swells and shakes on its tail.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M79.93,211.11a96,96,0,1,0-35-35h0L32.42,213.46a8,8,0,0,0,10.12,10.12l37.39-12.47Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    0: {\n      scale: [1, 1.08, 1.03, 1, 1],\n      rotate: [0, -5, 2.6, -1.4, 0],\n      origin: [38, 218],\n      ease: [\n        [0.22, 1, 0.36, 1],\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.3, 0.55, 0.78, 1]\n    }\n  }\n};\n\nexport const ChatCircle = createAnimatedIcon(\n  \"ChatCircle\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ChatCircle;\n"
+    }
+  ],
+  "meta": {
+    "category": "Communication",
+    "component": "ChatCircle"
+  }
+}

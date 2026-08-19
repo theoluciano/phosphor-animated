@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file",
+  "type": "registry:component",
+  "title": "File",
+  "description": "Hops — the page lifts with a small tilt while the corner fold flares.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/file.tsx",
+      "type": "registry:component",
+      "target": "components/icons/file.tsx",
+      "content": "\"use client\";\n\n/**\n * File — animated Phosphor icon.\n *\n * Hops — the page lifts with a small tilt while the corner fold flares.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z\" }],\n    [\"polyline\", { points: \"152 32 152 88 208 88\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z\" }],\n    [\"polyline\", { points: \"148 32 148 92 208 92\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"polygon\", { points: \"152 32 152 88 208 88 152 32\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  whole: { rotate: [0, -8, 4, -2, 0], ease: [\"easeIn\", \"linear\", \"linear\", \"easeOut\"] },\n  parts: {\n    1: {\n      origin: [152, 88],\n      duration: 0.45,\n      delay: 0.12,\n      ease: [\"easeIn\", \"linear\", \"easeOut\"],\n      pathLength: [1, 0, 1, 1]\n    }\n  }\n};\n\nexport const File = createAnimatedIcon(\n  \"File\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default File;\n"
+    }
+  ],
+  "meta": {
+    "category": "Files",
+    "component": "File"
+  }
+}

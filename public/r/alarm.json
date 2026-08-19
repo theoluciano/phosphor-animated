@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alarm",
+  "type": "registry:component",
+  "title": "Alarm",
+  "description": "Rattles — the whole clock rocks gently side to side while the bells flick.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/alarm.tsx",
+      "type": "registry:component",
+      "target": "components/icons/alarm.tsx",
+      "content": "\"use client\";\n\n/**\n * Alarm — animated Phosphor icon.\n *\n * Rattles — the whole clock rocks gently side to side while the bells flick.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"circle\", { cx: \"128\", cy: \"136\", r: \"88\" }],\n    [\"line\", { x1: \"56\", y1: \"32\", x2: \"24\", y2: \"64\" }],\n    [\"line\", { x1: \"200\", y1: \"32\", x2: \"232\", y2: \"64\" }],\n    [\"polyline\", { points: \"128 80 128 136 184 136\" }],\n  ],\n  bold: [\n    [\"circle\", { cx: \"128\", cy: \"136\", r: \"88\" }],\n    [\"line\", { x1: \"56\", y1: \"32\", x2: \"24\", y2: \"64\" }],\n    [\"line\", { x1: \"200\", y1: \"32\", x2: \"232\", y2: \"64\" }],\n    [\"polyline\", { points: \"128 88 128 136 176 136\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"136\", r: \"88\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.8,\n  whole: {\n    rotate: [0, -3, 1.6, -0.8, 0.4, 0],\n    origin: [128, 224],\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.16, 0.42, 0.66, 0.85, 1]\n  },\n  parts: {\n    1: {\n      rotate: [0, -8, 4.2, -2.2, 0],\n      origin: [40, 48],\n      duration: 0.77,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.143, 0.429, 0.714, 1]\n    },\n    2: {\n      rotate: [0, 8, -4.2, 2.2, 0],\n      origin: [216, 48],\n      duration: 0.77,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.143, 0.429, 0.714, 1]\n    }\n  }\n};\n\nexport const Alarm = createAnimatedIcon(\n  \"Alarm\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Alarm;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "Alarm"
+  }
+}

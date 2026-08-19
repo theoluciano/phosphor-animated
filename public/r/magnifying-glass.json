@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "magnifying-glass",
+  "type": "registry:component",
+  "title": "MagnifyingGlass",
+  "description": "Sweeps a slow arc, the way you search a page.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/magnifying-glass.tsx",
+      "type": "registry:component",
+      "target": "components/icons/magnifying-glass.tsx",
+      "content": "\"use client\";\n\n/**\n * MagnifyingGlass — animated Phosphor icon.\n *\n * Sweeps a slow arc, the way you search a page.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"circle\", { cx: \"112\", cy: \"112\", r: \"80\" }],\n    [\"line\", { x1: \"168.57\", y1: \"168.57\", x2: \"224\", y2: \"224\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"112\", cy: \"112\", r: \"80\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.9,\n  whole: {\n    x: [0, -20, 20, 20, -20, 0],\n    y: [0, -20, -20, 20, 20, 0],\n    origin: [112, 112],\n    duration: 1,\n    ease: [\"easeInOut\", \"easeInOut\", \"easeInOut\", \"easeInOut\", \"easeInOut\"]\n  }\n};\n\nexport const MagnifyingGlass = createAnimatedIcon(\n  \"MagnifyingGlass\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default MagnifyingGlass;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "MagnifyingGlass"
+  }
+}

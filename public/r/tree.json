@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tree",
+  "type": "registry:component",
+  "title": "Tree",
+  "description": "Sways — the whole tree leans through a gust and settles on its roots.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/tree.tsx",
+      "type": "registry:component",
+      "target": "components/icons/tree.tsx",
+      "content": "\"use client\";\n\n/**\n * Tree — animated Phosphor icon.\n *\n * Sways — the whole tree leans through a gust and settles on its roots.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"128\", y1: \"232\", x2: \"128\", y2: \"88\" }],\n    [\"line\", { x1: \"128\", y1: \"152\", x2: \"80\", y2: \"128\" }],\n    [\"line\", { x1: \"128\", y1: \"128\", x2: \"176\", y2: \"104\" }],\n    [\"path\", { d: \"M128,177.94a63.72,63.72,0,0,0,41.66,14c33.93-.86,62.43-30.22,62.34-64.16a64,64,0,0,0-40.13-59.2,68,68,0,0,0-127.74,0A64,64,0,0,0,24,127.82c-.09,33.94,28.42,63.3,62.35,64.16A63.71,63.71,0,0,0,128,177.94Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M128,177.94a63.72,63.72,0,0,0,41.66,14c33.93-.86,62.43-30.22,62.34-64.16a64,64,0,0,0-40.13-59.2,68,68,0,0,0-127.74,0A64,64,0,0,0,24,127.82c-.09,33.94,28.42,63.3,62.35,64.16A63.71,63.71,0,0,0,128,177.94Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  whole: {\n    rotate: [0, -4.1, 2.1, -1.1, 0],\n    origin: [128, 232],\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.2, 0.48, 0.74, 1]\n  }\n};\n\nexport const Tree = createAnimatedIcon(\n  \"Tree\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Tree;\n"
+    }
+  ],
+  "meta": {
+    "category": "Weather & Nature",
+    "component": "Tree"
+  }
+}

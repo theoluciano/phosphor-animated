@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "anchor",
+  "type": "registry:component",
+  "title": "Anchor",
+  "description": "Sways from its ring, the way a moored anchor rides the swell.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/anchor.tsx",
+      "type": "registry:component",
+      "target": "components/icons/anchor.tsx",
+      "content": "\"use client\";\n\n/**\n * Anchor — animated Phosphor icon.\n *\n * Sways from its ring, the way a moored anchor rides the swell.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"128\", y1: \"232\", x2: \"128\", y2: \"80\" }],\n    [\"circle\", { cx: \"128\", cy: \"56\", r: \"24\" }],\n    [\"line\", { x1: \"88\", y1: \"120\", x2: \"168\", y2: \"120\" }],\n    [\"path\", { d: \"M216,144c0,64-88,24-88,88,0-64-88-24-88-88\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"56\", r: \"24\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.9,\n  whole: {\n    rotate: [0, 4.5, -2.3, 1.2, -0.6, 0],\n    origin: [128, 32],\n    duration: 0.9,\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.16, 0.42, 0.66, 0.85, 1]\n  }\n};\n\nexport const Anchor = createAnimatedIcon(\n  \"Anchor\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Anchor;\n"
+    }
+  ],
+  "meta": {
+    "category": "Navigation",
+    "component": "Anchor"
+  }
+}

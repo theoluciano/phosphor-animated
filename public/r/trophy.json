@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trophy",
+  "type": "registry:component",
+  "title": "Trophy",
+  "description": "Hoisted — the whole trophy is raised and set back down with weight.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/trophy.tsx",
+      "type": "registry:component",
+      "target": "components/icons/trophy.tsx",
+      "content": "\"use client\";\n\n/**\n * Trophy — animated Phosphor icon.\n *\n * Hoisted — the whole trophy is raised and set back down with weight.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"96\", y1: \"224\", x2: \"160\", y2: \"224\" }],\n    [\"line\", { x1: \"128\", y1: \"184\", x2: \"128\", y2: \"224\" }],\n    [\"path\", { d: \"M58,128H48A32,32,0,0,1,16,96V80a8,8,0,0,1,8-8H56\" }],\n    [\"path\", { d: \"M198,128h10a32,32,0,0,0,32-32V80a8,8,0,0,0-8-8H200\" }],\n    [\"path\", { d: \"M56,48H200v63.1c0,39.7-31.75,72.6-71.45,72.9A72,72,0,0,1,56,112Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M56,48H200v63.1c0,39.7-31.75,72.6-71.45,72.9A72,72,0,0,1,56,112Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.7,\n  whole: {\n    y: [0, 2.5, -11, -9.5, 1.5, 0],\n    ease: [\n      \"easeOut\",\n      [0.34, 1.56, 0.64, 1],\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.14, 0.38, 0.56, 0.8, 1],\n    duration: 0.79\n  },\n  parts: {\n    4: {\n      scaleY: [1, 1, 0.97, 1.012, 1],\n      origin: [128, 184],\n      ease: [\n        \"linear\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1],\n        \"easeInOut\"\n      ],\n      times: [0, 0.58, 0.73, 0.86, 1],\n      duration: 0.85\n    }\n  }\n};\n\nexport const Trophy = createAnimatedIcon(\n  \"Trophy\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Trophy;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "Trophy"
+  }
+}

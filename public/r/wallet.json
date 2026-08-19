@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wallet",
+  "type": "registry:component",
+  "title": "Wallet",
+  "description": "Hefts — the whole wallet lifts, tips back, and drops into place.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/wallet.tsx",
+      "type": "registry:component",
+      "target": "components/icons/wallet.tsx",
+      "content": "\"use client\";\n\n/**\n * Wallet — animated Phosphor icon.\n *\n * Hefts — the whole wallet lifts, tips back, and drops into place.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M40,56V184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56h0A16,16,0,0,1,56,40H192\" }],\n    [\"circle\", { cx: \"180\", cy: \"132\", r: \"12\" }],\n  ],\n  thin: [\n    [\"path\", { d: \"M40,56V184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56h0A16,16,0,0,1,56,40H192\" }],\n    [\"circle\", { cx: \"180\", cy: \"132\", r: \"8\" }],\n  ],\n  light: [\n    [\"path\", { d: \"M40,56V184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56h0A16,16,0,0,1,56,40H192\" }],\n    [\"circle\", { cx: \"180\", cy: \"132\", r: \"10\" }],\n  ],\n  bold: [\n    [\"circle\", { cx: \"180\", cy: \"136\", r: \"16\" }],\n    [\"path\", { d: \"M40,60.73V180a20,20,0,0,0,20,20H204a20,20,0,0,0,20-20V100a20,20,0,0,0-20-20H60.48C49.63,80,40.4,71.57,40,60.73A20,20,0,0,1,60,40H192\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M40,184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56Z\", opacity: \"0.2\" }],\n    ],\n  },\n  maps: {\n    bold: [1, 0],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.55,\n  whole: {\n    y: [0, -13, 6.8, 0],\n    rotate: [0, -4, 2.1, 0],\n    origin: [128, 128],\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.42, 0.72, 1]\n  }\n};\n\nexport const Wallet = createAnimatedIcon(\n  \"Wallet\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Wallet;\n"
+    }
+  ],
+  "meta": {
+    "category": "Commerce",
+    "component": "Wallet"
+  }
+}

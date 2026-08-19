@@ -1,0 +1,327 @@
+/**
+ * Devices — hardware, power, connectivity.
+ *
+ * Note: `desktop` part 0 carries an SVG `transform` attribute of its own. Motion
+ * animates via the CSS transform property, which wins over the attribute, so
+ * animating that part would wipe out its placement. It is left alone and the
+ * motion is carried by the other parts — codegen enforces this.
+ */
+import type { AnimationSet } from "./types.ts";
+import { pop, wiggle, shake, bounce, nudge, draw, dim, hinge, stagger } from "./recipes.ts";
+
+export const devices: AnimationSet = {
+  "device-mobile": {
+    description: "Buzzes — the handset rattles, then settles.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.6,
+      whole: {
+        x: [0, -7, 3.6, -1.9, 1, 0],
+        origin: [128, 128],
+        duration: 0.9,
+        ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
+        times: [0, 0.12, 0.36, 0.6, 0.8, 1],
+      },
+    },
+  },
+
+  laptop: {
+    description: "Nods — the lid dips shut a touch, then springs back open.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.6,
+      parts: {
+        0: {
+          scaleY: [1, 0.9, 1.03, 1],
+          origin: [128, 176],
+          times: [0, 0.4, 0.7, 1],
+          ease: ["easeOut", [0.34, 1.56, 0.64, 1], [0.22, 1, 0.36, 1]],
+        },
+        2: {
+          y: [0, 9, -4.7, 0],
+          opacity: [1, 0.45, 1, 1],
+          times: [0, 0.4, 0.7, 1],
+          ease: ["easeOut", [0.34, 1.56, 0.64, 1], [0.22, 1, 0.36, 1]],
+        },
+      },
+    },
+  },
+
+  desktop: {
+    description: "Wakes — the screen lights and the stand takes the weight.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.55,
+      parts: {
+        2: {
+          pathLength: [0, 1],
+          origin: [128, 128],
+          duration: 0.45,
+          ease: [0.65, 0, 0.35, 1],
+        },
+        3: {
+          origin: [128, 224],
+          duration: 0.45,
+          ease: [[0.34, 1.56, 0.64, 1], "easeInOut", [0.22, 1, 0.36, 1]],
+          times: [0, 0.4, 0.7, 1],
+          delay: 0.12,
+        },
+      },
+    },
+  },
+
+  keyboard: {
+    description: "Types — key, key, spacebar, each blinking as it's struck.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.6,
+      parts: {
+        3: {
+          y: [0, 3, 0],
+          opacity: [1, 0.2, 1],
+          duration: 0.3,
+          ease: ["easeOut", [0.22, 1, 0.36, 1]],
+          delay: 0,
+        },
+        4: {
+          y: [0, 3, 0],
+          opacity: [1, 0.2, 1],
+          duration: 0.3,
+          ease: ["easeOut", [0.22, 1, 0.36, 1]],
+          delay: 0.18,
+        },
+        5: {
+          y: [0, 3, 0],
+          opacity: [1, 0.2, 1],
+          duration: 0.3,
+          ease: ["easeOut", [0.22, 1, 0.36, 1]],
+          delay: 0.09,
+        },
+      },
+    },
+  },
+
+  mouse: {
+    description: "Clicks — the whole mouse presses down and springs back, wheel first.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.35,
+      whole: {
+        y: [0, 2.5, 2.5, -1, 0],
+        rotate: [0, -1.5, -1.5, 0.3, 0],
+        scaleY: [1, 0.97, 0.97, 1.006, 1],
+        origin: [128, 232],
+        duration: 0.79,
+        ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
+        times: [0, 0.5, 0.64, 0.86, 1],
+      },
+      parts: {
+        1: {
+          scaleY: [1, 0.72, 0.72, 1.06, 1],
+          origin: [128, 112],
+          duration: 0.79,
+          ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
+          times: [0, 0.5, 0.64, 0.86, 1],
+        },
+      },
+    },
+  },
+
+  "game-controller": {
+    description: "Rumbles — a quick vibration buzzes through the pad and dies out.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.5,
+      whole: {
+        x: [0, -5, 2.6, -1.4, 0.7, 0],
+        rotate: [0, -1.5, 0.8, -0.4, 0.2, 0],
+        ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
+        duration: 0.55,
+      },
+    },
+  },
+
+  "battery-full": {
+    description: "Recharges — the bars blank out, then refill from the left.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.9,
+      parts: {
+        1: {
+          opacity: [1, 0, 0, 1],
+          ease: ["easeInOut", "linear", "easeInOut"],
+          times: [0, 0.25, 0.65, 1],
+        },
+        2: {
+          opacity: [1, 0, 0, 1, 1],
+          ease: ["easeInOut", "linear", "easeInOut", "linear"],
+          times: [0, 0.25, 0.55, 0.8, 1],
+        },
+        3: {
+          opacity: [1, 0, 0, 1, 1],
+          ease: ["easeInOut", "linear", "easeInOut", "linear"],
+          times: [0, 0.25, 0.45, 0.7, 1],
+        },
+        4: {
+          opacity: [1, 0, 0, 1, 1],
+          ease: ["easeInOut", "linear", "easeInOut", "linear"],
+          times: [0, 0.25, 0.35, 0.6, 1],
+        },
+      },
+    },
+  },
+
+  "battery-charging": {
+    description: "Charging — the bolt pulses twice as the current lands.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.8,
+      parts: {
+        2: {
+          scale: [1, 1.2, 1, 1.1, 1],
+          opacity: [1, 0.8, 1, 0.9, 1],
+          origin: [116, 128],
+          ease: "easeInOut",
+          times: [0, 0.25, 0.5, 0.75, 1],
+        },
+      },
+    },
+  },
+
+  "wifi-high": {
+    description: "Reconnects — the signal drops out and rebuilds outward from the dot.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.65,
+      parts: {
+        0: {
+          scale: [1, 0.85, 1.15, 1],
+          origin: [128, 204],
+          duration: 0.55,
+          ease: ["easeOut", "easeInOut", [0.34, 1.56, 0.64, 1]],
+          times: [0, 0.3, 0.6, 1],
+        },
+        1: {
+          opacity: [1, 0, 0, 1],
+          origin: [128, 204],
+          duration: 0.55,
+          ease: ["easeOut", "linear", [0.22, 1, 0.36, 1]],
+          times: [0, 0.3, 0.5, 1],
+          delay: 0.14,
+        },
+        2: {
+          opacity: [1, 0, 0, 1],
+          origin: [128, 204],
+          duration: 0.55,
+          ease: ["easeOut", "linear", [0.22, 1, 0.36, 1]],
+          times: [0, 0.3, 0.5, 1],
+          delay: 0.07,
+        },
+        3: {
+          opacity: [1, 0, 0, 1],
+          origin: [128, 204],
+          duration: 0.55,
+          ease: ["easeOut", "linear", [0.22, 1, 0.36, 1]],
+          times: [0, 0.3, 0.5, 1],
+          delay: 0,
+        },
+      },
+    },
+  },
+
+  bluetooth: {
+    description: "Reconnects — the whole glyph redraws itself like a signal coming back.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.45,
+      parts: {
+        0: {
+          pathLength: [0, 1],
+          opacity: [0, 1],
+          duration: 0.35,
+          ease: "easeInOut",
+        },
+        1: {
+          pathLength: [0, 1],
+          opacity: [0, 1],
+          duration: 0.35,
+          ease: "easeInOut",
+        },
+        2: {
+          pathLength: [0, 1],
+          opacity: [0, 1],
+          duration: 0.35,
+          ease: "easeInOut",
+        },
+        3: {
+          pathLength: [0, 1],
+          opacity: [0, 1],
+          duration: 0.35,
+          ease: "easeInOut",
+        },
+      },
+    },
+  },
+
+  power: {
+    description: "Presses — the whole switch dips in and pops back.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.5,
+      whole: {
+        scale: [1, 0.9, 1.05, 1],
+        origin: [128, 128],
+        times: [0, 0.38, 0.72, 1],
+        ease: ["easeOut", [0.34, 1.56, 0.64, 1], [0.22, 1, 0.36, 1]],
+      },
+    },
+  },
+
+  plug: {
+    description: "Connects — the plug snaps home, then current flickers through the prongs.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.65,
+      whole: {
+        x: [0, -7, 0],
+        y: [0, 7, 0],
+        duration: 0.45,
+        ease: ["easeInOut", [0.34, 1.56, 0.64, 1]],
+        times: [0, 0.4, 1],
+      },
+      parts: {
+        0: {
+          opacity: [1, 0.3, 1, 0.6, 1],
+          origin: [164, 44],
+          duration: 0.44,
+          ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
+          delay: 0.26,
+        },
+        1: {
+          opacity: [1, 0.3, 1, 0.6, 1],
+          origin: [212, 92],
+          duration: 0.44,
+          ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
+          delay: 0.32,
+        },
+      },
+    },
+  },
+
+  "hard-drive": {
+    description: "Reads — the activity light pops and blinks twice.",
+    // Tuned in the studio; values are explicit rather than recipe calls.
+    stroke: {
+      duration: 0.65,
+      parts: {
+        1: {
+          opacity: [1, 0.15, 1, 0.35, 1],
+          scale: [1, 1.2, 1, 1.1, 1],
+          origin: [188, 128],
+          ease: [[0.34, 1.56, 0.64, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
+          times: [0, 0.25, 0.5, 0.7, 1],
+        },
+      },
+    },
+  },
+};

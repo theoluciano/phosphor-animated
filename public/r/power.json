@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "power",
+  "type": "registry:component",
+  "title": "Power",
+  "description": "Presses — the whole switch dips in and pops back.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/power.tsx",
+      "type": "registry:component",
+      "target": "components/icons/power.tsx",
+      "content": "\"use client\";\n\n/**\n * Power — animated Phosphor icon.\n *\n * Presses — the whole switch dips in and pops back.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"128\", y1: \"48\", x2: \"128\", y2: \"128\" }],\n    [\"path\", { d: \"M176,56c24.08,15.7,40,41.11,40,72a88,88,0,0,1-176,0c0-30.89,15.92-56.3,40-72\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"128\", r: \"88\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.5,\n  whole: {\n    scale: [1, 0.9, 1.05, 1],\n    origin: [128, 128],\n    times: [0, 0.38, 0.72, 1],\n    ease: [\n      \"easeOut\",\n      [0.34, 1.56, 0.64, 1],\n      [0.22, 1, 0.36, 1]\n    ]\n  }\n};\n\nexport const Power = createAnimatedIcon(\n  \"Power\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Power;\n"
+    }
+  ],
+  "meta": {
+    "category": "Devices",
+    "component": "Power"
+  }
+}

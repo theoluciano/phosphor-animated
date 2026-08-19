@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/*
+ * Palette tuned to Phosphor's own — warm off-white ground, stone ink, moss and acid
+ * accents — so the set reads as part of that world rather than a stranger to it.
+ */
+:root {
+  --ghost: #f7f5f1;
+  --vellum: #eeeae3;
+  --stone: #343330;
+  --slate: #3e3d3a;
+  --grey: #656461;
+  --moss: #3c402b;
+  --acid: #c4e456;
+  --deepgreen: #1f2310;
+  --darkgreen: #2e321f;
+  --rust: #92543b;
+
+  --bg: var(--ghost);
+  --surface: #ffffff;
+  --surface-2: var(--vellum);
+  --ink: var(--stone);
+  --ink-muted: var(--grey);
+  --line: #e2ddd2;
+  --line-strong: #cfc8b9;
+  --accent: var(--moss);
+  --accent-ink: var(--ghost);
+  --highlight: var(--acid);
+  --tooltip-bg: var(--stone);
+  --tooltip-ink: var(--ghost);
+
+  /*
+   * The dock stays dark in both themes. It reads as a thing floating above the
+   * page rather than part of it, and inverting it to a light bar over the icon
+   * wall was tested and far too loud — hence its own tokens rather than reusing
+   * --surface or --tooltip-bg, both of which flip.
+   */
+  --dock-bg: var(--stone);
+  --dock-raised: #45443f;
+  --dock-line: #4e4d49;
+  --dock-border: transparent;
+  --dock-ink: var(--ghost);
+  --dock-ink-muted: #9d9c92;
+}
+
+.dark {
+  --bg: var(--deepgreen);
+  --surface: #262a17;
+  --surface-2: var(--darkgreen);
+  --ink: var(--vellum);
+  --ink-muted: #9d9c92;
+  --line: #3a3f28;
+  --line-strong: #4d5336;
+  --accent: var(--acid);
+  --accent-ink: var(--deepgreen);
+  --highlight: var(--acid);
+  --tooltip-bg: var(--vellum);
+  --tooltip-ink: var(--stone);
+
+  /* Lifted off the near-black ground with a hairline, not inverted. */
+  --dock-bg: #32371e;
+  --dock-raised: #414727;
+  --dock-line: #4d5336;
+  --dock-border: #4d5336;
+  --dock-ink: var(--vellum);
+  --dock-ink-muted: #9d9c92;
+}
+
+/* The width below which the dock can no longer hold every control on one line. */
+@theme {
+  --breakpoint-dock: 900px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-highlight: var(--highlight);
+  --color-tooltip-bg: var(--tooltip-bg);
+  --color-tooltip-ink: var(--tooltip-ink);
+  --color-dock-bg: var(--dock-bg);
+  --color-dock-raised: var(--dock-raised);
+  --color-dock-line: var(--dock-line);
+  --color-dock-border: var(--dock-border);
+  --color-dock-ink: var(--dock-ink);
+  --color-dock-ink-muted: var(--dock-ink-muted);
+  --color-deepgreen: var(--deepgreen);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-plex-mono);
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Phosphor's own selection colours, and their exact rule. Deliberately not
+ * themed: acid on moss clears 7:1 either way, so the highlight stays the same
+ * recognisable green in light and dark rather than becoming two different greens.
+ */
+::selection {
+  color: var(--moss);
+  background-color: var(--acid);
+}
+
+/*
+ * The grid's hairlines come from the cells themselves, so a 1px seam never
+ * doubles. It runs edge to edge now, so there is no left border — the viewport
+ * edge is the boundary.
+ */
+.icon-grid {
+  border-top: 1px solid var(--line);
+}
+.icon-cell {
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* Each rotation of the hero's install line fades up rather than popping. */
+@keyframes command-swap {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.command-swap {
+  animation: command-swap 240ms ease-out;
+}
+
+/* WebKit draws its own clear button in search fields; we render our own. */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  /* The dock still needs to arrive readably, so it fades where it stands. */
+  .dock {
+    transform: none !important;
+    transition-property: opacity !important;
+    transition-duration: 200ms !important;
+  }
+}

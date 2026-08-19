@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "git-branch",
+  "type": "registry:component",
+  "title": "GitBranch",
+  "description": "Draws itself — the new node pops in, the branch traces on, the tip lands.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/git-branch.tsx",
+      "type": "registry:component",
+      "target": "components/icons/git-branch.tsx",
+      "content": "\"use client\";\n\n/**\n * GitBranch — animated Phosphor icon.\n *\n * Draws itself — the new node pops in, the branch traces on, the tip lands.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M80,168V144a16,16,0,0,1,16-16h88a16,16,0,0,0,16-16V88\" }],\n    [\"line\", { x1: \"80\", y1: \"88\", x2: \"80\", y2: \"168\" }],\n    [\"circle\", { cx: \"80\", cy: \"64\", r: \"24\" }],\n    [\"circle\", { cx: \"200\", cy: \"64\", r: \"24\" }],\n    [\"circle\", { cx: \"80\", cy: \"192\", r: \"24\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"200\", cy: \"64\", r: \"24\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.85,\n  parts: {\n    0: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.25,\n      delay: 0.3,\n      ease: \"easeOut\"\n    },\n    1: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.25,\n      delay: 0.3,\n      ease: \"easeOut\"\n    },\n    3: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.25,\n      delay: 0.05,\n      ease: \"easeOut\"\n    },\n    4: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.25,\n      delay: 0.55,\n      ease: \"easeOut\"\n    }\n  }\n};\n\nexport const GitBranch = createAnimatedIcon(\n  \"GitBranch\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default GitBranch;\n"
+    }
+  ],
+  "meta": {
+    "category": "Development",
+    "component": "GitBranch"
+  }
+}

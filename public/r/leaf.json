@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "leaf",
+  "type": "registry:component",
+  "title": "Leaf",
+  "description": "Drifts — tilting and travelling at once, the way a leaf falls.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/leaf.tsx",
+      "type": "registry:component",
+      "target": "components/icons/leaf.tsx",
+      "content": "\"use client\";\n\n/**\n * Leaf — animated Phosphor icon.\n *\n * Drifts — tilting and travelling at once, the way a leaf falls.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M63.81,192.19c-47.89-79.81,16-159.62,151.64-151.64C223.43,176.23,143.62,240.08,63.81,192.19Z\" }],\n    [\"line\", { x1: \"160\", y1: \"96\", x2: \"40\", y2: \"216\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M63.81,192.19c-47.89-79.81,16-159.62,151.64-151.64C223.43,176.23,143.62,240.08,63.81,192.19Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 1.5,\n  whole: {\n    rotate: [0, -3.5, 1.8, -0.9, 0],\n    x: [0, 5, -2.6, 1.4, 0],\n    y: [0, -9, -5, -2, 0],\n    origin: [40, 216],\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.24, 0.52, 0.76, 1]\n  }\n};\n\nexport const Leaf = createAnimatedIcon(\n  \"Leaf\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Leaf;\n"
+    }
+  ],
+  "meta": {
+    "category": "Weather & Nature",
+    "component": "Leaf"
+  }
+}

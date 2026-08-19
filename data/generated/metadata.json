@@ -1,0 +1,980 @@
+[
+  {
+    "name": "bell",
+    "component": "Bell",
+    "category": "Essentials",
+    "description": "Rings — the whole bell swings wide from its mount, left first."
+  },
+  {
+    "name": "bell-ringing",
+    "component": "BellRinging",
+    "category": "Essentials",
+    "description": "Rings out loud — the bell whips from its mount and sound draws off both sides."
+  },
+  {
+    "name": "bell-slash",
+    "component": "BellSlash",
+    "category": "Essentials",
+    "description": "Silenced — a token shake dies as the slash strikes through."
+  },
+  {
+    "name": "heart",
+    "component": "Heart",
+    "category": "Essentials",
+    "description": "Lub-dub — a quick squeeze, then two beats, the second softer."
+  },
+  {
+    "name": "star",
+    "component": "Star",
+    "category": "Essentials",
+    "description": "Catches the light — stretches its points, settles, then glimmers once more."
+  },
+  {
+    "name": "trash",
+    "component": "Trash",
+    "category": "Essentials",
+    "description": "Opens — the lid lifts clear of the bin, which absorbs it on the way down."
+  },
+  {
+    "name": "trash-simple",
+    "component": "TrashSimple",
+    "category": "Essentials",
+    "description": "Lifts — the lid and its handle hop straight off the bin and drop back."
+  },
+  {
+    "name": "gear",
+    "component": "Gear",
+    "category": "Essentials",
+    "description": "Winds up, then turns a tooth counter-clockwise and eases in."
+  },
+  {
+    "name": "gear-six",
+    "component": "GearSix",
+    "category": "Essentials",
+    "description": "Turns a tooth clockwise, overshoots, and clicks into place."
+  },
+  {
+    "name": "house",
+    "component": "House",
+    "category": "Essentials",
+    "description": "Hops once — a welcoming little bounce."
+  },
+  {
+    "name": "magnifying-glass",
+    "component": "MagnifyingGlass",
+    "category": "Essentials",
+    "description": "Sweeps a slow arc, the way you search a page."
+  },
+  {
+    "name": "user",
+    "component": "User",
+    "category": "Essentials",
+    "description": "Draws itself — the head sketches in first, the shoulders follow."
+  },
+  {
+    "name": "users",
+    "component": "Users",
+    "category": "Essentials",
+    "description": "Joins in — the second figure leans in behind the first and settles."
+  },
+  {
+    "name": "plus",
+    "component": "Plus",
+    "category": "Essentials",
+    "description": "Stamps — each stroke overshoots long, pinches short, and settles."
+  },
+  {
+    "name": "minus",
+    "component": "Minus",
+    "category": "Essentials",
+    "description": "Pinches to the centre, then snaps back to full width."
+  },
+  {
+    "name": "x",
+    "component": "X",
+    "category": "Essentials",
+    "description": "Struck out — two strokes cross in turn, and the pair lands with a snap."
+  },
+  {
+    "name": "check",
+    "component": "Check",
+    "category": "Essentials",
+    "description": "Stamps in — the check draws on while scaling up to size."
+  },
+  {
+    "name": "check-circle",
+    "component": "CheckCircle",
+    "category": "Essentials",
+    "description": "Confirms — the check rewrites itself and the ring nods."
+  },
+  {
+    "name": "x-circle",
+    "component": "XCircle",
+    "category": "Essentials",
+    "description": "Rejects — the cross twists in and pops while the ring pulses around it."
+  },
+  {
+    "name": "eye",
+    "component": "Eye",
+    "category": "Essentials",
+    "description": "Blinks — the lid closes as the pupil contracts behind it."
+  },
+  {
+    "name": "eye-slash",
+    "component": "EyeSlash",
+    "category": "Essentials",
+    "description": "Hidden — the slash sweeps across as the eye dims behind it."
+  },
+  {
+    "name": "lock",
+    "component": "Lock",
+    "category": "Essentials",
+    "description": "Clicks shut — the shackle presses in and the body shudders tight."
+  },
+  {
+    "name": "lock-open",
+    "component": "LockOpen",
+    "category": "Essentials",
+    "description": "Springs — the shackle flicks wider while the whole lock jolts."
+  },
+  {
+    "name": "key",
+    "component": "Key",
+    "category": "Essentials",
+    "description": "Turns in the lock — deep, a small rebound, then lets go."
+  },
+  {
+    "name": "shield-check",
+    "component": "ShieldCheck",
+    "category": "Essentials",
+    "description": "Re-verifies — the shield braces while the check pops in and redraws."
+  },
+  {
+    "name": "bookmark-simple",
+    "component": "BookmarkSimple",
+    "category": "Essentials",
+    "description": "Saved — stretches down, squashes, and settles into place."
+  },
+  {
+    "name": "tag",
+    "component": "Tag",
+    "category": "Essentials",
+    "description": "Swings — nudged, the tag rocks on its eyelet and settles."
+  },
+  {
+    "name": "pencil-simple",
+    "component": "PencilSimple",
+    "category": "Essentials",
+    "description": "Writes — the nib travels a quick scribble while the shaft tilts."
+  },
+  {
+    "name": "note-pencil",
+    "component": "NotePencil",
+    "category": "Essentials",
+    "description": "Edits — the pencil scribbles a quick stroke against the note."
+  },
+  {
+    "name": "copy",
+    "component": "Copy",
+    "category": "Essentials",
+    "description": "Duplicates — the sheets spring apart, then snap back into a stack."
+  },
+  {
+    "name": "clipboard",
+    "component": "Clipboard",
+    "category": "Essentials",
+    "description": "Snaps — the clip pops up and claps back down; the board takes the hit."
+  },
+  {
+    "name": "link",
+    "component": "Link",
+    "category": "Essentials",
+    "description": "Tugs — the two halves pull apart, then snap back past centre."
+  },
+  {
+    "name": "dots-three",
+    "component": "DotsThree",
+    "category": "Essentials",
+    "description": "Hops — each dot pops up in turn, left to right."
+  },
+  {
+    "name": "list",
+    "component": "List",
+    "category": "Essentials",
+    "description": "Scans — each row's right edge sweeps in and snaps back, top to bottom."
+  },
+  {
+    "name": "sliders",
+    "component": "Sliders",
+    "category": "Essentials",
+    "description": "Adjusts — the knobs take turns sliding along their tracks."
+  },
+  {
+    "name": "funnel",
+    "component": "Funnel",
+    "category": "Essentials",
+    "description": "Squeezes — pinches in and pushes down, forcing everything through."
+  },
+  {
+    "name": "arrow-right",
+    "component": "ArrowRight",
+    "category": "Navigation",
+    "description": "Recoils — the arrow draws back, then springs home."
+  },
+  {
+    "name": "arrow-left",
+    "component": "ArrowLeft",
+    "category": "Navigation",
+    "description": "Recoils — shaft retracting — then strikes back to the left."
+  },
+  {
+    "name": "arrow-up",
+    "component": "ArrowUp",
+    "category": "Navigation",
+    "description": "Crouches — the arrow dips down, then springs back up."
+  },
+  {
+    "name": "arrow-down",
+    "component": "ArrowDown",
+    "category": "Navigation",
+    "description": "Recoils upward — shaft retracting — then strikes back down."
+  },
+  {
+    "name": "arrow-clockwise",
+    "component": "ArrowClockwise",
+    "category": "Navigation",
+    "description": "Refreshes — one clockwise turn, away fast and easing home."
+  },
+  {
+    "name": "arrow-counter-clockwise",
+    "component": "ArrowCounterClockwise",
+    "category": "Navigation",
+    "description": "Undoes — one turn back, away fast and easing home."
+  },
+  {
+    "name": "caret-down",
+    "component": "CaretDown",
+    "category": "Navigation",
+    "description": "Nudges downward, the way it points."
+  },
+  {
+    "name": "caret-right",
+    "component": "CaretRight",
+    "category": "Navigation",
+    "description": "Nudges forward, the way it points."
+  },
+  {
+    "name": "arrow-square-out",
+    "component": "ArrowSquareOut",
+    "category": "Navigation",
+    "description": "Slips out — the arrow drifts toward the corner and recedes."
+  },
+  {
+    "name": "sign-out",
+    "component": "SignOut",
+    "category": "Navigation",
+    "description": "Leaves — the arrow winds up and lunges out, the door recoiling behind it."
+  },
+  {
+    "name": "sign-in",
+    "component": "SignIn",
+    "category": "Navigation",
+    "description": "Enters — the arrow lunges in through the door, which takes the bump."
+  },
+  {
+    "name": "map-pin",
+    "component": "MapPin",
+    "category": "Navigation",
+    "description": "Hops off the map and stamps back down — the dot draws in as it lands."
+  },
+  {
+    "name": "compass",
+    "component": "Compass",
+    "category": "Navigation",
+    "description": "Finds north — the needle whips a full turn, overshoots, and settles."
+  },
+  {
+    "name": "globe",
+    "component": "Globe",
+    "category": "Navigation",
+    "description": "Draws itself — the rim first, then the meridian and parallels trace on."
+  },
+  {
+    "name": "flag",
+    "component": "Flag",
+    "category": "Navigation",
+    "description": "Gusts — the cloth lifts from the pole, billows, and settles to rest."
+  },
+  {
+    "name": "anchor",
+    "component": "Anchor",
+    "category": "Navigation",
+    "description": "Sways from its ring, the way a moored anchor rides the swell."
+  },
+  {
+    "name": "envelope",
+    "component": "Envelope",
+    "category": "Communication",
+    "description": "Opens — the flap swings up, then snaps shut with a soft bounce."
+  },
+  {
+    "name": "envelope-open",
+    "component": "EnvelopeOpen",
+    "category": "Communication",
+    "description": "The letter inside pushes up — the pocket fold lifts, then settles shut."
+  },
+  {
+    "name": "paper-plane-tilt",
+    "component": "PaperPlaneTilt",
+    "category": "Communication",
+    "description": "Sends — flies out of frame and a fresh one arrives."
+  },
+  {
+    "name": "chat-circle",
+    "component": "ChatCircle",
+    "category": "Communication",
+    "description": "Perks up — the bubble swells and shakes on its tail."
+  },
+  {
+    "name": "chat-teardrop-dots",
+    "component": "ChatTeardropDots",
+    "category": "Communication",
+    "description": "Typing — the dots blink out and back, left to right."
+  },
+  {
+    "name": "phone",
+    "component": "Phone",
+    "category": "Communication",
+    "description": "Rings — the handset rattles in decaying swings and settles home."
+  },
+  {
+    "name": "phone-call",
+    "component": "PhoneCall",
+    "category": "Communication",
+    "description": "Connects — the handset rocks while the signal waves blink out and pop back, inner first."
+  },
+  {
+    "name": "at",
+    "component": "At",
+    "category": "Communication",
+    "description": "Writes itself — the centre loops first, then the spiral sweeps around."
+  },
+  {
+    "name": "share-network",
+    "component": "ShareNetwork",
+    "category": "Communication",
+    "description": "Broadcasts — the hub pulses, the wires carry the signal, the nodes pop as it lands."
+  },
+  {
+    "name": "hand-waving",
+    "component": "HandWaving",
+    "category": "Communication",
+    "description": "Waves hello, pivoting at the wrist."
+  },
+  {
+    "name": "megaphone",
+    "component": "Megaphone",
+    "category": "Communication",
+    "description": "Shouts — rears up on its grip, then settles."
+  },
+  {
+    "name": "play",
+    "component": "Play",
+    "category": "Media",
+    "description": "Starts — the triangle coils back with a tilt, then springs forward."
+  },
+  {
+    "name": "pause",
+    "component": "Pause",
+    "category": "Media",
+    "description": "Holds — the bars dip in turn, left then right, and spring back."
+  },
+  {
+    "name": "stop",
+    "component": "Stop",
+    "category": "Media",
+    "description": "Presses in — the square dips like a struck button, then settles."
+  },
+  {
+    "name": "skip-forward",
+    "component": "SkipForward",
+    "category": "Media",
+    "description": "Skips ahead — the triangle lunges at the end bar and knocks it."
+  },
+  {
+    "name": "skip-back",
+    "component": "SkipBack",
+    "category": "Media",
+    "description": "Skips back — the triangle lunges at the start bar and knocks it."
+  },
+  {
+    "name": "shuffle",
+    "component": "Shuffle",
+    "category": "Media",
+    "description": "Weaves — both tracks redraw through the crossing and the heads snap outward."
+  },
+  {
+    "name": "repeat",
+    "component": "Repeat",
+    "category": "Media",
+    "description": "Loops — the cycle turns once around and springs into place."
+  },
+  {
+    "name": "music-note",
+    "component": "MusicNote",
+    "category": "Media",
+    "description": "Plays — the note sways to the beat while its head pulses."
+  },
+  {
+    "name": "headphones",
+    "component": "Headphones",
+    "category": "Media",
+    "description": "Thumps — the band flexes down onto the ears and springs back, twice."
+  },
+  {
+    "name": "speaker-high",
+    "component": "SpeakerHigh",
+    "category": "Media",
+    "description": "Sounds — the cone pulses and the waves radiate out from it."
+  },
+  {
+    "name": "speaker-x",
+    "component": "SpeakerX",
+    "category": "Media",
+    "description": "Muted — the cross draws itself in, stroke after stroke."
+  },
+  {
+    "name": "microphone",
+    "component": "Microphone",
+    "category": "Media",
+    "description": "Sound check — the capsule bobs one-two in its cradle."
+  },
+  {
+    "name": "microphone-slash",
+    "component": "MicrophoneSlash",
+    "category": "Media",
+    "description": "Muted — the slash draws across and the capsule dims."
+  },
+  {
+    "name": "camera",
+    "component": "Camera",
+    "category": "Media",
+    "description": "Pulls focus — the lens breathes, then the body snaps the shot."
+  },
+  {
+    "name": "image",
+    "component": "Image",
+    "category": "Media",
+    "description": "Lifts in hand — the sun and hills shift with shallow parallax."
+  },
+  {
+    "name": "video-camera",
+    "component": "VideoCamera",
+    "category": "Media",
+    "description": "Rolls — the body breathes while the lens draws back and returns."
+  },
+  {
+    "name": "folder",
+    "component": "Folder",
+    "category": "Files",
+    "description": "Picked up — lifts with a small lean, then settles back with weight."
+  },
+  {
+    "name": "folder-open",
+    "component": "FolderOpen",
+    "category": "Files",
+    "description": "Wobbles — the whole folder rocks on its base and settles."
+  },
+  {
+    "name": "file",
+    "component": "File",
+    "category": "Files",
+    "description": "Hops — the page lifts with a small tilt while the corner fold flares."
+  },
+  {
+    "name": "file-text",
+    "component": "FileText",
+    "category": "Files",
+    "description": "Rewrites — the file perks up as its lines erase and retype."
+  },
+  {
+    "name": "files",
+    "component": "Files",
+    "category": "Files",
+    "description": "Fans apart — the sheets slide diagonally away from each other and spring back."
+  },
+  {
+    "name": "archive",
+    "component": "Archive",
+    "category": "Files",
+    "description": "Opens — the lid pops clear, hangs a beat, then drops shut."
+  },
+  {
+    "name": "printer",
+    "component": "Printer",
+    "category": "Files",
+    "description": "Prints — the paper feeds through the body and the status light blinks."
+  },
+  {
+    "name": "download-simple",
+    "component": "DownloadSimple",
+    "category": "Files",
+    "description": "Delivers — the arrow springs down and back while the tray dips to take it."
+  },
+  {
+    "name": "upload-simple",
+    "component": "UploadSimple",
+    "category": "Files",
+    "description": "Sends — the arrow springs up and back while the tray dips to launch it."
+  },
+  {
+    "name": "cloud-arrow-up",
+    "component": "CloudArrowUp",
+    "category": "Files",
+    "description": "Uploads — the arrow dips, surges up, and the cloud lifts buoyantly with it."
+  },
+  {
+    "name": "floppy-disk",
+    "component": "FloppyDisk",
+    "category": "Files",
+    "description": "Saves — the disk presses in with a click while label and door rewrite."
+  },
+  {
+    "name": "shopping-cart",
+    "component": "ShoppingCart",
+    "category": "Commerce",
+    "description": "Hops — added to the cart, so it bounces twice and lands on its wheels."
+  },
+  {
+    "name": "shopping-bag",
+    "component": "ShoppingBag",
+    "category": "Commerce",
+    "description": "Picked up — swings once from the handle and settles."
+  },
+  {
+    "name": "credit-card",
+    "component": "CreditCard",
+    "category": "Commerce",
+    "description": "Swipes — the whole card slides through and the digits catch up."
+  },
+  {
+    "name": "currency-dollar",
+    "component": "CurrencyDollar",
+    "category": "Commerce",
+    "description": "Draws itself — the curve sweeps through, then the bar strikes down."
+  },
+  {
+    "name": "wallet",
+    "component": "Wallet",
+    "category": "Commerce",
+    "description": "Hefts — the whole wallet lifts, tips back, and drops into place."
+  },
+  {
+    "name": "gift",
+    "component": "Gift",
+    "category": "Commerce",
+    "description": "What's inside? — the box rocks from its base while the bows flutter."
+  },
+  {
+    "name": "package",
+    "component": "Package",
+    "category": "Commerce",
+    "description": "Draws itself — the box outlines first, then its seams."
+  },
+  {
+    "name": "truck",
+    "component": "Truck",
+    "category": "Commerce",
+    "description": "Jounces — the body bobs on its springs while the wheels stay planted."
+  },
+  {
+    "name": "receipt",
+    "component": "Receipt",
+    "category": "Commerce",
+    "description": "Itemises — the lines ink themselves in, top to bottom."
+  },
+  {
+    "name": "storefront",
+    "component": "Storefront",
+    "category": "Commerce",
+    "description": "Ripples — the awning scallops flap in turn, left to right."
+  },
+  {
+    "name": "sun",
+    "component": "Sun",
+    "category": "Weather & Nature",
+    "description": "Lights up — the core pops and the rays flare one by one, clockwise."
+  },
+  {
+    "name": "moon",
+    "component": "Moon",
+    "category": "Weather & Nature",
+    "description": "Rocks side to side, a crescent settling into the night."
+  },
+  {
+    "name": "cloud",
+    "component": "Cloud",
+    "category": "Weather & Nature",
+    "description": "Swells — a soft roll lifts the cloud and sets it back down."
+  },
+  {
+    "name": "lightning",
+    "component": "Lightning",
+    "category": "Weather & Nature",
+    "description": "Strikes — the bolt draws itself on, strike-quick."
+  },
+  {
+    "name": "fire",
+    "component": "Fire",
+    "category": "Weather & Nature",
+    "description": "Ignites — the flame draws itself on, the inner tongue catching last."
+  },
+  {
+    "name": "drop",
+    "component": "Drop",
+    "category": "Weather & Nature",
+    "description": "Draws itself — the outline traces on, then the sheen follows."
+  },
+  {
+    "name": "leaf",
+    "component": "Leaf",
+    "category": "Weather & Nature",
+    "description": "Drifts — tilting and travelling at once, the way a leaf falls."
+  },
+  {
+    "name": "tree",
+    "component": "Tree",
+    "category": "Weather & Nature",
+    "description": "Sways — the whole tree leans through a gust and settles on its roots."
+  },
+  {
+    "name": "snowflake",
+    "component": "Snowflake",
+    "category": "Weather & Nature",
+    "description": "Shivers — the whole flake flicks side to side and settles."
+  },
+  {
+    "name": "wind",
+    "component": "Wind",
+    "category": "Weather & Nature",
+    "description": "Blows through — each stream draws itself on, one gust behind the last."
+  },
+  {
+    "name": "umbrella",
+    "component": "Umbrella",
+    "category": "Weather & Nature",
+    "description": "Takes the weather — it rocks under the shaft while the canopy absorbs the hit."
+  },
+  {
+    "name": "rainbow",
+    "component": "Rainbow",
+    "category": "Weather & Nature",
+    "description": "Appears — the bands draw on, inner arc first."
+  },
+  {
+    "name": "cow",
+    "component": "Cow",
+    "category": "Weather & Nature",
+    "description": "Cocks its head — a slow tilt, and a blink halfway through."
+  },
+  {
+    "name": "device-mobile",
+    "component": "DeviceMobile",
+    "category": "Devices",
+    "description": "Buzzes — the handset rattles, then settles."
+  },
+  {
+    "name": "laptop",
+    "component": "Laptop",
+    "category": "Devices",
+    "description": "Nods — the lid dips shut a touch, then springs back open."
+  },
+  {
+    "name": "desktop",
+    "component": "Desktop",
+    "category": "Devices",
+    "description": "Wakes — the screen lights and the stand takes the weight."
+  },
+  {
+    "name": "keyboard",
+    "component": "Keyboard",
+    "category": "Devices",
+    "description": "Types — key, key, spacebar, each blinking as it's struck."
+  },
+  {
+    "name": "mouse",
+    "component": "Mouse",
+    "category": "Devices",
+    "description": "Clicks — the whole mouse presses down and springs back, wheel first."
+  },
+  {
+    "name": "game-controller",
+    "component": "GameController",
+    "category": "Devices",
+    "description": "Rumbles — a quick vibration buzzes through the pad and dies out."
+  },
+  {
+    "name": "battery-full",
+    "component": "BatteryFull",
+    "category": "Devices",
+    "description": "Recharges — the bars blank out, then refill from the left."
+  },
+  {
+    "name": "battery-charging",
+    "component": "BatteryCharging",
+    "category": "Devices",
+    "description": "Charging — the bolt pulses twice as the current lands."
+  },
+  {
+    "name": "wifi-high",
+    "component": "WifiHigh",
+    "category": "Devices",
+    "description": "Reconnects — the signal drops out and rebuilds outward from the dot."
+  },
+  {
+    "name": "bluetooth",
+    "component": "Bluetooth",
+    "category": "Devices",
+    "description": "Reconnects — the whole glyph redraws itself like a signal coming back."
+  },
+  {
+    "name": "power",
+    "component": "Power",
+    "category": "Devices",
+    "description": "Presses — the whole switch dips in and pops back."
+  },
+  {
+    "name": "plug",
+    "component": "Plug",
+    "category": "Devices",
+    "description": "Connects — the plug snaps home, then current flickers through the prongs."
+  },
+  {
+    "name": "hard-drive",
+    "component": "HardDrive",
+    "category": "Devices",
+    "description": "Reads — the activity light pops and blinks twice."
+  },
+  {
+    "name": "code",
+    "component": "Code",
+    "category": "Development",
+    "description": "Recompiles — the slash slips off down-left and a fresh one drops in from above."
+  },
+  {
+    "name": "terminal-window",
+    "component": "TerminalWindow",
+    "category": "Development",
+    "description": "Types — the prompt pops and the line runs out after it."
+  },
+  {
+    "name": "git-branch",
+    "component": "GitBranch",
+    "category": "Development",
+    "description": "Draws itself — the new node pops in, the branch traces on, the tip lands."
+  },
+  {
+    "name": "bug",
+    "component": "Bug",
+    "category": "Development",
+    "description": "Skitters — mismatched legs twitch while the body shifts its weight."
+  },
+  {
+    "name": "database",
+    "component": "Database",
+    "category": "Development",
+    "description": "Scans — a pulse sweeps the platters, top to bottom."
+  },
+  {
+    "name": "cpu",
+    "component": "Cpu",
+    "category": "Development",
+    "description": "Ticks — every pin stretches with the clock, twice."
+  },
+  {
+    "name": "cube",
+    "component": "Cube",
+    "category": "Development",
+    "description": "Draws itself — the outline first, then the folded inner edges."
+  },
+  {
+    "name": "wrench",
+    "component": "Wrench",
+    "category": "Development",
+    "description": "Ratchets — cranks the bolt in its jaws, then springs back."
+  },
+  {
+    "name": "hammer",
+    "component": "Hammer",
+    "category": "Development",
+    "description": "Strikes — a slow windup, then the head snaps down and recoils."
+  },
+  {
+    "name": "magic-wand",
+    "component": "MagicWand",
+    "category": "Development",
+    "description": "Flicks — the wand snaps a small arc and the stars twinkle in turn."
+  },
+  {
+    "name": "rocket",
+    "component": "Rocket",
+    "category": "Development",
+    "description": "Test-fires — hops off the pad, fins trailing, exhaust flaring beneath."
+  },
+  {
+    "name": "lightbulb",
+    "component": "Lightbulb",
+    "category": "Development",
+    "description": "An idea — the glass flexes as the shine redraws."
+  },
+  {
+    "name": "brain",
+    "component": "Brain",
+    "category": "Development",
+    "description": "Thinks — one deep breath while the folds retract and redraw."
+  },
+  {
+    "name": "sparkle",
+    "component": "Sparkle",
+    "category": "Development",
+    "description": "Lifts — the big sparkle bobs while the small stars blink in turn."
+  },
+  {
+    "name": "warning",
+    "component": "Warning",
+    "category": "Feedback",
+    "description": "Alerts — the triangle takes the knock and the exclamation snaps back up."
+  },
+  {
+    "name": "warning-circle",
+    "component": "WarningCircle",
+    "category": "Feedback",
+    "description": "Alerts — the ring squashes and the exclamation bounces back into place."
+  },
+  {
+    "name": "info",
+    "component": "Info",
+    "category": "Feedback",
+    "description": "The \"i\" bobs — the dot hops while the stem squashes and the ring breathes."
+  },
+  {
+    "name": "question",
+    "component": "Question",
+    "category": "Feedback",
+    "description": "Wonders — the mark waggles side to side, dot in tow."
+  },
+  {
+    "name": "thumbs-up",
+    "component": "ThumbsUp",
+    "category": "Feedback",
+    "description": "Approves — the whole hand lifts and tips back, with a little pop."
+  },
+  {
+    "name": "thumbs-down",
+    "component": "ThumbsDown",
+    "category": "Feedback",
+    "description": "Rejects — the whole hand presses down and tips, with a little pop."
+  },
+  {
+    "name": "smiley",
+    "component": "Smiley",
+    "category": "Feedback",
+    "description": "Beams — the face pops and tilts, the eyes widen and the grin deepens."
+  },
+  {
+    "name": "spinner",
+    "component": "Spinner",
+    "category": "Feedback",
+    "description": "Spins — one full turn of the wheel, winding up and easing off."
+  },
+  {
+    "name": "circle-notch",
+    "component": "CircleNotch",
+    "category": "Feedback",
+    "description": "Spins — one full turn, up to speed and easing home."
+  },
+  {
+    "name": "hourglass",
+    "component": "Hourglass",
+    "category": "Feedback",
+    "description": "Flips over with a springy half-turn — the sand starts again."
+  },
+  {
+    "name": "clock",
+    "component": "Clock",
+    "category": "Feedback",
+    "description": "Fast-forwards — the hands whip one brisk full turn."
+  },
+  {
+    "name": "timer",
+    "component": "Timer",
+    "category": "Feedback",
+    "description": "Starts — the crown presses down and the hand sweeps a full turn."
+  },
+  {
+    "name": "alarm",
+    "component": "Alarm",
+    "category": "Feedback",
+    "description": "Rattles — the whole clock rocks gently side to side while the bells flick."
+  },
+  {
+    "name": "confetti",
+    "component": "Confetti",
+    "category": "Feedback",
+    "description": "Pops — the cone recoils and the confetti kicks outward."
+  },
+  {
+    "name": "crown",
+    "component": "Crown",
+    "category": "Feedback",
+    "description": "Bows — one restrained dip and lift while the jewels flash in turn."
+  },
+  {
+    "name": "trophy",
+    "component": "Trophy",
+    "category": "Feedback",
+    "description": "Hoisted — the whole trophy is raised and set back down with weight."
+  },
+  {
+    "name": "target",
+    "component": "Target",
+    "category": "Feedback",
+    "description": "Hits — the arrow draws back, lands, and the rings ring outward from the centre."
+  },
+  {
+    "name": "heartbeat",
+    "component": "Heartbeat",
+    "category": "Feedback",
+    "description": "The pulse sweeps through first, then the heart draws in and beats."
+  },
+  {
+    "name": "chart-line",
+    "component": "ChartLine",
+    "category": "Feedback",
+    "description": "Replots — the trend line fades in as it draws across the axes."
+  },
+  {
+    "name": "chart-bar",
+    "component": "ChartBar",
+    "category": "Feedback",
+    "description": "Redraws — the columns wipe away and rise again in turn."
+  },
+  {
+    "name": "chart-pie-slice",
+    "component": "ChartPieSlice",
+    "category": "Feedback",
+    "description": "Breaks out — the slice springs free, hangs a beat, and rejoins."
+  },
+  {
+    "name": "trend-up",
+    "component": "TrendUp",
+    "category": "Feedback",
+    "description": "Redraws — the line retraces its climb while the frame lifts with it."
+  },
+  {
+    "name": "trend-down",
+    "component": "TrendDown",
+    "category": "Feedback",
+    "description": "Redraws — the line retraces its fall while the frame dips with it."
+  }
+]

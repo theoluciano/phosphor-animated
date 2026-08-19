@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skip-forward",
+  "type": "registry:component",
+  "title": "SkipForward",
+  "description": "Skips ahead — the triangle lunges at the end bar and knocks it.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/skip-forward.tsx",
+      "type": "registry:component",
+      "target": "components/icons/skip-forward.tsx",
+      "content": "\"use client\";\n\n/**\n * SkipForward — animated Phosphor icon.\n *\n * Skips ahead — the triangle lunges at the end bar and knocks it.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"200\", y1: \"40\", x2: \"200\", y2: \"216\" }],\n    [\"path\", { d: \"M56,47.88V208.12a8,8,0,0,0,12.19,6.65L196.3,134.65a7.83,7.83,0,0,0,0-13.3L68.19,41.23A8,8,0,0,0,56,47.88Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M56,47.88V208.12a8,8,0,0,0,12.19,6.65L196.3,134.65a7.83,7.83,0,0,0,0-13.3L68.19,41.23A8,8,0,0,0,56,47.88Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.5,\n  parts: {\n    0: {\n      x: [0, 5, 0],\n      duration: 0.3,\n      ease: [\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      delay: 0.14\n    },\n    1: {\n      x: [0, 12, 0],\n      duration: 0.5,\n      ease: [\n        [0.22, 1, 0.36, 1],\n        \"easeInOut\"\n      ],\n      times: [0, 0.45, 1]\n    }\n  }\n};\n\nexport const SkipForward = createAnimatedIcon(\n  \"SkipForward\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default SkipForward;\n"
+    }
+  ],
+  "meta": {
+    "category": "Media",
+    "component": "SkipForward"
+  }
+}

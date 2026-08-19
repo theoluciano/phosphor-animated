@@ -1,0 +1,5 @@
+allowBuilds:
+  # tsx's bundler — needed so build scripts under scripts/ can run.
+  esbuild: true
+  sharp: false
+  unrs-resolver: false

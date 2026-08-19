@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "device-mobile",
+  "type": "registry:component",
+  "title": "DeviceMobile",
+  "description": "Buzzes — the handset rattles, then settles.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/device-mobile.tsx",
+      "type": "registry:component",
+      "target": "components/icons/device-mobile.tsx",
+      "content": "\"use client\";\n\n/**\n * DeviceMobile — animated Phosphor icon.\n *\n * Buzzes — the handset rattles, then settles.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"rect\", { x: \"64\", y: \"24\", width: \"128\", height: \"208\", rx: \"16\" }],\n    [\"line\", { x1: \"64\", y1: \"56\", x2: \"192\", y2: \"56\" }],\n    [\"line\", { x1: \"64\", y1: \"200\", x2: \"192\", y2: \"200\" }],\n  ],\n  bold: [\n    [\"rect\", { x: \"64\", y: \"24\", width: \"128\", height: \"208\", rx: \"16\" }],\n    [\"line\", { x1: \"64\", y1: \"64\", x2: \"192\", y2: \"64\" }],\n    [\"line\", { x1: \"64\", y1: \"192\", x2: \"192\", y2: \"192\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"rect\", { x: \"64\", y: \"56\", width: \"128\", height: \"144\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  whole: {\n    x: [0, -7, 3.6, -1.9, 1, 0],\n    origin: [128, 128],\n    duration: 0.9,\n    ease: [\n      \"easeOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.12, 0.36, 0.6, 0.8, 1]\n  }\n};\n\nexport const DeviceMobile = createAnimatedIcon(\n  \"DeviceMobile\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default DeviceMobile;\n"
+    }
+  ],
+  "meta": {
+    "category": "Devices",
+    "component": "DeviceMobile"
+  }
+}

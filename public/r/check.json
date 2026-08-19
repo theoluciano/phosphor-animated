@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "check",
+  "type": "registry:component",
+  "title": "Check",
+  "description": "Stamps in — the check draws on while scaling up to size.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/check.tsx",
+      "type": "registry:component",
+      "target": "components/icons/check.tsx",
+      "content": "\"use client\";\n\n/**\n * Check — animated Phosphor icon.\n *\n * Stamps in — the check draws on while scaling up to size.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"polyline\", { points: \"40 144 96 200 224 72\" }],\n  ],\n  duotone: [\n    [\"polyline\", { points: \"64 136 104 176 200 80\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.45,\n  parts: {\n    0: {\n      pathLength: [0, 0.6, 1],\n      origin: [132, 136],\n      duration: 0.45,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.35, 1]\n    }\n  }\n};\n\nexport const Check = createAnimatedIcon(\n  \"Check\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Check;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "Check"
+  }
+}

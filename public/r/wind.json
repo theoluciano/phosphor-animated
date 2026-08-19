@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wind",
+  "type": "registry:component",
+  "title": "Wind",
+  "description": "Blows through — each stream draws itself on, one gust behind the last.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/wind.tsx",
+      "type": "registry:component",
+      "target": "components/icons/wind.tsx",
+      "content": "\"use client\";\n\n/**\n * Wind — animated Phosphor icon.\n *\n * Blows through — each stream draws itself on, one gust behind the last.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M128,192c3.39,9.15,13.67,16,24,16a24,24,0,0,0,0-48H40\" }],\n    [\"path\", { d: \"M96,64c3.39-9.15,13.67-16,24-16a24,24,0,0,1,0,48H24\" }],\n    [\"path\", { d: \"M184,96c3.39-9.15,13.67-16,24-16a24,24,0,0,1,0,48H32\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M101.22,52A27.1,27.1,0,0,1,120,44a24,24,0,0,1,0,48H24\" }],\n    [\"path\", { d: \"M189.22,88A27.1,27.1,0,0,1,208,80a24,24,0,0,1,0,48H32\" }],\n    [\"path\", { d: \"M133.22,204A27.1,27.1,0,0,0,152,212a24,24,0,0,0,0-48H40\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"120\", cy: \"72\", r: \"24\", opacity: \"0.2\" }],\n      [\"circle\", { cx: \"208\", cy: \"104\", r: \"24\", opacity: \"0.2\" }],\n      [\"circle\", { cx: \"152\", cy: \"184\", r: \"24\", opacity: \"0.2\" }],\n    ],\n  },\n  divergent: [\"bold\"],\n};\n\nconst STROKE: Choreography = {\n  duration: 0.8,\n  parts: {\n    0: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.44,\n      ease: \"easeInOut\",\n      delay: 0.16\n    },\n    1: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.44,\n      ease: \"easeInOut\",\n      delay: 0.32\n    },\n    2: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      duration: 0.44,\n      ease: \"easeInOut\"\n    }\n  }\n};\n\nexport const Wind = createAnimatedIcon(\n  \"Wind\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Wind;\n"
+    }
+  ],
+  "meta": {
+    "category": "Weather & Nature",
+    "component": "Wind"
+  }
+}

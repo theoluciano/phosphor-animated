@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "currency-dollar",
+  "type": "registry:component",
+  "title": "CurrencyDollar",
+  "description": "Draws itself — the curve sweeps through, then the bar strikes down.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/currency-dollar.tsx",
+      "type": "registry:component",
+      "target": "components/icons/currency-dollar.tsx",
+      "content": "\"use client\";\n\n/**\n * CurrencyDollar — animated Phosphor icon.\n *\n * Draws itself — the curve sweeps through, then the bar strikes down.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"128\", y1: \"24\", x2: \"128\", y2: \"232\" }],\n    [\"path\", { d: \"M184,88a40,40,0,0,0-40-40H112a40,40,0,0,0,0,80h40a40,40,0,0,1,0,80H104a40,40,0,0,1-40-40\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M128,128h24a40,40,0,0,1,0,80H128Z\", opacity: \"0.2\" }],\n      [\"path\", { d: \"M128,48H112a40,40,0,0,0,0,80h16Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.5,\n  parts: {\n    0: {\n      pathLength: [0, 1, 1],\n      origin: [128, 128],\n      duration: 0.5,\n      ease: [\"easeIn\", \"easeOut\"],\n      delay: 0,\n      times: [0.415, 0.786, 1],\n      opacity: [0, 1, 1]\n    },\n    1: {\n      pathLength: [0, 1, 1],\n      origin: [128, 128],\n      duration: 0.5,\n      ease: [\"easeIn\", \"easeOut\"],\n      opacity: [0, 1, 1]\n    }\n  }\n};\n\nexport const CurrencyDollar = createAnimatedIcon(\n  \"CurrencyDollar\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default CurrencyDollar;\n"
+    }
+  ],
+  "meta": {
+    "category": "Commerce",
+    "component": "CurrencyDollar"
+  }
+}

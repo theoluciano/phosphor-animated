@@ -1,0 +1,3936 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "phosphor-animated",
+  "homepage": "https://phosphor-animated.com",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "animated-icon",
+      "type": "registry:component",
+      "title": "Animated Icon runtime",
+      "description": "Shared runtime for phosphor-animated icons: weight resolution, triggers, and reduced-motion handling. Installed automatically with any icon.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "components/icons/animated-icon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/animated-icon.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bell",
+      "type": "registry:component",
+      "title": "Bell",
+      "description": "Rings — the whole bell swings wide from its mount, left first.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Bell"
+      },
+      "files": [
+        {
+          "path": "components/icons/bell.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bell.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bell-ringing",
+      "type": "registry:component",
+      "title": "BellRinging",
+      "description": "Rings out loud — the bell whips from its mount and sound draws off both sides.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "BellRinging"
+      },
+      "files": [
+        {
+          "path": "components/icons/bell-ringing.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bell-ringing.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bell-slash",
+      "type": "registry:component",
+      "title": "BellSlash",
+      "description": "Silenced — a token shake dies as the slash strikes through.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "BellSlash"
+      },
+      "files": [
+        {
+          "path": "components/icons/bell-slash.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bell-slash.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "heart",
+      "type": "registry:component",
+      "title": "Heart",
+      "description": "Lub-dub — a quick squeeze, then two beats, the second softer.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Heart"
+      },
+      "files": [
+        {
+          "path": "components/icons/heart.tsx",
+          "type": "registry:component",
+          "target": "components/icons/heart.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "star",
+      "type": "registry:component",
+      "title": "Star",
+      "description": "Catches the light — stretches its points, settles, then glimmers once more.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Star"
+      },
+      "files": [
+        {
+          "path": "components/icons/star.tsx",
+          "type": "registry:component",
+          "target": "components/icons/star.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "trash",
+      "type": "registry:component",
+      "title": "Trash",
+      "description": "Opens — the lid lifts clear of the bin, which absorbs it on the way down.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Trash"
+      },
+      "files": [
+        {
+          "path": "components/icons/trash.tsx",
+          "type": "registry:component",
+          "target": "components/icons/trash.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "trash-simple",
+      "type": "registry:component",
+      "title": "TrashSimple",
+      "description": "Lifts — the lid and its handle hop straight off the bin and drop back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "TrashSimple"
+      },
+      "files": [
+        {
+          "path": "components/icons/trash-simple.tsx",
+          "type": "registry:component",
+          "target": "components/icons/trash-simple.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gear",
+      "type": "registry:component",
+      "title": "Gear",
+      "description": "Winds up, then turns a tooth counter-clockwise and eases in.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Gear"
+      },
+      "files": [
+        {
+          "path": "components/icons/gear.tsx",
+          "type": "registry:component",
+          "target": "components/icons/gear.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gear-six",
+      "type": "registry:component",
+      "title": "GearSix",
+      "description": "Turns a tooth clockwise, overshoots, and clicks into place.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "GearSix"
+      },
+      "files": [
+        {
+          "path": "components/icons/gear-six.tsx",
+          "type": "registry:component",
+          "target": "components/icons/gear-six.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "house",
+      "type": "registry:component",
+      "title": "House",
+      "description": "Hops once — a welcoming little bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "House"
+      },
+      "files": [
+        {
+          "path": "components/icons/house.tsx",
+          "type": "registry:component",
+          "target": "components/icons/house.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "magnifying-glass",
+      "type": "registry:component",
+      "title": "MagnifyingGlass",
+      "description": "Sweeps a slow arc, the way you search a page.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "MagnifyingGlass"
+      },
+      "files": [
+        {
+          "path": "components/icons/magnifying-glass.tsx",
+          "type": "registry:component",
+          "target": "components/icons/magnifying-glass.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "user",
+      "type": "registry:component",
+      "title": "User",
+      "description": "Draws itself — the head sketches in first, the shoulders follow.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "User"
+      },
+      "files": [
+        {
+          "path": "components/icons/user.tsx",
+          "type": "registry:component",
+          "target": "components/icons/user.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "users",
+      "type": "registry:component",
+      "title": "Users",
+      "description": "Joins in — the second figure leans in behind the first and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Users"
+      },
+      "files": [
+        {
+          "path": "components/icons/users.tsx",
+          "type": "registry:component",
+          "target": "components/icons/users.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "plus",
+      "type": "registry:component",
+      "title": "Plus",
+      "description": "Stamps — each stroke overshoots long, pinches short, and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Plus"
+      },
+      "files": [
+        {
+          "path": "components/icons/plus.tsx",
+          "type": "registry:component",
+          "target": "components/icons/plus.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "minus",
+      "type": "registry:component",
+      "title": "Minus",
+      "description": "Pinches to the centre, then snaps back to full width.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Minus"
+      },
+      "files": [
+        {
+          "path": "components/icons/minus.tsx",
+          "type": "registry:component",
+          "target": "components/icons/minus.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "x",
+      "type": "registry:component",
+      "title": "X",
+      "description": "Struck out — two strokes cross in turn, and the pair lands with a snap.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "X"
+      },
+      "files": [
+        {
+          "path": "components/icons/x.tsx",
+          "type": "registry:component",
+          "target": "components/icons/x.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "check",
+      "type": "registry:component",
+      "title": "Check",
+      "description": "Stamps in — the check draws on while scaling up to size.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Check"
+      },
+      "files": [
+        {
+          "path": "components/icons/check.tsx",
+          "type": "registry:component",
+          "target": "components/icons/check.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "check-circle",
+      "type": "registry:component",
+      "title": "CheckCircle",
+      "description": "Confirms — the check rewrites itself and the ring nods.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "CheckCircle"
+      },
+      "files": [
+        {
+          "path": "components/icons/check-circle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/check-circle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "x-circle",
+      "type": "registry:component",
+      "title": "XCircle",
+      "description": "Rejects — the cross twists in and pops while the ring pulses around it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "XCircle"
+      },
+      "files": [
+        {
+          "path": "components/icons/x-circle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/x-circle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "eye",
+      "type": "registry:component",
+      "title": "Eye",
+      "description": "Blinks — the lid closes as the pupil contracts behind it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Eye"
+      },
+      "files": [
+        {
+          "path": "components/icons/eye.tsx",
+          "type": "registry:component",
+          "target": "components/icons/eye.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "eye-slash",
+      "type": "registry:component",
+      "title": "EyeSlash",
+      "description": "Hidden — the slash sweeps across as the eye dims behind it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "EyeSlash"
+      },
+      "files": [
+        {
+          "path": "components/icons/eye-slash.tsx",
+          "type": "registry:component",
+          "target": "components/icons/eye-slash.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lock",
+      "type": "registry:component",
+      "title": "Lock",
+      "description": "Clicks shut — the shackle presses in and the body shudders tight.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Lock"
+      },
+      "files": [
+        {
+          "path": "components/icons/lock.tsx",
+          "type": "registry:component",
+          "target": "components/icons/lock.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lock-open",
+      "type": "registry:component",
+      "title": "LockOpen",
+      "description": "Springs — the shackle flicks wider while the whole lock jolts.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "LockOpen"
+      },
+      "files": [
+        {
+          "path": "components/icons/lock-open.tsx",
+          "type": "registry:component",
+          "target": "components/icons/lock-open.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "key",
+      "type": "registry:component",
+      "title": "Key",
+      "description": "Turns in the lock — deep, a small rebound, then lets go.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Key"
+      },
+      "files": [
+        {
+          "path": "components/icons/key.tsx",
+          "type": "registry:component",
+          "target": "components/icons/key.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shield-check",
+      "type": "registry:component",
+      "title": "ShieldCheck",
+      "description": "Re-verifies — the shield braces while the check pops in and redraws.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "ShieldCheck"
+      },
+      "files": [
+        {
+          "path": "components/icons/shield-check.tsx",
+          "type": "registry:component",
+          "target": "components/icons/shield-check.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bookmark-simple",
+      "type": "registry:component",
+      "title": "BookmarkSimple",
+      "description": "Saved — stretches down, squashes, and settles into place.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "BookmarkSimple"
+      },
+      "files": [
+        {
+          "path": "components/icons/bookmark-simple.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bookmark-simple.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tag",
+      "type": "registry:component",
+      "title": "Tag",
+      "description": "Swings — nudged, the tag rocks on its eyelet and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Tag"
+      },
+      "files": [
+        {
+          "path": "components/icons/tag.tsx",
+          "type": "registry:component",
+          "target": "components/icons/tag.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pencil-simple",
+      "type": "registry:component",
+      "title": "PencilSimple",
+      "description": "Writes — the nib travels a quick scribble while the shaft tilts.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "PencilSimple"
+      },
+      "files": [
+        {
+          "path": "components/icons/pencil-simple.tsx",
+          "type": "registry:component",
+          "target": "components/icons/pencil-simple.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "note-pencil",
+      "type": "registry:component",
+      "title": "NotePencil",
+      "description": "Edits — the pencil scribbles a quick stroke against the note.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "NotePencil"
+      },
+      "files": [
+        {
+          "path": "components/icons/note-pencil.tsx",
+          "type": "registry:component",
+          "target": "components/icons/note-pencil.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "copy",
+      "type": "registry:component",
+      "title": "Copy",
+      "description": "Duplicates — the sheets spring apart, then snap back into a stack.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Copy"
+      },
+      "files": [
+        {
+          "path": "components/icons/copy.tsx",
+          "type": "registry:component",
+          "target": "components/icons/copy.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "clipboard",
+      "type": "registry:component",
+      "title": "Clipboard",
+      "description": "Snaps — the clip pops up and claps back down; the board takes the hit.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Clipboard"
+      },
+      "files": [
+        {
+          "path": "components/icons/clipboard.tsx",
+          "type": "registry:component",
+          "target": "components/icons/clipboard.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "link",
+      "type": "registry:component",
+      "title": "Link",
+      "description": "Tugs — the two halves pull apart, then snap back past centre.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Link"
+      },
+      "files": [
+        {
+          "path": "components/icons/link.tsx",
+          "type": "registry:component",
+          "target": "components/icons/link.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dots-three",
+      "type": "registry:component",
+      "title": "DotsThree",
+      "description": "Hops — each dot pops up in turn, left to right.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "DotsThree"
+      },
+      "files": [
+        {
+          "path": "components/icons/dots-three.tsx",
+          "type": "registry:component",
+          "target": "components/icons/dots-three.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "list",
+      "type": "registry:component",
+      "title": "List",
+      "description": "Scans — each row's right edge sweeps in and snaps back, top to bottom.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "List"
+      },
+      "files": [
+        {
+          "path": "components/icons/list.tsx",
+          "type": "registry:component",
+          "target": "components/icons/list.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sliders",
+      "type": "registry:component",
+      "title": "Sliders",
+      "description": "Adjusts — the knobs take turns sliding along their tracks.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Sliders"
+      },
+      "files": [
+        {
+          "path": "components/icons/sliders.tsx",
+          "type": "registry:component",
+          "target": "components/icons/sliders.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "funnel",
+      "type": "registry:component",
+      "title": "Funnel",
+      "description": "Squeezes — pinches in and pushes down, forcing everything through.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Essentials",
+        "component": "Funnel"
+      },
+      "files": [
+        {
+          "path": "components/icons/funnel.tsx",
+          "type": "registry:component",
+          "target": "components/icons/funnel.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-right",
+      "type": "registry:component",
+      "title": "ArrowRight",
+      "description": "Recoils — the arrow draws back, then springs home.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowRight"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-right.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-right.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-left",
+      "type": "registry:component",
+      "title": "ArrowLeft",
+      "description": "Recoils — shaft retracting — then strikes back to the left.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowLeft"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-left.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-left.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-up",
+      "type": "registry:component",
+      "title": "ArrowUp",
+      "description": "Crouches — the arrow dips down, then springs back up.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowUp"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-up.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-up.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-down",
+      "type": "registry:component",
+      "title": "ArrowDown",
+      "description": "Recoils upward — shaft retracting — then strikes back down.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowDown"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-down.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-down.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-clockwise",
+      "type": "registry:component",
+      "title": "ArrowClockwise",
+      "description": "Refreshes — one clockwise turn, away fast and easing home.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowClockwise"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-clockwise.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-clockwise.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-counter-clockwise",
+      "type": "registry:component",
+      "title": "ArrowCounterClockwise",
+      "description": "Undoes — one turn back, away fast and easing home.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowCounterClockwise"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-counter-clockwise.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-counter-clockwise.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "caret-down",
+      "type": "registry:component",
+      "title": "CaretDown",
+      "description": "Nudges downward, the way it points.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "CaretDown"
+      },
+      "files": [
+        {
+          "path": "components/icons/caret-down.tsx",
+          "type": "registry:component",
+          "target": "components/icons/caret-down.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "caret-right",
+      "type": "registry:component",
+      "title": "CaretRight",
+      "description": "Nudges forward, the way it points.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "CaretRight"
+      },
+      "files": [
+        {
+          "path": "components/icons/caret-right.tsx",
+          "type": "registry:component",
+          "target": "components/icons/caret-right.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "arrow-square-out",
+      "type": "registry:component",
+      "title": "ArrowSquareOut",
+      "description": "Slips out — the arrow drifts toward the corner and recedes.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "ArrowSquareOut"
+      },
+      "files": [
+        {
+          "path": "components/icons/arrow-square-out.tsx",
+          "type": "registry:component",
+          "target": "components/icons/arrow-square-out.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sign-out",
+      "type": "registry:component",
+      "title": "SignOut",
+      "description": "Leaves — the arrow winds up and lunges out, the door recoiling behind it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "SignOut"
+      },
+      "files": [
+        {
+          "path": "components/icons/sign-out.tsx",
+          "type": "registry:component",
+          "target": "components/icons/sign-out.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sign-in",
+      "type": "registry:component",
+      "title": "SignIn",
+      "description": "Enters — the arrow lunges in through the door, which takes the bump.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "SignIn"
+      },
+      "files": [
+        {
+          "path": "components/icons/sign-in.tsx",
+          "type": "registry:component",
+          "target": "components/icons/sign-in.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "map-pin",
+      "type": "registry:component",
+      "title": "MapPin",
+      "description": "Hops off the map and stamps back down — the dot draws in as it lands.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "MapPin"
+      },
+      "files": [
+        {
+          "path": "components/icons/map-pin.tsx",
+          "type": "registry:component",
+          "target": "components/icons/map-pin.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "compass",
+      "type": "registry:component",
+      "title": "Compass",
+      "description": "Finds north — the needle whips a full turn, overshoots, and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "Compass"
+      },
+      "files": [
+        {
+          "path": "components/icons/compass.tsx",
+          "type": "registry:component",
+          "target": "components/icons/compass.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "globe",
+      "type": "registry:component",
+      "title": "Globe",
+      "description": "Draws itself — the rim first, then the meridian and parallels trace on.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "Globe"
+      },
+      "files": [
+        {
+          "path": "components/icons/globe.tsx",
+          "type": "registry:component",
+          "target": "components/icons/globe.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flag",
+      "type": "registry:component",
+      "title": "Flag",
+      "description": "Gusts — the cloth lifts from the pole, billows, and settles to rest.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "Flag"
+      },
+      "files": [
+        {
+          "path": "components/icons/flag.tsx",
+          "type": "registry:component",
+          "target": "components/icons/flag.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "anchor",
+      "type": "registry:component",
+      "title": "Anchor",
+      "description": "Sways from its ring, the way a moored anchor rides the swell.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Navigation",
+        "component": "Anchor"
+      },
+      "files": [
+        {
+          "path": "components/icons/anchor.tsx",
+          "type": "registry:component",
+          "target": "components/icons/anchor.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "envelope",
+      "type": "registry:component",
+      "title": "Envelope",
+      "description": "Opens — the flap swings up, then snaps shut with a soft bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "Envelope"
+      },
+      "files": [
+        {
+          "path": "components/icons/envelope.tsx",
+          "type": "registry:component",
+          "target": "components/icons/envelope.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "envelope-open",
+      "type": "registry:component",
+      "title": "EnvelopeOpen",
+      "description": "The letter inside pushes up — the pocket fold lifts, then settles shut.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "EnvelopeOpen"
+      },
+      "files": [
+        {
+          "path": "components/icons/envelope-open.tsx",
+          "type": "registry:component",
+          "target": "components/icons/envelope-open.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "paper-plane-tilt",
+      "type": "registry:component",
+      "title": "PaperPlaneTilt",
+      "description": "Sends — flies out of frame and a fresh one arrives.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "PaperPlaneTilt"
+      },
+      "files": [
+        {
+          "path": "components/icons/paper-plane-tilt.tsx",
+          "type": "registry:component",
+          "target": "components/icons/paper-plane-tilt.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chat-circle",
+      "type": "registry:component",
+      "title": "ChatCircle",
+      "description": "Perks up — the bubble swells and shakes on its tail.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "ChatCircle"
+      },
+      "files": [
+        {
+          "path": "components/icons/chat-circle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/chat-circle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chat-teardrop-dots",
+      "type": "registry:component",
+      "title": "ChatTeardropDots",
+      "description": "Typing — the dots blink out and back, left to right.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "ChatTeardropDots"
+      },
+      "files": [
+        {
+          "path": "components/icons/chat-teardrop-dots.tsx",
+          "type": "registry:component",
+          "target": "components/icons/chat-teardrop-dots.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "phone",
+      "type": "registry:component",
+      "title": "Phone",
+      "description": "Rings — the handset rattles in decaying swings and settles home.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "Phone"
+      },
+      "files": [
+        {
+          "path": "components/icons/phone.tsx",
+          "type": "registry:component",
+          "target": "components/icons/phone.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "phone-call",
+      "type": "registry:component",
+      "title": "PhoneCall",
+      "description": "Connects — the handset rocks while the signal waves blink out and pop back, inner first.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "PhoneCall"
+      },
+      "files": [
+        {
+          "path": "components/icons/phone-call.tsx",
+          "type": "registry:component",
+          "target": "components/icons/phone-call.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "at",
+      "type": "registry:component",
+      "title": "At",
+      "description": "Writes itself — the centre loops first, then the spiral sweeps around.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "At"
+      },
+      "files": [
+        {
+          "path": "components/icons/at.tsx",
+          "type": "registry:component",
+          "target": "components/icons/at.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "share-network",
+      "type": "registry:component",
+      "title": "ShareNetwork",
+      "description": "Broadcasts — the hub pulses, the wires carry the signal, the nodes pop as it lands.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "ShareNetwork"
+      },
+      "files": [
+        {
+          "path": "components/icons/share-network.tsx",
+          "type": "registry:component",
+          "target": "components/icons/share-network.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hand-waving",
+      "type": "registry:component",
+      "title": "HandWaving",
+      "description": "Waves hello, pivoting at the wrist.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "HandWaving"
+      },
+      "files": [
+        {
+          "path": "components/icons/hand-waving.tsx",
+          "type": "registry:component",
+          "target": "components/icons/hand-waving.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "megaphone",
+      "type": "registry:component",
+      "title": "Megaphone",
+      "description": "Shouts — rears up on its grip, then settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Communication",
+        "component": "Megaphone"
+      },
+      "files": [
+        {
+          "path": "components/icons/megaphone.tsx",
+          "type": "registry:component",
+          "target": "components/icons/megaphone.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "play",
+      "type": "registry:component",
+      "title": "Play",
+      "description": "Starts — the triangle coils back with a tilt, then springs forward.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Play"
+      },
+      "files": [
+        {
+          "path": "components/icons/play.tsx",
+          "type": "registry:component",
+          "target": "components/icons/play.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pause",
+      "type": "registry:component",
+      "title": "Pause",
+      "description": "Holds — the bars dip in turn, left then right, and spring back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Pause"
+      },
+      "files": [
+        {
+          "path": "components/icons/pause.tsx",
+          "type": "registry:component",
+          "target": "components/icons/pause.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "stop",
+      "type": "registry:component",
+      "title": "Stop",
+      "description": "Presses in — the square dips like a struck button, then settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Stop"
+      },
+      "files": [
+        {
+          "path": "components/icons/stop.tsx",
+          "type": "registry:component",
+          "target": "components/icons/stop.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "skip-forward",
+      "type": "registry:component",
+      "title": "SkipForward",
+      "description": "Skips ahead — the triangle lunges at the end bar and knocks it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "SkipForward"
+      },
+      "files": [
+        {
+          "path": "components/icons/skip-forward.tsx",
+          "type": "registry:component",
+          "target": "components/icons/skip-forward.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "skip-back",
+      "type": "registry:component",
+      "title": "SkipBack",
+      "description": "Skips back — the triangle lunges at the start bar and knocks it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "SkipBack"
+      },
+      "files": [
+        {
+          "path": "components/icons/skip-back.tsx",
+          "type": "registry:component",
+          "target": "components/icons/skip-back.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shuffle",
+      "type": "registry:component",
+      "title": "Shuffle",
+      "description": "Weaves — both tracks redraw through the crossing and the heads snap outward.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Shuffle"
+      },
+      "files": [
+        {
+          "path": "components/icons/shuffle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/shuffle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "repeat",
+      "type": "registry:component",
+      "title": "Repeat",
+      "description": "Loops — the cycle turns once around and springs into place.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Repeat"
+      },
+      "files": [
+        {
+          "path": "components/icons/repeat.tsx",
+          "type": "registry:component",
+          "target": "components/icons/repeat.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "music-note",
+      "type": "registry:component",
+      "title": "MusicNote",
+      "description": "Plays — the note sways to the beat while its head pulses.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "MusicNote"
+      },
+      "files": [
+        {
+          "path": "components/icons/music-note.tsx",
+          "type": "registry:component",
+          "target": "components/icons/music-note.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "headphones",
+      "type": "registry:component",
+      "title": "Headphones",
+      "description": "Thumps — the band flexes down onto the ears and springs back, twice.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Headphones"
+      },
+      "files": [
+        {
+          "path": "components/icons/headphones.tsx",
+          "type": "registry:component",
+          "target": "components/icons/headphones.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "speaker-high",
+      "type": "registry:component",
+      "title": "SpeakerHigh",
+      "description": "Sounds — the cone pulses and the waves radiate out from it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "SpeakerHigh"
+      },
+      "files": [
+        {
+          "path": "components/icons/speaker-high.tsx",
+          "type": "registry:component",
+          "target": "components/icons/speaker-high.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "speaker-x",
+      "type": "registry:component",
+      "title": "SpeakerX",
+      "description": "Muted — the cross draws itself in, stroke after stroke.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "SpeakerX"
+      },
+      "files": [
+        {
+          "path": "components/icons/speaker-x.tsx",
+          "type": "registry:component",
+          "target": "components/icons/speaker-x.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "microphone",
+      "type": "registry:component",
+      "title": "Microphone",
+      "description": "Sound check — the capsule bobs one-two in its cradle.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Microphone"
+      },
+      "files": [
+        {
+          "path": "components/icons/microphone.tsx",
+          "type": "registry:component",
+          "target": "components/icons/microphone.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "microphone-slash",
+      "type": "registry:component",
+      "title": "MicrophoneSlash",
+      "description": "Muted — the slash draws across and the capsule dims.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "MicrophoneSlash"
+      },
+      "files": [
+        {
+          "path": "components/icons/microphone-slash.tsx",
+          "type": "registry:component",
+          "target": "components/icons/microphone-slash.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "camera",
+      "type": "registry:component",
+      "title": "Camera",
+      "description": "Pulls focus — the lens breathes, then the body snaps the shot.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Camera"
+      },
+      "files": [
+        {
+          "path": "components/icons/camera.tsx",
+          "type": "registry:component",
+          "target": "components/icons/camera.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "image",
+      "type": "registry:component",
+      "title": "Image",
+      "description": "Lifts in hand — the sun and hills shift with shallow parallax.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "Image"
+      },
+      "files": [
+        {
+          "path": "components/icons/image.tsx",
+          "type": "registry:component",
+          "target": "components/icons/image.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "video-camera",
+      "type": "registry:component",
+      "title": "VideoCamera",
+      "description": "Rolls — the body breathes while the lens draws back and returns.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Media",
+        "component": "VideoCamera"
+      },
+      "files": [
+        {
+          "path": "components/icons/video-camera.tsx",
+          "type": "registry:component",
+          "target": "components/icons/video-camera.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "folder",
+      "type": "registry:component",
+      "title": "Folder",
+      "description": "Picked up — lifts with a small lean, then settles back with weight.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "Folder"
+      },
+      "files": [
+        {
+          "path": "components/icons/folder.tsx",
+          "type": "registry:component",
+          "target": "components/icons/folder.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "folder-open",
+      "type": "registry:component",
+      "title": "FolderOpen",
+      "description": "Wobbles — the whole folder rocks on its base and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "FolderOpen"
+      },
+      "files": [
+        {
+          "path": "components/icons/folder-open.tsx",
+          "type": "registry:component",
+          "target": "components/icons/folder-open.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "file",
+      "type": "registry:component",
+      "title": "File",
+      "description": "Hops — the page lifts with a small tilt while the corner fold flares.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "File"
+      },
+      "files": [
+        {
+          "path": "components/icons/file.tsx",
+          "type": "registry:component",
+          "target": "components/icons/file.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "file-text",
+      "type": "registry:component",
+      "title": "FileText",
+      "description": "Rewrites — the file perks up as its lines erase and retype.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "FileText"
+      },
+      "files": [
+        {
+          "path": "components/icons/file-text.tsx",
+          "type": "registry:component",
+          "target": "components/icons/file-text.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "files",
+      "type": "registry:component",
+      "title": "Files",
+      "description": "Fans apart — the sheets slide diagonally away from each other and spring back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "Files"
+      },
+      "files": [
+        {
+          "path": "components/icons/files.tsx",
+          "type": "registry:component",
+          "target": "components/icons/files.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "archive",
+      "type": "registry:component",
+      "title": "Archive",
+      "description": "Opens — the lid pops clear, hangs a beat, then drops shut.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "Archive"
+      },
+      "files": [
+        {
+          "path": "components/icons/archive.tsx",
+          "type": "registry:component",
+          "target": "components/icons/archive.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "printer",
+      "type": "registry:component",
+      "title": "Printer",
+      "description": "Prints — the paper feeds through the body and the status light blinks.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "Printer"
+      },
+      "files": [
+        {
+          "path": "components/icons/printer.tsx",
+          "type": "registry:component",
+          "target": "components/icons/printer.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "download-simple",
+      "type": "registry:component",
+      "title": "DownloadSimple",
+      "description": "Delivers — the arrow springs down and back while the tray dips to take it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "DownloadSimple"
+      },
+      "files": [
+        {
+          "path": "components/icons/download-simple.tsx",
+          "type": "registry:component",
+          "target": "components/icons/download-simple.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "upload-simple",
+      "type": "registry:component",
+      "title": "UploadSimple",
+      "description": "Sends — the arrow springs up and back while the tray dips to launch it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "UploadSimple"
+      },
+      "files": [
+        {
+          "path": "components/icons/upload-simple.tsx",
+          "type": "registry:component",
+          "target": "components/icons/upload-simple.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cloud-arrow-up",
+      "type": "registry:component",
+      "title": "CloudArrowUp",
+      "description": "Uploads — the arrow dips, surges up, and the cloud lifts buoyantly with it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "CloudArrowUp"
+      },
+      "files": [
+        {
+          "path": "components/icons/cloud-arrow-up.tsx",
+          "type": "registry:component",
+          "target": "components/icons/cloud-arrow-up.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "floppy-disk",
+      "type": "registry:component",
+      "title": "FloppyDisk",
+      "description": "Saves — the disk presses in with a click while label and door rewrite.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Files",
+        "component": "FloppyDisk"
+      },
+      "files": [
+        {
+          "path": "components/icons/floppy-disk.tsx",
+          "type": "registry:component",
+          "target": "components/icons/floppy-disk.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shopping-cart",
+      "type": "registry:component",
+      "title": "ShoppingCart",
+      "description": "Hops — added to the cart, so it bounces twice and lands on its wheels.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "ShoppingCart"
+      },
+      "files": [
+        {
+          "path": "components/icons/shopping-cart.tsx",
+          "type": "registry:component",
+          "target": "components/icons/shopping-cart.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "shopping-bag",
+      "type": "registry:component",
+      "title": "ShoppingBag",
+      "description": "Picked up — swings once from the handle and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "ShoppingBag"
+      },
+      "files": [
+        {
+          "path": "components/icons/shopping-bag.tsx",
+          "type": "registry:component",
+          "target": "components/icons/shopping-bag.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "credit-card",
+      "type": "registry:component",
+      "title": "CreditCard",
+      "description": "Swipes — the whole card slides through and the digits catch up.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "CreditCard"
+      },
+      "files": [
+        {
+          "path": "components/icons/credit-card.tsx",
+          "type": "registry:component",
+          "target": "components/icons/credit-card.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "currency-dollar",
+      "type": "registry:component",
+      "title": "CurrencyDollar",
+      "description": "Draws itself — the curve sweeps through, then the bar strikes down.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "CurrencyDollar"
+      },
+      "files": [
+        {
+          "path": "components/icons/currency-dollar.tsx",
+          "type": "registry:component",
+          "target": "components/icons/currency-dollar.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wallet",
+      "type": "registry:component",
+      "title": "Wallet",
+      "description": "Hefts — the whole wallet lifts, tips back, and drops into place.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Wallet"
+      },
+      "files": [
+        {
+          "path": "components/icons/wallet.tsx",
+          "type": "registry:component",
+          "target": "components/icons/wallet.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "gift",
+      "type": "registry:component",
+      "title": "Gift",
+      "description": "What's inside? — the box rocks from its base while the bows flutter.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Gift"
+      },
+      "files": [
+        {
+          "path": "components/icons/gift.tsx",
+          "type": "registry:component",
+          "target": "components/icons/gift.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "package",
+      "type": "registry:component",
+      "title": "Package",
+      "description": "Draws itself — the box outlines first, then its seams.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Package"
+      },
+      "files": [
+        {
+          "path": "components/icons/package.tsx",
+          "type": "registry:component",
+          "target": "components/icons/package.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "truck",
+      "type": "registry:component",
+      "title": "Truck",
+      "description": "Jounces — the body bobs on its springs while the wheels stay planted.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Truck"
+      },
+      "files": [
+        {
+          "path": "components/icons/truck.tsx",
+          "type": "registry:component",
+          "target": "components/icons/truck.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "receipt",
+      "type": "registry:component",
+      "title": "Receipt",
+      "description": "Itemises — the lines ink themselves in, top to bottom.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Receipt"
+      },
+      "files": [
+        {
+          "path": "components/icons/receipt.tsx",
+          "type": "registry:component",
+          "target": "components/icons/receipt.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "storefront",
+      "type": "registry:component",
+      "title": "Storefront",
+      "description": "Ripples — the awning scallops flap in turn, left to right.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Commerce",
+        "component": "Storefront"
+      },
+      "files": [
+        {
+          "path": "components/icons/storefront.tsx",
+          "type": "registry:component",
+          "target": "components/icons/storefront.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sun",
+      "type": "registry:component",
+      "title": "Sun",
+      "description": "Lights up — the core pops and the rays flare one by one, clockwise.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Sun"
+      },
+      "files": [
+        {
+          "path": "components/icons/sun.tsx",
+          "type": "registry:component",
+          "target": "components/icons/sun.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "moon",
+      "type": "registry:component",
+      "title": "Moon",
+      "description": "Rocks side to side, a crescent settling into the night.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Moon"
+      },
+      "files": [
+        {
+          "path": "components/icons/moon.tsx",
+          "type": "registry:component",
+          "target": "components/icons/moon.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cloud",
+      "type": "registry:component",
+      "title": "Cloud",
+      "description": "Swells — a soft roll lifts the cloud and sets it back down.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Cloud"
+      },
+      "files": [
+        {
+          "path": "components/icons/cloud.tsx",
+          "type": "registry:component",
+          "target": "components/icons/cloud.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lightning",
+      "type": "registry:component",
+      "title": "Lightning",
+      "description": "Strikes — the bolt draws itself on, strike-quick.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Lightning"
+      },
+      "files": [
+        {
+          "path": "components/icons/lightning.tsx",
+          "type": "registry:component",
+          "target": "components/icons/lightning.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "fire",
+      "type": "registry:component",
+      "title": "Fire",
+      "description": "Ignites — the flame draws itself on, the inner tongue catching last.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Fire"
+      },
+      "files": [
+        {
+          "path": "components/icons/fire.tsx",
+          "type": "registry:component",
+          "target": "components/icons/fire.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "drop",
+      "type": "registry:component",
+      "title": "Drop",
+      "description": "Draws itself — the outline traces on, then the sheen follows.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Drop"
+      },
+      "files": [
+        {
+          "path": "components/icons/drop.tsx",
+          "type": "registry:component",
+          "target": "components/icons/drop.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "leaf",
+      "type": "registry:component",
+      "title": "Leaf",
+      "description": "Drifts — tilting and travelling at once, the way a leaf falls.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Leaf"
+      },
+      "files": [
+        {
+          "path": "components/icons/leaf.tsx",
+          "type": "registry:component",
+          "target": "components/icons/leaf.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tree",
+      "type": "registry:component",
+      "title": "Tree",
+      "description": "Sways — the whole tree leans through a gust and settles on its roots.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Tree"
+      },
+      "files": [
+        {
+          "path": "components/icons/tree.tsx",
+          "type": "registry:component",
+          "target": "components/icons/tree.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "snowflake",
+      "type": "registry:component",
+      "title": "Snowflake",
+      "description": "Shivers — the whole flake flicks side to side and settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Snowflake"
+      },
+      "files": [
+        {
+          "path": "components/icons/snowflake.tsx",
+          "type": "registry:component",
+          "target": "components/icons/snowflake.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wind",
+      "type": "registry:component",
+      "title": "Wind",
+      "description": "Blows through — each stream draws itself on, one gust behind the last.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Wind"
+      },
+      "files": [
+        {
+          "path": "components/icons/wind.tsx",
+          "type": "registry:component",
+          "target": "components/icons/wind.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "umbrella",
+      "type": "registry:component",
+      "title": "Umbrella",
+      "description": "Takes the weather — it rocks under the shaft while the canopy absorbs the hit.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Umbrella"
+      },
+      "files": [
+        {
+          "path": "components/icons/umbrella.tsx",
+          "type": "registry:component",
+          "target": "components/icons/umbrella.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "rainbow",
+      "type": "registry:component",
+      "title": "Rainbow",
+      "description": "Appears — the bands draw on, inner arc first.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Rainbow"
+      },
+      "files": [
+        {
+          "path": "components/icons/rainbow.tsx",
+          "type": "registry:component",
+          "target": "components/icons/rainbow.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cow",
+      "type": "registry:component",
+      "title": "Cow",
+      "description": "Cocks its head — a slow tilt, and a blink halfway through.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Weather & Nature",
+        "component": "Cow"
+      },
+      "files": [
+        {
+          "path": "components/icons/cow.tsx",
+          "type": "registry:component",
+          "target": "components/icons/cow.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "device-mobile",
+      "type": "registry:component",
+      "title": "DeviceMobile",
+      "description": "Buzzes — the handset rattles, then settles.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "DeviceMobile"
+      },
+      "files": [
+        {
+          "path": "components/icons/device-mobile.tsx",
+          "type": "registry:component",
+          "target": "components/icons/device-mobile.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "laptop",
+      "type": "registry:component",
+      "title": "Laptop",
+      "description": "Nods — the lid dips shut a touch, then springs back open.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Laptop"
+      },
+      "files": [
+        {
+          "path": "components/icons/laptop.tsx",
+          "type": "registry:component",
+          "target": "components/icons/laptop.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "desktop",
+      "type": "registry:component",
+      "title": "Desktop",
+      "description": "Wakes — the screen lights and the stand takes the weight.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Desktop"
+      },
+      "files": [
+        {
+          "path": "components/icons/desktop.tsx",
+          "type": "registry:component",
+          "target": "components/icons/desktop.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "keyboard",
+      "type": "registry:component",
+      "title": "Keyboard",
+      "description": "Types — key, key, spacebar, each blinking as it's struck.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Keyboard"
+      },
+      "files": [
+        {
+          "path": "components/icons/keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/icons/keyboard.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "mouse",
+      "type": "registry:component",
+      "title": "Mouse",
+      "description": "Clicks — the whole mouse presses down and springs back, wheel first.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Mouse"
+      },
+      "files": [
+        {
+          "path": "components/icons/mouse.tsx",
+          "type": "registry:component",
+          "target": "components/icons/mouse.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "game-controller",
+      "type": "registry:component",
+      "title": "GameController",
+      "description": "Rumbles — a quick vibration buzzes through the pad and dies out.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "GameController"
+      },
+      "files": [
+        {
+          "path": "components/icons/game-controller.tsx",
+          "type": "registry:component",
+          "target": "components/icons/game-controller.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "battery-full",
+      "type": "registry:component",
+      "title": "BatteryFull",
+      "description": "Recharges — the bars blank out, then refill from the left.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "BatteryFull"
+      },
+      "files": [
+        {
+          "path": "components/icons/battery-full.tsx",
+          "type": "registry:component",
+          "target": "components/icons/battery-full.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "battery-charging",
+      "type": "registry:component",
+      "title": "BatteryCharging",
+      "description": "Charging — the bolt pulses twice as the current lands.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "BatteryCharging"
+      },
+      "files": [
+        {
+          "path": "components/icons/battery-charging.tsx",
+          "type": "registry:component",
+          "target": "components/icons/battery-charging.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wifi-high",
+      "type": "registry:component",
+      "title": "WifiHigh",
+      "description": "Reconnects — the signal drops out and rebuilds outward from the dot.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "WifiHigh"
+      },
+      "files": [
+        {
+          "path": "components/icons/wifi-high.tsx",
+          "type": "registry:component",
+          "target": "components/icons/wifi-high.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bluetooth",
+      "type": "registry:component",
+      "title": "Bluetooth",
+      "description": "Reconnects — the whole glyph redraws itself like a signal coming back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Bluetooth"
+      },
+      "files": [
+        {
+          "path": "components/icons/bluetooth.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bluetooth.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "power",
+      "type": "registry:component",
+      "title": "Power",
+      "description": "Presses — the whole switch dips in and pops back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Power"
+      },
+      "files": [
+        {
+          "path": "components/icons/power.tsx",
+          "type": "registry:component",
+          "target": "components/icons/power.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "plug",
+      "type": "registry:component",
+      "title": "Plug",
+      "description": "Connects — the plug snaps home, then current flickers through the prongs.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "Plug"
+      },
+      "files": [
+        {
+          "path": "components/icons/plug.tsx",
+          "type": "registry:component",
+          "target": "components/icons/plug.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hard-drive",
+      "type": "registry:component",
+      "title": "HardDrive",
+      "description": "Reads — the activity light pops and blinks twice.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Devices",
+        "component": "HardDrive"
+      },
+      "files": [
+        {
+          "path": "components/icons/hard-drive.tsx",
+          "type": "registry:component",
+          "target": "components/icons/hard-drive.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "code",
+      "type": "registry:component",
+      "title": "Code",
+      "description": "Recompiles — the slash slips off down-left and a fresh one drops in from above.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Code"
+      },
+      "files": [
+        {
+          "path": "components/icons/code.tsx",
+          "type": "registry:component",
+          "target": "components/icons/code.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "terminal-window",
+      "type": "registry:component",
+      "title": "TerminalWindow",
+      "description": "Types — the prompt pops and the line runs out after it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "TerminalWindow"
+      },
+      "files": [
+        {
+          "path": "components/icons/terminal-window.tsx",
+          "type": "registry:component",
+          "target": "components/icons/terminal-window.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "git-branch",
+      "type": "registry:component",
+      "title": "GitBranch",
+      "description": "Draws itself — the new node pops in, the branch traces on, the tip lands.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "GitBranch"
+      },
+      "files": [
+        {
+          "path": "components/icons/git-branch.tsx",
+          "type": "registry:component",
+          "target": "components/icons/git-branch.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "bug",
+      "type": "registry:component",
+      "title": "Bug",
+      "description": "Skitters — mismatched legs twitch while the body shifts its weight.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Bug"
+      },
+      "files": [
+        {
+          "path": "components/icons/bug.tsx",
+          "type": "registry:component",
+          "target": "components/icons/bug.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "database",
+      "type": "registry:component",
+      "title": "Database",
+      "description": "Scans — a pulse sweeps the platters, top to bottom.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Database"
+      },
+      "files": [
+        {
+          "path": "components/icons/database.tsx",
+          "type": "registry:component",
+          "target": "components/icons/database.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cpu",
+      "type": "registry:component",
+      "title": "Cpu",
+      "description": "Ticks — every pin stretches with the clock, twice.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Cpu"
+      },
+      "files": [
+        {
+          "path": "components/icons/cpu.tsx",
+          "type": "registry:component",
+          "target": "components/icons/cpu.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "cube",
+      "type": "registry:component",
+      "title": "Cube",
+      "description": "Draws itself — the outline first, then the folded inner edges.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Cube"
+      },
+      "files": [
+        {
+          "path": "components/icons/cube.tsx",
+          "type": "registry:component",
+          "target": "components/icons/cube.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wrench",
+      "type": "registry:component",
+      "title": "Wrench",
+      "description": "Ratchets — cranks the bolt in its jaws, then springs back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Wrench"
+      },
+      "files": [
+        {
+          "path": "components/icons/wrench.tsx",
+          "type": "registry:component",
+          "target": "components/icons/wrench.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hammer",
+      "type": "registry:component",
+      "title": "Hammer",
+      "description": "Strikes — a slow windup, then the head snaps down and recoils.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Hammer"
+      },
+      "files": [
+        {
+          "path": "components/icons/hammer.tsx",
+          "type": "registry:component",
+          "target": "components/icons/hammer.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "magic-wand",
+      "type": "registry:component",
+      "title": "MagicWand",
+      "description": "Flicks — the wand snaps a small arc and the stars twinkle in turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "MagicWand"
+      },
+      "files": [
+        {
+          "path": "components/icons/magic-wand.tsx",
+          "type": "registry:component",
+          "target": "components/icons/magic-wand.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "rocket",
+      "type": "registry:component",
+      "title": "Rocket",
+      "description": "Test-fires — hops off the pad, fins trailing, exhaust flaring beneath.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Rocket"
+      },
+      "files": [
+        {
+          "path": "components/icons/rocket.tsx",
+          "type": "registry:component",
+          "target": "components/icons/rocket.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "lightbulb",
+      "type": "registry:component",
+      "title": "Lightbulb",
+      "description": "An idea — the glass flexes as the shine redraws.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Lightbulb"
+      },
+      "files": [
+        {
+          "path": "components/icons/lightbulb.tsx",
+          "type": "registry:component",
+          "target": "components/icons/lightbulb.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "brain",
+      "type": "registry:component",
+      "title": "Brain",
+      "description": "Thinks — one deep breath while the folds retract and redraw.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Brain"
+      },
+      "files": [
+        {
+          "path": "components/icons/brain.tsx",
+          "type": "registry:component",
+          "target": "components/icons/brain.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "sparkle",
+      "type": "registry:component",
+      "title": "Sparkle",
+      "description": "Lifts — the big sparkle bobs while the small stars blink in turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Development",
+        "component": "Sparkle"
+      },
+      "files": [
+        {
+          "path": "components/icons/sparkle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/sparkle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "warning",
+      "type": "registry:component",
+      "title": "Warning",
+      "description": "Alerts — the triangle takes the knock and the exclamation snaps back up.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Warning"
+      },
+      "files": [
+        {
+          "path": "components/icons/warning.tsx",
+          "type": "registry:component",
+          "target": "components/icons/warning.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "warning-circle",
+      "type": "registry:component",
+      "title": "WarningCircle",
+      "description": "Alerts — the ring squashes and the exclamation bounces back into place.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "WarningCircle"
+      },
+      "files": [
+        {
+          "path": "components/icons/warning-circle.tsx",
+          "type": "registry:component",
+          "target": "components/icons/warning-circle.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "info",
+      "type": "registry:component",
+      "title": "Info",
+      "description": "The \"i\" bobs — the dot hops while the stem squashes and the ring breathes.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Info"
+      },
+      "files": [
+        {
+          "path": "components/icons/info.tsx",
+          "type": "registry:component",
+          "target": "components/icons/info.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "question",
+      "type": "registry:component",
+      "title": "Question",
+      "description": "Wonders — the mark waggles side to side, dot in tow.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Question"
+      },
+      "files": [
+        {
+          "path": "components/icons/question.tsx",
+          "type": "registry:component",
+          "target": "components/icons/question.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "thumbs-up",
+      "type": "registry:component",
+      "title": "ThumbsUp",
+      "description": "Approves — the whole hand lifts and tips back, with a little pop.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "ThumbsUp"
+      },
+      "files": [
+        {
+          "path": "components/icons/thumbs-up.tsx",
+          "type": "registry:component",
+          "target": "components/icons/thumbs-up.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "thumbs-down",
+      "type": "registry:component",
+      "title": "ThumbsDown",
+      "description": "Rejects — the whole hand presses down and tips, with a little pop.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "ThumbsDown"
+      },
+      "files": [
+        {
+          "path": "components/icons/thumbs-down.tsx",
+          "type": "registry:component",
+          "target": "components/icons/thumbs-down.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "smiley",
+      "type": "registry:component",
+      "title": "Smiley",
+      "description": "Beams — the face pops and tilts, the eyes widen and the grin deepens.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Smiley"
+      },
+      "files": [
+        {
+          "path": "components/icons/smiley.tsx",
+          "type": "registry:component",
+          "target": "components/icons/smiley.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "spinner",
+      "type": "registry:component",
+      "title": "Spinner",
+      "description": "Spins — one full turn of the wheel, winding up and easing off.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Spinner"
+      },
+      "files": [
+        {
+          "path": "components/icons/spinner.tsx",
+          "type": "registry:component",
+          "target": "components/icons/spinner.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "circle-notch",
+      "type": "registry:component",
+      "title": "CircleNotch",
+      "description": "Spins — one full turn, up to speed and easing home.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "CircleNotch"
+      },
+      "files": [
+        {
+          "path": "components/icons/circle-notch.tsx",
+          "type": "registry:component",
+          "target": "components/icons/circle-notch.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hourglass",
+      "type": "registry:component",
+      "title": "Hourglass",
+      "description": "Flips over with a springy half-turn — the sand starts again.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Hourglass"
+      },
+      "files": [
+        {
+          "path": "components/icons/hourglass.tsx",
+          "type": "registry:component",
+          "target": "components/icons/hourglass.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "clock",
+      "type": "registry:component",
+      "title": "Clock",
+      "description": "Fast-forwards — the hands whip one brisk full turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Clock"
+      },
+      "files": [
+        {
+          "path": "components/icons/clock.tsx",
+          "type": "registry:component",
+          "target": "components/icons/clock.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "timer",
+      "type": "registry:component",
+      "title": "Timer",
+      "description": "Starts — the crown presses down and the hand sweeps a full turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Timer"
+      },
+      "files": [
+        {
+          "path": "components/icons/timer.tsx",
+          "type": "registry:component",
+          "target": "components/icons/timer.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "alarm",
+      "type": "registry:component",
+      "title": "Alarm",
+      "description": "Rattles — the whole clock rocks gently side to side while the bells flick.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Alarm"
+      },
+      "files": [
+        {
+          "path": "components/icons/alarm.tsx",
+          "type": "registry:component",
+          "target": "components/icons/alarm.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "confetti",
+      "type": "registry:component",
+      "title": "Confetti",
+      "description": "Pops — the cone recoils and the confetti kicks outward.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Confetti"
+      },
+      "files": [
+        {
+          "path": "components/icons/confetti.tsx",
+          "type": "registry:component",
+          "target": "components/icons/confetti.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "crown",
+      "type": "registry:component",
+      "title": "Crown",
+      "description": "Bows — one restrained dip and lift while the jewels flash in turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Crown"
+      },
+      "files": [
+        {
+          "path": "components/icons/crown.tsx",
+          "type": "registry:component",
+          "target": "components/icons/crown.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "trophy",
+      "type": "registry:component",
+      "title": "Trophy",
+      "description": "Hoisted — the whole trophy is raised and set back down with weight.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Trophy"
+      },
+      "files": [
+        {
+          "path": "components/icons/trophy.tsx",
+          "type": "registry:component",
+          "target": "components/icons/trophy.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "target",
+      "type": "registry:component",
+      "title": "Target",
+      "description": "Hits — the arrow draws back, lands, and the rings ring outward from the centre.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Target"
+      },
+      "files": [
+        {
+          "path": "components/icons/target.tsx",
+          "type": "registry:component",
+          "target": "components/icons/target.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "heartbeat",
+      "type": "registry:component",
+      "title": "Heartbeat",
+      "description": "The pulse sweeps through first, then the heart draws in and beats.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "Heartbeat"
+      },
+      "files": [
+        {
+          "path": "components/icons/heartbeat.tsx",
+          "type": "registry:component",
+          "target": "components/icons/heartbeat.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chart-line",
+      "type": "registry:component",
+      "title": "ChartLine",
+      "description": "Replots — the trend line fades in as it draws across the axes.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "ChartLine"
+      },
+      "files": [
+        {
+          "path": "components/icons/chart-line.tsx",
+          "type": "registry:component",
+          "target": "components/icons/chart-line.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chart-bar",
+      "type": "registry:component",
+      "title": "ChartBar",
+      "description": "Redraws — the columns wipe away and rise again in turn.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "ChartBar"
+      },
+      "files": [
+        {
+          "path": "components/icons/chart-bar.tsx",
+          "type": "registry:component",
+          "target": "components/icons/chart-bar.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chart-pie-slice",
+      "type": "registry:component",
+      "title": "ChartPieSlice",
+      "description": "Breaks out — the slice springs free, hangs a beat, and rejoins.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "ChartPieSlice"
+      },
+      "files": [
+        {
+          "path": "components/icons/chart-pie-slice.tsx",
+          "type": "registry:component",
+          "target": "components/icons/chart-pie-slice.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "trend-up",
+      "type": "registry:component",
+      "title": "TrendUp",
+      "description": "Redraws — the line retraces its climb while the frame lifts with it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "TrendUp"
+      },
+      "files": [
+        {
+          "path": "components/icons/trend-up.tsx",
+          "type": "registry:component",
+          "target": "components/icons/trend-up.tsx"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "trend-down",
+      "type": "registry:component",
+      "title": "TrendDown",
+      "description": "Redraws — the line retraces its fall while the frame dips with it.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://phosphor-animated.com/r/animated-icon.json"
+      ],
+      "meta": {
+        "category": "Feedback",
+        "component": "TrendDown"
+      },
+      "files": [
+        {
+          "path": "components/icons/trend-down.tsx",
+          "type": "registry:component",
+          "target": "components/icons/trend-down.tsx"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "warning",
+  "type": "registry:component",
+  "title": "Warning",
+  "description": "Alerts — the triangle takes the knock and the exclamation snaps back up.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/warning.tsx",
+      "type": "registry:component",
+      "target": "components/icons/warning.tsx",
+      "content": "\"use client\";\n\n/**\n * Warning — animated Phosphor icon.\n *\n * Alerts — the triangle takes the knock and the exclamation snaps back up.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M142.41,40.22l87.46,151.87C236,202.79,228.08,216,215.46,216H40.54C27.92,216,20,202.79,26.13,192.09L113.59,40.22C119.89,29.26,136.11,29.26,142.41,40.22Z\" }],\n    [\"line\", { x1: \"128\", y1: \"144\", x2: \"128\", y2: \"104\" }],\n    [\"circle\", { cx: \"128\", cy: \"180\", r: \"12\" }],\n  ],\n  thin: [\n    [\"path\", { d: \"M142.41,40.22l87.46,151.87C236,202.79,228.08,216,215.46,216H40.54C27.92,216,20,202.79,26.13,192.09L113.59,40.22C119.89,29.26,136.11,29.26,142.41,40.22Z\" }],\n    [\"line\", { x1: \"128\", y1: \"144\", x2: \"128\", y2: \"104\" }],\n    [\"circle\", { cx: \"128\", cy: \"180\", r: \"8\" }],\n  ],\n  light: [\n    [\"path\", { d: \"M142.41,40.22l87.46,151.87C236,202.79,228.08,216,215.46,216H40.54C27.92,216,20,202.79,26.13,192.09L113.59,40.22C119.89,29.26,136.11,29.26,142.41,40.22Z\" }],\n    [\"line\", { x1: \"128\", y1: \"144\", x2: \"128\", y2: \"104\" }],\n    [\"circle\", { cx: \"128\", cy: \"180\", r: \"10\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M142.41,40.22l87.46,151.87C236,202.79,228.08,216,215.46,216H40.54C27.92,216,20,202.79,26.13,192.09L113.59,40.22C119.89,29.26,136.11,29.26,142.41,40.22Z\" }],\n    [\"line\", { x1: \"128\", y1: \"136\", x2: \"128\", y2: \"104\" }],\n    [\"circle\", { cx: \"128\", cy: \"176\", r: \"16\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M142.41,40.22l87.46,151.87C236,202.79,228.08,216,215.46,216H40.54C27.92,216,20,202.79,26.13,192.09L113.59,40.22C119.89,29.26,136.11,29.26,142.41,40.22Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.58,\n  parts: {\n    0: {\n      scaleY: [1, 0.955, 1.03, 0.994, 1],\n      origin: [128, 216],\n      duration: 0.61,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.18, 0.46, 0.72, 1]\n    },\n    1: {\n      y: [0, -9, 4.7, -2.4, 0],\n      scaleY: [1, 1.1, 0.93, 1.02, 1],\n      origin: [128, 144],\n      duration: 0.58,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.24, 0.5, 0.75, 1]\n    },\n    2: {\n      y: [0, 7.5, -8.5, 2.2, 0],\n      scale: [1, 0.86, 1.2, 0.92, 1],\n      origin: [128, 180],\n      duration: 0.61,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.18, 0.46, 0.72, 1]\n    }\n  }\n};\n\nexport const Warning = createAnimatedIcon(\n  \"Warning\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Warning;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "Warning"
+  }
+}

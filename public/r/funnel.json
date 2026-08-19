@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "funnel",
+  "type": "registry:component",
+  "title": "Funnel",
+  "description": "Squeezes — pinches in and pushes down, forcing everything through.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/funnel.tsx",
+      "type": "registry:component",
+      "target": "components/icons/funnel.tsx",
+      "content": "\"use client\";\n\n/**\n * Funnel — animated Phosphor icon.\n *\n * Squeezes — pinches in and pushes down, forcing everything through.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M34.1,61.38A8,8,0,0,1,40,48H216a8,8,0,0,1,5.92,13.38L152,136v58.65a8,8,0,0,1-3.56,6.66l-32,21.33A8,8,0,0,1,104,216V136Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M34.1,61.38A8,8,0,0,1,40,48H216a8,8,0,0,1,5.92,13.38L152,136v58.65a8,8,0,0,1-3.56,6.66l-32,21.33A8,8,0,0,1,104,216V136Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    0: {\n      scaleX: [1, 1.06, 0.78, 1.03, 1],\n      y: [0, -7, 12, -2, 0],\n      origin: [128, 48],\n      times: [0, 0.2, 0.52, 0.78, 1],\n      ease: [\n        \"easeOut\",\n        [0.65, 0, 0.35, 1],\n        [0.22, 1, 0.36, 1],\n        [0.22, 1, 0.36, 1]\n      ]\n    }\n  }\n};\n\nexport const Funnel = createAnimatedIcon(\n  \"Funnel\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Funnel;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "Funnel"
+  }
+}

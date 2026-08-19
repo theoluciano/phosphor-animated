@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "arrow-clockwise",
+  "type": "registry:component",
+  "title": "ArrowClockwise",
+  "description": "Refreshes — one clockwise turn, away fast and easing home.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/arrow-clockwise.tsx",
+      "type": "registry:component",
+      "target": "components/icons/arrow-clockwise.tsx",
+      "content": "\"use client\";\n\n/**\n * ArrowClockwise — animated Phosphor icon.\n *\n * Refreshes — one clockwise turn, away fast and easing home.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"polyline\", { points: \"184 104 232 104 232 56\" }],\n    [\"path\", { d: \"M188.4,192a88,88,0,1,1,1.83-126.23L232,104\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"128\", r: \"88\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.7,\n  whole: {\n    rotate: [-360, -340, -20, 0],\n    origin: [128, 128],\n    duration: 0.7,\n    ease: [\n      \"linear\",\n      [0.22, 1, 0.36, 1],\n      \"linear\"\n    ],\n    times: [0, 0.14, 0.86, 1]\n  }\n};\n\nexport const ArrowClockwise = createAnimatedIcon(\n  \"ArrowClockwise\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ArrowClockwise;\n"
+    }
+  ],
+  "meta": {
+    "category": "Navigation",
+    "component": "ArrowClockwise"
+  }
+}

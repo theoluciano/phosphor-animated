@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "note-pencil",
+  "type": "registry:component",
+  "title": "NotePencil",
+  "description": "Edits — the pencil scribbles a quick stroke against the note.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/note-pencil.tsx",
+      "type": "registry:component",
+      "target": "components/icons/note-pencil.tsx",
+      "content": "\"use client\";\n\n/**\n * NotePencil — animated Phosphor icon.\n *\n * Edits — the pencil scribbles a quick stroke against the note.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"polygon\", { points: \"128 160 96 160 96 128 192 32 224 64 128 160\" }],\n    [\"line\", { x1: \"168\", y1: \"56\", x2: \"200\", y2: \"88\" }],\n    [\"path\", { d: \"M216,128v80a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8h80\" }],\n  ],\n  bold: [\n    [\"polygon\", { points: \"128 160 96 160 96 128 192 32 224 64 128 160\" }],\n    [\"line\", { x1: \"164\", y1: \"60\", x2: \"196\", y2: \"92\" }],\n    [\"path\", { d: \"M216,140.57V208a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8h67.43\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"polygon\", { points: \"128 160 96 160 96 128 168 56 200 88 128 160\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    0: {\n      rotate: [0, -5, 2.6, -1.4, 0],\n      x: [0, -10, 5.2, -2.7, 0],\n      origin: [104, 152],\n      ease: [\n        \"easeOut\",\n        [0.65, 0, 0.35, 1],\n        [0.65, 0, 0.35, 1],\n        [0.65, 0, 0.35, 1]\n      ]\n    },\n    1: {\n      rotate: [0, -5, 2.6, -1.4, 0],\n      x: [0, -10, 5.2, -2.7, 0],\n      origin: [104, 152],\n      ease: [\n        \"easeOut\",\n        [0.65, 0, 0.35, 1],\n        [0.65, 0, 0.35, 1],\n        [0.65, 0, 0.35, 1]\n      ]\n    }\n  }\n};\n\nexport const NotePencil = createAnimatedIcon(\n  \"NotePencil\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default NotePencil;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "NotePencil"
+  }
+}

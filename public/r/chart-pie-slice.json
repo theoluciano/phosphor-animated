@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chart-pie-slice",
+  "type": "registry:component",
+  "title": "ChartPieSlice",
+  "description": "Breaks out — the slice springs free, hangs a beat, and rejoins.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/chart-pie-slice.tsx",
+      "type": "registry:component",
+      "target": "components/icons/chart-pie-slice.tsx",
+      "content": "\"use client\";\n\n/**\n * ChartPieSlice — animated Phosphor icon.\n *\n * Breaks out — the slice springs free, hangs a beat, and rejoins.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M33.6,145.5A96,96,0,0,1,96,37.5v72Z\" }],\n    [\"path\", { d: \"M128,128.42V32A96,96,0,1,1,45.22,176.64Z\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M32.42,137q-.42-4.44-.42-9A95.93,95.93,0,0,1,88,40.74v65.41Z\" }],\n    [\"path\", { d: \"M128,128.42V32A96,96,0,1,1,45.22,176.64Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M33.6,145.5A96,96,0,0,1,96,37.5v72Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    0: {\n      x: [0, -12, -12, 0],\n      y: [0, -12, -12, 0],\n      origin: [128, 128],\n      ease: [\"easeIn\", \"linear\", \"easeOut\"],\n      times: [0, 0.3, 0.55, 1]\n    }\n  }\n};\n\nexport const ChartPieSlice = createAnimatedIcon(\n  \"ChartPieSlice\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ChartPieSlice;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "ChartPieSlice"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "truck",
+  "type": "registry:component",
+  "title": "Truck",
+  "description": "Jounces — the body bobs on its springs while the wheels stay planted.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/truck.tsx",
+      "type": "registry:component",
+      "target": "components/icons/truck.tsx",
+      "content": "\"use client\";\n\n/**\n * Truck — animated Phosphor icon.\n *\n * Jounces — the body bobs on its springs while the wheels stay planted.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M184,80h42.58A8,8,0,0,1,234,85l14,35\" }],\n    [\"line\", { x1: \"24\", y1: \"144\", x2: \"184\", y2: \"144\" }],\n    [\"circle\", { cx: \"192\", cy: \"192\", r: \"24\" }],\n    [\"circle\", { cx: \"80\", cy: \"192\", r: \"24\" }],\n    [\"line\", { x1: \"168\", y1: \"192\", x2: \"104\", y2: \"192\" }],\n    [\"path\", { d: \"M184,120h64v64a8,8,0,0,1-8,8H216\" }],\n    [\"path\", { d: \"M56,192H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184V169.37\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M184,80h38.58A8,8,0,0,1,230,85l14,35\" }],\n    [\"line\", { x1: \"24\", y1: \"128\", x2: \"184\", y2: \"128\" }],\n    [\"circle\", { cx: \"192\", cy: \"192\", r: \"24\" }],\n    [\"circle\", { cx: \"80\", cy: \"192\", r: \"24\" }],\n    [\"line\", { x1: \"168\", y1: \"192\", x2: \"104\", y2: \"192\" }],\n    [\"path\", { d: \"M184,120h60v64a8,8,0,0,1-8,8H216\" }],\n    [\"path\", { d: \"M56,192H32a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H184V169.37\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M184,120v24H24v40a8,8,0,0,0,8,8H56a24,24,0,0,1,48,0h64a24,24,0,0,1,48,0h24a8,8,0,0,0,8-8V120Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.65,\n  parts: {\n    0: { y: [0, -4, -2.1, -1.1, 0], ease: [\n        \"easeOut\",\n        \"easeIn\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ], times: [0, 0.22, 0.46, 0.7, 1] },\n    1: { y: [0, -4, -2.1, -1.1, 0], ease: [\n        \"easeOut\",\n        \"easeIn\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ], times: [0, 0.22, 0.46, 0.7, 1] },\n    4: { y: [0, -4, -2.1, -1.1, 0], ease: [\n        \"easeOut\",\n        \"easeIn\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ], times: [0, 0.22, 0.46, 0.7, 1] },\n    5: { y: [0, -4, -2.1, -1.1, 0], ease: [\n        \"easeOut\",\n        \"easeIn\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ], times: [0, 0.22, 0.46, 0.7, 1] },\n    6: { y: [0, -4, -2.1, -1.1, 0], ease: [\n        \"easeOut\",\n        \"easeIn\",\n        \"easeOut\",\n        [0.22, 1, 0.36, 1]\n      ], times: [0, 0.22, 0.46, 0.7, 1] }\n  }\n};\n\nexport const Truck = createAnimatedIcon(\n  \"Truck\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Truck;\n"
+    }
+  ],
+  "meta": {
+    "category": "Commerce",
+    "component": "Truck"
+  }
+}

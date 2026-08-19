@@ -1,0 +1,50 @@
+"use client";
+
+/**
+ * ShoppingCart — animated Phosphor icon.
+ *
+ * Hops — added to the cart, so it bounces twice and lands on its wheels.
+ *
+ * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
+ * the keyframes below are ordinary data, so retune or replace them freely.
+ */
+
+import {
+  createAnimatedIcon,
+  type Choreography,
+  type IconGeometry,
+} from "./animated-icon";
+
+const GEOMETRY: IconGeometry = {
+  regular: [
+    ["path", { d: "M188,184H91.17a16,16,0,0,1-15.74-13.14L48.73,24H24" }],
+    ["circle", { cx: "92", cy: "204", r: "20" }],
+    ["circle", { cx: "188", cy: "204", r: "20" }],
+    ["path", { d: "M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56" }],
+  ],
+  backdrop: {
+    duotone: [
+      ["path", { d: "M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56Z", opacity: "0.2" }],
+    ],
+  },
+};
+
+const STROKE: Choreography = {
+  duration: 0.6,
+  whole: {
+    y: [0, -7.82, -5.7, -3, 0],
+    scale: [1, 1.04, 1, 1.03, 1],
+    origin: [128, 204],
+    duration: 0.6,
+    ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
+    times: [0, 0.24, 0.52, 0.74, 1]
+  }
+};
+
+export const ShoppingCart = createAnimatedIcon(
+  "ShoppingCart",
+  GEOMETRY,
+  STROKE,
+);
+
+export default ShoppingCart;

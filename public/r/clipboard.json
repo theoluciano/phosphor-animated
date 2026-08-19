@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clipboard",
+  "type": "registry:component",
+  "title": "Clipboard",
+  "description": "Snaps — the clip pops up and claps back down; the board takes the hit.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/clipboard.tsx",
+      "type": "registry:component",
+      "target": "components/icons/clipboard.tsx",
+      "content": "\"use client\";\n\n/**\n * Clipboard — animated Phosphor icon.\n *\n * Snaps — the clip pops up and claps back down; the board takes the hit.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M160,40h40a8,8,0,0,1,8,8V216a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H96\" }],\n    [\"path\", { d: \"M88,72V64a40,40,0,0,1,80,0v8Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M160,40a39.83,39.83,0,0,1,8,24v8H88V64a39.83,39.83,0,0,1,8-24H56a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H200a8,8,0,0,0,8-8V48a8,8,0,0,0-8-8Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    0: {\n      y: [0, -12, 0],\n      origin: [128, 224],\n      duration: 0.45,\n      delay: 0,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.4, 1]\n    },\n    1: {\n      y: [0, -12, 0],\n      origin: [128, 48],\n      duration: 0.55,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.4, 1]\n    }\n  }\n};\n\nexport const Clipboard = createAnimatedIcon(\n  \"Clipboard\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Clipboard;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "Clipboard"
+  }
+}

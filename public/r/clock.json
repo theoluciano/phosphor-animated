@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock",
+  "type": "registry:component",
+  "title": "Clock",
+  "description": "Fast-forwards — the hands whip one brisk full turn.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/clock.tsx",
+      "type": "registry:component",
+      "target": "components/icons/clock.tsx",
+      "content": "\"use client\";\n\n/**\n * Clock — animated Phosphor icon.\n *\n * Fast-forwards — the hands whip one brisk full turn.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"circle\", { cx: \"128\", cy: \"128\", r: \"96\" }],\n    [\"polyline\", { points: \"128 72 128 128 184 128\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"128\", r: \"96\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  parts: {\n    1: {\n      rotate: [-360, 0],\n      origin: [128, 128],\n      duration: 0.6,\n      ease: [0.4, 0, 0.2, 1]\n    }\n  }\n};\n\nexport const Clock = createAnimatedIcon(\n  \"Clock\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Clock;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "Clock"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bell",
+  "type": "registry:component",
+  "title": "Bell",
+  "description": "Rings — the whole bell swings wide from its mount, left first.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/bell.tsx",
+      "type": "registry:component",
+      "target": "components/icons/bell.tsx",
+      "content": "\"use client\";\n\n/**\n * Bell — animated Phosphor icon.\n *\n * Rings — the whole bell swings wide from its mount, left first.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M96,192a32,32,0,0,0,64,0\" }],\n    [\"path\", { d: \"M56,104a72,72,0,0,1,144,0c0,35.82,8.3,64.6,14.9,76A8,8,0,0,1,208,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,139.81,56,104Z\" }],\n  ],\n  bold: [\n    [\"path\", { d: \"M96,184v8a32,32,0,0,0,64,0v-8\" }],\n    [\"path\", { d: \"M56,104a72,72,0,0,1,144,0c0,35.82,8.3,56.6,14.9,68A8,8,0,0,1,208,184H48a8,8,0,0,1-6.88-12C47.71,160.6,56,139.81,56,104Z\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M56,104a72,72,0,0,1,144,0c0,35.82,8.3,64.6,14.9,76A8,8,0,0,1,208,192H48a8,8,0,0,1-6.88-12C47.71,168.6,56,139.81,56,104Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.6,\n  whole: {\n    rotate: [0, -4.4, 2.3, -1.2, 0],\n    origin: [128, 48],\n    duration: 0.6,\n    ease: [\n      \"easeInOut\",\n      \"easeInOut\",\n      \"easeInOut\",\n      [0.22, 1, 0.36, 1]\n    ],\n    times: [0, 0.22, 0.5, 0.78, 1]\n  },\n  parts: {\n    0: {\n      rotate: [0, -4.8, 2.5, -1.3, 0],\n      origin: [128, 48],\n      delay: 0.04,\n      duration: 0.65,\n      times: [0, 0.22, 0.5, 0.78, 1],\n      ease: [\n        \"easeInOut\",\n        \"easeInOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ]\n    }\n  }\n};\n\nexport const Bell = createAnimatedIcon(\n  \"Bell\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Bell;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "Bell"
+  }
+}

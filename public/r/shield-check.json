@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shield-check",
+  "type": "registry:component",
+  "title": "ShieldCheck",
+  "description": "Re-verifies — the shield braces while the check pops in and redraws.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/shield-check.tsx",
+      "type": "registry:component",
+      "target": "components/icons/shield-check.tsx",
+      "content": "\"use client\";\n\n/**\n * ShieldCheck — animated Phosphor icon.\n *\n * Re-verifies — the shield braces while the check pops in and redraws.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M216,112V56a8,8,0,0,0-8-8H48a8,8,0,0,0-8,8v56c0,96,88,120,88,120S216,208,216,112Z\" }],\n    [\"polyline\", { points: \"88 136 112 160 168 104\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M216,112V56a8,8,0,0,0-8-8H48a8,8,0,0,0-8,8v56c0,96,88,120,88,120S216,208,216,112Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.65,\n  parts: {\n    0: {\n      scale: [1, 0.95, 1.04, 1],\n      origin: [128, 128],\n      duration: 0.55,\n      ease: [\n        \"easeOut\",\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.3, 0.62, 1]\n    },\n    1: {\n      pathLength: [0, 1],\n      opacity: [0, 1],\n      scale: [0.5, 1],\n      origin: [128, 132],\n      duration: 0.45,\n      ease: [0.22, 1, 0.36, 1],\n      delay: 0.12\n    }\n  }\n};\n\nexport const ShieldCheck = createAnimatedIcon(\n  \"ShieldCheck\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ShieldCheck;\n"
+    }
+  ],
+  "meta": {
+    "category": "Essentials",
+    "component": "ShieldCheck"
+  }
+}

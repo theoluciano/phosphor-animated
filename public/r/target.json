@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "target",
+  "type": "registry:component",
+  "title": "Target",
+  "description": "Hits — the arrow draws back, lands, and the rings ring outward from the centre.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/target.tsx",
+      "type": "registry:component",
+      "target": "components/icons/target.tsx",
+      "content": "\"use client\";\n\n/**\n * Target — animated Phosphor icon.\n *\n * Hits — the arrow draws back, lands, and the rings ring outward from the centre.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"line\", { x1: \"128\", y1: \"128\", x2: \"224\", y2: \"32\" }],\n    [\"path\", { d: \"M195.88,60.12a95.88,95.88,0,1,0,18.77,26.49\" }],\n    [\"path\", { d: \"M161.94,94.06a48,48,0,1,0,14,31.2\" }],\n  ],\n  bold: [\n    [\"line\", { x1: \"128\", y1: \"128\", x2: \"224\", y2: \"32\" }],\n    [\"path\", { d: \"M195.88,60.12A95.92,95.92,0,1,0,218,94.56\" }],\n    [\"path\", { d: \"M161.94,94.06a48,48,0,1,0,13.11,43.46\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"circle\", { cx: \"128\", cy: \"128\", r: \"48\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.86,\n  parts: {\n    0: {\n      x: [0, 11, 11, 0],\n      y: [0, -11, -11, 0],\n      duration: 0.55,\n      ease: [\n        \"easeOut\",\n        \"linear\",\n        [0.5, 0, 0.75, 0]\n      ],\n      times: [0, 0.4, 0.6, 1]\n    },\n    1: {\n      scale: [1, 1.09, 0.995, 1],\n      origin: [128, 128],\n      duration: 0.44,\n      ease: [\n        [0.22, 1, 0.36, 1],\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.42, 0.7, 1],\n      delay: 0.42\n    },\n    2: {\n      scale: [1, 1.32, 0.99, 1],\n      origin: [128, 128],\n      duration: 0.44,\n      ease: [\n        [0.22, 1, 0.36, 1],\n        \"easeInOut\",\n        [0.22, 1, 0.36, 1]\n      ],\n      times: [0, 0.42, 0.7, 1],\n      delay: 0.38\n    }\n  }\n};\n\nexport const Target = createAnimatedIcon(\n  \"Target\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Target;\n"
+    }
+  ],
+  "meta": {
+    "category": "Feedback",
+    "component": "Target"
+  }
+}

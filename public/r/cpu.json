@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cpu",
+  "type": "registry:component",
+  "title": "Cpu",
+  "description": "Ticks — every pin stretches with the clock, twice.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/cpu.tsx",
+      "type": "registry:component",
+      "target": "components/icons/cpu.tsx",
+      "content": "\"use client\";\n\n/**\n * Cpu — animated Phosphor icon.\n *\n * Ticks — every pin stretches with the clock, twice.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"rect\", { x: \"104\", y: \"104\", width: \"48\", height: \"48\" }],\n    [\"rect\", { x: \"48\", y: \"48\", width: \"160\", height: \"160\", rx: \"8\" }],\n    [\"line\", { x1: \"208\", y1: \"104\", x2: \"232\", y2: \"104\" }],\n    [\"line\", { x1: \"208\", y1: \"152\", x2: \"232\", y2: \"152\" }],\n    [\"line\", { x1: \"24\", y1: \"104\", x2: \"48\", y2: \"104\" }],\n    [\"line\", { x1: \"24\", y1: \"152\", x2: \"48\", y2: \"152\" }],\n    [\"line\", { x1: \"152\", y1: \"208\", x2: \"152\", y2: \"232\" }],\n    [\"line\", { x1: \"104\", y1: \"208\", x2: \"104\", y2: \"232\" }],\n    [\"line\", { x1: \"152\", y1: \"24\", x2: \"152\", y2: \"48\" }],\n    [\"line\", { x1: \"104\", y1: \"24\", x2: \"104\", y2: \"48\" }],\n  ],\n  bold: [\n    [\"rect\", { x: \"100\", y: \"100\", width: \"56\", height: \"56\" }],\n    [\"rect\", { x: \"48\", y: \"48\", width: \"160\", height: \"160\", rx: \"8\" }],\n    [\"line\", { x1: \"208\", y1: \"104\", x2: \"232\", y2: \"104\" }],\n    [\"line\", { x1: \"208\", y1: \"152\", x2: \"232\", y2: \"152\" }],\n    [\"line\", { x1: \"24\", y1: \"104\", x2: \"48\", y2: \"104\" }],\n    [\"line\", { x1: \"24\", y1: \"152\", x2: \"48\", y2: \"152\" }],\n    [\"line\", { x1: \"152\", y1: \"208\", x2: \"152\", y2: \"232\" }],\n    [\"line\", { x1: \"104\", y1: \"208\", x2: \"104\", y2: \"232\" }],\n    [\"line\", { x1: \"152\", y1: \"24\", x2: \"152\", y2: \"48\" }],\n    [\"line\", { x1: \"104\", y1: \"24\", x2: \"104\", y2: \"48\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M200,48H56a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H200a8,8,0,0,0,8-8V56A8,8,0,0,0,200,48ZM152,152H104V104h48Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.7,\n  parts: {\n    2: { origin: [208, 104], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"], scale: [1, 0, 1, 1, 1] },\n    3: { origin: [208, 152], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"], scale: [1, 0, 1, 1, 1] },\n    4: { origin: [48, 104], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"], scale: [1, 0, 1, 1, 1] },\n    5: {\n      scale: [1, 0, 1, 1, 1],\n      origin: [48, 152],\n      ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"],\n      x: [0, 0, 0, 0, 0],\n      y: [0, 0, 0, 0, 0]\n    },\n    6: { scale: [1, 0, 1, 1, 1], origin: [152, 208], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"] },\n    7: { scale: [1, 0, 1, 1, 1], origin: [104, 208], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"] },\n    8: { scale: [1, 0, 1, 1, 1], origin: [152, 48], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"] },\n    9: { scale: [1, 0, 1, 1, 1], origin: [104, 48], ease: [\"easeIn\", \"linear\", \"easeOut\", \"easeOut\"] }\n  }\n};\n\nexport const Cpu = createAnimatedIcon(\n  \"Cpu\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Cpu;\n"
+    }
+  ],
+  "meta": {
+    "category": "Development",
+    "component": "Cpu"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "phosphor-animated",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "icons:fetch": "node scripts/fetch-sources.ts",
+    "icons:analyze": "node scripts/analyze.ts",
+    "icons:parts": "node scripts/parts-report.ts",
+    "icons:codegen": "node scripts/codegen.ts",
+    "icons:registry": "node scripts/build-registry.ts",
+    "icons:build": "node scripts/analyze.ts && node scripts/codegen.ts && node scripts/build-registry.ts",
+    "icons:survey": "node scripts/survey.ts",
+    "typecheck": "tsc --noEmit",
+    "studio": "next dev --port 4310"
+  },
+  "dependencies": {
+    "@phosphor-icons/core": "^2.1.1",
+    "motion": "^13.1.0",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@11.1.1"
+}

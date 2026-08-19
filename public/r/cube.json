@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cube",
+  "type": "registry:component",
+  "title": "Cube",
+  "description": "Draws itself — the outline first, then the folded inner edges.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/cube.tsx",
+      "type": "registry:component",
+      "target": "components/icons/cube.tsx",
+      "content": "\"use client\";\n\n/**\n * Cube — animated Phosphor icon.\n *\n * Draws itself — the outline first, then the folded inner edges.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"polyline\", { points: \"32.7 76.92 128 129.08 223.3 76.92\" }],\n    [\"path\", { d: \"M131.84,25l88,48.18a8,8,0,0,1,4.16,7v95.64a8,8,0,0,1-4.16,7l-88,48.18a8,8,0,0,1-7.68,0l-88-48.18a8,8,0,0,1-4.16-7V80.18a8,8,0,0,1,4.16-7l88-48.18A8,8,0,0,1,131.84,25Z\" }],\n    [\"line\", { x1: \"128\", y1: \"129.09\", x2: \"128\", y2: \"232\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M128,129.09V232a8,8,0,0,1-3.84-1l-88-48.16a8,8,0,0,1-4.16-7V80.2a8,8,0,0,1,.7-3.27Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.7,\n  parts: {\n    0: {\n      pathLength: [0, 0.5, 1],\n      opacity: [0, 1, 1],\n      duration: 0.37,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.3, 1],\n      delay: 0.28\n    },\n    1: {\n      pathLength: [0, 0.5, 1],\n      opacity: [0, 1, 1],\n      duration: 0.5,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.22, 1]\n    },\n    2: {\n      pathLength: [0, 0.5, 1],\n      opacity: [0, 1, 1],\n      duration: 0.37,\n      ease: [\"easeIn\", \"easeOut\"],\n      times: [0, 0.3, 1],\n      delay: 0.42\n    }\n  }\n};\n\nexport const Cube = createAnimatedIcon(\n  \"Cube\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Cube;\n"
+    }
+  ],
+  "meta": {
+    "category": "Development",
+    "component": "Cube"
+  }
+}

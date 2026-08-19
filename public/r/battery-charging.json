@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "battery-charging",
+  "type": "registry:component",
+  "title": "BatteryCharging",
+  "description": "Charging — the bolt pulses twice as the current lands.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/battery-charging.tsx",
+      "type": "registry:component",
+      "target": "components/icons/battery-charging.tsx",
+      "content": "\"use client\";\n\n/**\n * BatteryCharging — animated Phosphor icon.\n *\n * Charging — the bolt pulses twice as the current lands.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"rect\", { x: \"16\", y: \"64\", width: \"200\", height: \"128\", rx: \"16\" }],\n    [\"line\", { x1: \"248\", y1: \"96\", x2: \"248\", y2: \"160\" }],\n    [\"polyline\", { points: \"116 160 132 128 100 128 116 96\" }],\n  ],\n  bold: [\n    [\"rect\", { x: \"12\", y: \"64\", width: \"200\", height: \"128\", rx: \"16\" }],\n    [\"line\", { x1: \"244\", y1: \"104\", x2: \"244\", y2: \"152\" }],\n    [\"polyline\", { points: \"116 156 132 128 100 128 116 100\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"rect\", { x: \"16\", y: \"64\", width: \"200\", height: \"128\", rx: \"16\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.8,\n  parts: {\n    2: {\n      scale: [1, 1.2, 1, 1.1, 1],\n      opacity: [1, 0.8, 1, 0.9, 1],\n      origin: [116, 128],\n      ease: [\"easeOut\", \"easeInOut\", \"easeInOut\", \"easeInOut\"],\n      times: [0, 0.25, 0.5, 0.75, 1]\n    }\n  }\n};\n\nexport const BatteryCharging = createAnimatedIcon(\n  \"BatteryCharging\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default BatteryCharging;\n"
+    }
+  ],
+  "meta": {
+    "category": "Devices",
+    "component": "BatteryCharging"
+  }
+}

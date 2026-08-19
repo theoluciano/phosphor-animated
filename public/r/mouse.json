@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mouse",
+  "type": "registry:component",
+  "title": "Mouse",
+  "description": "Clicks — the whole mouse presses down and springs back, wheel first.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "https://phosphor-animated.com/r/animated-icon.json"
+  ],
+  "files": [
+    {
+      "path": "components/icons/mouse.tsx",
+      "type": "registry:component",
+      "target": "components/icons/mouse.tsx",
+      "content": "\"use client\";\n\n/**\n * Mouse — animated Phosphor icon.\n *\n * Clicks — the whole mouse presses down and springs back, wheel first.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"rect\", { x: \"56\", y: \"24\", width: \"144\", height: \"208\", rx: \"56\" }],\n    [\"line\", { x1: \"128\", y1: \"112\", x2: \"128\", y2: \"24\" }],\n    [\"line\", { x1: \"56\", y1: \"112\", x2: \"200\", y2: \"112\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M56,112H200v64a56,56,0,0,1-56,56H112a56,56,0,0,1-56-56Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.35,\n  whole: {\n    y: [0, 2.5, 2.5, -1, 0],\n    rotate: [0, -1.5, -1.5, 0.3, 0],\n    scaleY: [1, 0.97, 0.97, 1.006, 1],\n    origin: [128, 232],\n    duration: 0.79,\n    ease: [\n      \"easeOut\",\n      [0.23, 1, 0.32, 1],\n      [0.23, 1, 0.32, 1],\n      [0.23, 1, 0.32, 1]\n    ],\n    times: [0, 0.5, 0.64, 0.86, 1]\n  },\n  parts: {\n    1: {\n      scaleY: [1, 0.72, 0.72, 1.06, 1],\n      origin: [128, 112],\n      duration: 0.79,\n      ease: [\n        \"easeOut\",\n        [0.23, 1, 0.32, 1],\n        [0.23, 1, 0.32, 1],\n        [0.23, 1, 0.32, 1]\n      ],\n      times: [0, 0.5, 0.64, 0.86, 1]\n    }\n  }\n};\n\nexport const Mouse = createAnimatedIcon(\n  \"Mouse\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default Mouse;\n"
+    }
+  ],
+  "meta": {
+    "category": "Devices",
+    "component": "Mouse"
+  }
+}
