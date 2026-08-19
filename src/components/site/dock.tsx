@@ -193,12 +193,14 @@ function Stepper({
 }
 
 /**
- * Hover is how you see one of these move, and a touch screen has no hover — so
- * this is not a convenience there, it is the only way to see the set animate at
- * all. Hence a real switch rather than a play button: it turns a mode on, and the
- * grid stays that way. It defaults on for touch (see Gallery) and keeps its word
- * beside the glyph at phone widths, where it is doing the most work; the desktop
- * dock has four other controls to seat, so there it goes icon-only like the rest.
+ * Changes what a hover does rather than doing anything itself: off, an icon plays
+ * once and settles; on, it keeps going for as long as you stay on it. Which is the
+ * only way to watch a 600ms animation closely enough to judge it — the alternative
+ * is leaving and re-entering the cell over and over.
+ *
+ * A switch rather than a button because it sets a mode and the grid stays in it.
+ * It keeps its word beside the glyph at phone widths, where there is room; the
+ * desktop dock has four other controls to seat, so there it goes icon-only.
  */
 function LoopSwitch({
   value,

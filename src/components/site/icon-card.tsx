@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { useInView } from "motion/react";
 import { Tooltip } from "./tooltip";
 import * as Icons from "@/registry/icons";
 import type { AnimatedIconHandle, AnimatedIconProps, Weight } from "@/registry/icons/animated-icon";
@@ -80,7 +79,7 @@ export function IconCard({
   meta: IconMeta;
   weight: Weight;
   size: number;
-  /** Run continuously instead of waiting to be hovered. */
+  /** Keep repeating while hovered, rather than playing through once. */
   loop: boolean;
   registryUrl: string;
 }) {
@@ -88,16 +87,7 @@ export function IconCard({
   const { copied, copy } = useCopy();
   const [busy, setBusy] = React.useState(false);
   const icon = React.useRef<AnimatedIconHandle>(null);
-  const cell = React.useRef<HTMLDivElement>(null);
-
-  /*
-   * Loop means the rows you can see, not all 163 of them. Every icon is several
-   * springs and tweens, and running the whole grid at once buys nothing — the rest
-   * of it is offscreen — while costing the most on the phones where loop is the
-   * default. An icon starts from rest as its row arrives, which is how it would
-   * have looked anyway.
-   */
-  const onScreen = useInView(cell);
+  const [hovered, setHovered] = React.useState(false);
 
   const itemUrl = `${registryUrl}/r/${meta.name}.json`;
   const command = `npx shadcn@latest add "${itemUrl}"`;
@@ -121,7 +111,6 @@ export function IconCard({
 
   return (
     <div
-      ref={cell}
       className="
         icon-cell group relative flex flex-col items-center justify-center gap-4
         px-3 py-7 transition-colors hover:bg-surface
@@ -132,19 +121,36 @@ export function IconCard({
        * actions on hover — the animation belongs to that same gesture. So the icon
        * gives up its own trigger and the cell plays it; keyboard users arriving at
        * the action buttons get it too, which is what group-focus-within does for
-       * the rest of the cell. Idle while looping: the trigger is already running
-       * it, and play/stop cannot end a loop.
+       * the rest of the cell.
+       *
+       * Two ways to run, one gesture. Loop off, the handle plays the animation
+       * through once. Loop on, the trigger takes over for as long as the pointer
+       * stays: `loop` repeats, and swapping it in per-hover is what keeps that
+       * confined to the one cell under the cursor instead of the whole wall.
+       * Either way, leaving springs the icon home from wherever it had got to.
        */
-      onMouseEnter={() => icon.current?.play()}
-      onMouseLeave={() => icon.current?.stop()}
-      onFocus={() => icon.current?.play()}
-      onBlur={() => icon.current?.stop()}
+      onMouseEnter={() => {
+        setHovered(true);
+        icon.current?.play();
+      }}
+      onMouseLeave={() => {
+        setHovered(false);
+        icon.current?.stop();
+      }}
+      onFocus={() => {
+        setHovered(true);
+        icon.current?.play();
+      }}
+      onBlur={() => {
+        setHovered(false);
+        icon.current?.stop();
+      }}
     >
       <Icon
         ref={icon}
         weight={weight}
         size={size}
-        trigger={loop && onScreen ? "loop" : "none"}
+        trigger={loop && hovered ? "loop" : "none"}
         className="text-ink"
         aria-label={meta.name}
       />

@@ -38,22 +38,6 @@ export function Gallery({
   const [size, setSize] = React.useState<number>(DEFAULT_SIZE);
   const [loop, setLoop] = React.useState(false);
 
-  /*
-   * A phone starts with the grid looping. Hover is what plays an icon, a touch
-   * screen has none, and a wall of 163 motionless glyphs is a poor advert for a
-   * set whose whole point is that they move — so the default follows the pointer
-   * rather than the viewport width. Set in an effect, not in the initial state,
-   * so the server and the client agree on the first render.
-   *
-   * Not against an explicit preference for less motion: the icons would sit still
-   * anyway, and the switch would be lying about what it had turned on.
-   */
-  React.useEffect(() => {
-    const touch = window.matchMedia("(hover: none)").matches;
-    const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (touch && !still) setLoop(true);
-  }, []);
-
   const visible = React.useMemo(
     () => icons.filter((i) => (!category || i.category === category) && matches(i, query)),
     [icons, category, query],
