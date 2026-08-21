@@ -1,6 +1,5 @@
 # phosphor-animated
-<img width="1624" height="1061" alt="image" src="https://github.com/user-attachments/assets/93089023-0dfb-4f38-b65a-c1557825fca6" />
-
+<img width="1624" height="1061" alt="image" src="https://github.com/user-attachments/assets/719d8138-f54a-410f-b64e-db9ed094d2e6" />
 
 163 hand-animated [Phosphor](https://phosphoricons.com) icons for React, installed
 as source through the shadcn CLI. Five weights, ten categories, and no package to
