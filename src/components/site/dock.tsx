@@ -1,7 +1,11 @@
 "use client";
 
 import * as React from "react";
-import { WEIGHTS, type Weight } from "@/registry/icons/animated-icon";
+import {
+  WEIGHTS,
+  type AnimatedIconHandle,
+  type Weight,
+} from "@/registry/icons/animated-icon";
 import { Bell } from "@/registry/icons/bell";
 import { MagnifyingGlass } from "@/registry/icons/magnifying-glass";
 import { CaretDown } from "@/registry/icons/caret-down";
@@ -256,27 +260,50 @@ function WeightPicker({
 }) {
   return (
     <div role="group" aria-label="Weight" className={`flex items-center gap-0.5 ${className}`}>
-      {WEIGHTS.map((w) => {
-        const active = w === value;
-        return (
-          <button
-            key={w}
-            type="button"
-            onClick={() => onChange(w)}
-            aria-pressed={active}
-            title={w[0].toUpperCase() + w.slice(1)}
-            className={`
-              grid size-[30px] place-items-center rounded-lg transition
-              focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight
-              ${active ? "bg-highlight text-deepgreen" : "text-dock-ink-muted hover:text-dock-ink"}
-            `}
-          >
-            <Bell weight={w} size={18} trigger="none" />
-            <span className="sr-only">{w}</span>
-          </button>
-        );
-      })}
+      {WEIGHTS.map((w) => (
+        <WeightButton key={w} weight={w} active={w === value} onSelect={() => onChange(w)} />
+      ))}
     </div>
+  );
+}
+
+/**
+ * Rings on press, whichever weight it is.
+ *
+ * Every other glyph in the dock is a label, but these five are the thing they
+ * select — so pressing one shows what that stroke width looks like in motion, at
+ * the weight the grid is about to switch to. Its own component because the handle
+ * has to belong to a single bell rather than to the row of them.
+ */
+function WeightButton({
+  weight,
+  active,
+  onSelect,
+}: {
+  weight: Weight;
+  active: boolean;
+  onSelect: () => void;
+}) {
+  const icon = React.useRef<AnimatedIconHandle>(null);
+
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        onSelect();
+        icon.current?.play();
+      }}
+      aria-pressed={active}
+      title={weight[0].toUpperCase() + weight.slice(1)}
+      className={`
+        grid size-[30px] place-items-center rounded-lg transition
+        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-highlight
+        ${active ? "bg-highlight text-deepgreen" : "text-dock-ink-muted hover:text-dock-ink"}
+      `}
+    >
+      <Bell ref={icon} weight={weight} size={18} trigger="none" />
+      <span className="sr-only">{weight}</span>
+    </button>
   );
 }
 
