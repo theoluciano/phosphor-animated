@@ -74,7 +74,16 @@ export function Gallery({
   }, []);
 
   return (
-    <section id="icons" ref={section} className="scroll-mt-4">
+    /*
+     * The hero's fan hangs past the bottom of the header on purpose, and this
+     * section's top edge is what cuts it. Both halves of that are needed here: a
+     * rotated card paints above plain in-flow content whatever the document
+     * order, so the directory needs a stacking position of its own — and a
+     * ground of its own, or the card would go on showing through a transparent
+     * background. On the section rather than `.icon-grid` so an empty search
+     * result gets the same cover.
+     */
+    <section id="icons" ref={section} className="relative z-10 bg-bg scroll-mt-4">
       {visible.length === 0 ? (
         /*
          * A full viewport of height even when empty. Without it a one-result
