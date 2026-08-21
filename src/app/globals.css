@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
 /*
+ * The tuning studio lives on disk but out of the repository (see .gitignore),
+ * and Tailwind's automatic source detection skips whatever git ignores — so
+ * every utility used only by the studio went ungenerated and its layout
+ * collapsed. These paths are registered by hand to put them back in scope.
+ * Globbed rather than named so an absent studio is simply an empty match
+ * instead of a build error on a fresh clone.
+ */
+@source "../components/studio/**/*.{ts,tsx}";
+@source "../app/studio/**/*.{ts,tsx}";
+
+/*
  * Palette tuned to Phosphor's own — warm off-white ground, stone ink, moss and acid
  * accents — so the set reads as part of that world rather than a stranger to it.
  */
