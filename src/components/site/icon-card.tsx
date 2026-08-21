@@ -3,14 +3,10 @@
 import * as React from "react";
 import { Tooltip } from "./tooltip";
 import * as Icons from "@/registry/icons";
-import type { AnimatedIconHandle, AnimatedIconProps, Weight } from "@/registry/icons/animated-icon";
+import type { AnimatedIconHandle, IconComponent, Weight } from "@/registry/icons/animated-icon";
 import { Copy } from "@/registry/icons/copy";
 import { TerminalWindow } from "@/registry/icons/terminal-window";
 import { Check } from "@/registry/icons/check";
-
-type IconComponent = React.ForwardRefExoticComponent<
-  AnimatedIconProps & React.RefAttributes<AnimatedIconHandle>
->;
 
 const registry = Icons as unknown as Record<string, IconComponent>;
 

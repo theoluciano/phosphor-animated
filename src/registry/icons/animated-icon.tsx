@@ -139,6 +139,18 @@ export type AnimatedIconProps = Omit<
 };
 
 /**
+ * One of the generated components, as a value.
+ *
+ * The two halves of this — the props and the handle — are declared above, so the
+ * composed shape belongs here too: anything that stores an icon in a variable or
+ * a lookup table needs it, and re-deriving it at each of those call sites means
+ * every widening of `AnimatedIconProps` has to be chased through all of them.
+ */
+export type IconComponent = React.ForwardRefExoticComponent<
+  AnimatedIconProps & React.RefAttributes<AnimatedIconHandle>
+>;
+
+/**
  * Everything the generated file supplies. Grouped into one prop because `stroke`
  * is itself an SVG attribute — spreading these alongside SVGProps would collide.
  */
@@ -259,7 +271,19 @@ export const AnimatedIcon = React.forwardRef<AnimatedIconHandle, InternalProps>(
     {
       spec,
       size = 24, weight = "regular", trigger = "hover", speed = 1,
-      onMouseEnter, onMouseLeave, onClick, style, ...rest
+      onMouseEnter, onMouseLeave, onClick, style,
+      /**
+       * Defaulted here rather than written straight onto the <svg>, because the
+       * attributes below sit before `{...rest}`: a caller who passes
+       * `fill={maybeUndefined}` — the ordinary shape of a toggle, and the one
+       * prop this component invites callers to set — would otherwise land
+       * `fill: undefined` in the spread and wipe the attribute out entirely.
+       * The SVG then falls back to its initial value, which is solid black, not
+       * the "none" it was meant to keep. A default parameter absorbs the
+       * undefined instead.
+       */
+      fill = "none",
+      ...rest
     },
     ref,
   ) {
@@ -368,7 +392,7 @@ export const AnimatedIcon = React.forwardRef<AnimatedIconHandle, InternalProps>(
         viewBox="0 0 256 256"
         width={size}
         height={size}
-        fill="none"
+        fill={fill}
         stroke="currentColor"
         strokeWidth={STROKE_WIDTH[weight]}
         strokeLinecap="round"
