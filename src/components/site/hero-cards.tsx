@@ -709,7 +709,7 @@ function Checkout() {
       <div className="flex items-center gap-2.5">
         <Glyph icon={Envelope} size={16} />
         <span className="text-[13px] leading-4 text-ink-muted">
-          {paid ? "Receipt sent to nadia@studio.co" : "Receipt to nadia@studio.co"}
+          {paid ? "Receipt sent to hello@category5.co" : "Receipt to hello@category5.co"}
         </span>
       </div>
     </Card>
