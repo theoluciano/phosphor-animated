@@ -282,7 +282,7 @@ export const communication: AnimationSet = {
       duration: 0.8,
       whole: {
         rotate: [0, -7.6, 4, -2.1, 0],
-        origin: [80, 210],
+        origin: [128, 128],
         ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
       },
     },
