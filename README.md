@@ -20,7 +20,7 @@ Two files land in your project: `components/icons/bell.tsx`, and
 `components/icons/animated-icon.tsx` — a small shared runtime every icon reuses
 rather than duplicates. `motion` is added as a dependency; nothing else is.
 
-Works with React 18 or 19. color comes from `currentColor` and size from a prop,
+Works with React 18 or 19. Color comes from `currentColor` and size from a prop,
 so Tailwind is welcome but not required.
 
 ## Usage
@@ -70,7 +70,7 @@ bell.current?.stop();
 
 ### Reduced motion
 
-`prefers-reduced-motion` is honoured with no configuration — icons render static
+`prefers-reduced-motion` is honored with no configuration — icons render static
 for readers who ask for that.
 
 ### Making it yours
