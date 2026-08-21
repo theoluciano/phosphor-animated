@@ -137,6 +137,15 @@ body {
  */
 .icon-grid {
   border-top: 1px solid var(--line);
+  /*
+   * The grid runs to both edges, so the action tooltips in the outermost columns
+   * hang past the viewport — and a tooltip is `absolute` inside a cell with
+   * nothing between it and the document, so those few pixels were widening the
+   * page and letting the whole thing scroll sideways. Clipped rather than
+   * hidden: `clip` stops the overflow without making this a scroll container,
+   * and only on the x axis, so a tooltip still hangs below its cell.
+   */
+  overflow-x: clip;
 }
 .icon-cell {
   border-right: 1px solid var(--line);

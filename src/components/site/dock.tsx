@@ -79,7 +79,14 @@ export function Dock({
           dock:max-w-[740px] dock:flex-row dock:items-center dock:gap-3.5
         "
       >
-        <label className="flex flex-1 items-center gap-2.5 pl-1">
+        {/*
+         * min-w-0 because an input carries an intrinsic width (its `size`), and a
+         * flex item's floor is its content's — so `min-w-0` on the input alone
+         * still left this label unable to shrink past ~245px. Once a search put a
+         * match count and a clear button beside it, the line no longer fit and the
+         * loop switch was pushed out through the right edge of the dock.
+         */}
+        <label className="flex min-w-0 flex-1 items-center gap-2.5 pl-1">
           <MagnifyingGlass
             size={15}
             trigger="none"
