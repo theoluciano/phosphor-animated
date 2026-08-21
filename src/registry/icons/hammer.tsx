@@ -39,13 +39,14 @@ const GEOMETRY: IconGeometry = {
 
 const STROKE: Choreography = {
   duration: 0.8,
-  whole: {
-    rotate: [0, -5.7, 7.1, 0],
-    scale: [1, 0.95, 0.95, 1],
-    origin: [56, 200],
-    ease: ["easeInOut", "easeOut", "easeOut"],
-    times: [0, 0.6, 0.8, 1]
-  }
+  whole: { rotate: [0, -4, -12, -4, -12, -4, 0], origin: [56, 200], ease: [
+      "easeIn",
+      "linear",
+      "linear",
+      "linear",
+      "linear",
+      [0.22, 1, 0.36, 1]
+    ] }
 };
 
 export const Hammer = createAnimatedIcon(

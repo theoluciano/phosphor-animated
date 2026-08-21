@@ -177,7 +177,7 @@ export const essentials: AnimationSet = {
       duration: 0.72,
       parts: {
         0: {
-          scale: [1, 0.96, 1.16, 0.98, 1.09, 1],
+          scale: [1, 0.96, 1.14, 0.96, 1.09, 1],
           origin: [128, 128],
           ease: ["easeOut", [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
           times: [0, 0.12, 0.32, 0.48, 0.68, 1],
@@ -411,10 +411,11 @@ export const essentials: AnimationSet = {
       duration: 0.6,
       parts: {
         0: {
-          pathLength: [0, 1],
+          pathLength: [1, 0, 1],
           delay: 0.1,
           duration: 0.35,
-          ease: ["easeOut"],
+          ease: ["easeIn", "easeOut"],
+          opacity: [1, 0, 1],
         },
         1: {
           delay: 0.1,
@@ -705,17 +706,17 @@ export const essentials: AnimationSet = {
       duration: 0.6,
       parts: {
         0: {
-          x: [0, 7, -4, 0],
-          y: [0, -7, 4, 0],
+          x: [0, 7, 0, 0],
+          y: [0, -7, 0, 0],
           origin: [128, 128],
           duration: 0.55,
           ease: ["easeIn", "linear", "easeOut"],
-          times: [0, 0.4, 0.75, 1],
+          times: [0, 0.4, 0.751, 1],
           delay: 0.03,
         },
         1: {
-          x: [0, -9, 5, 0],
-          y: [0, 9, -5, 0],
+          x: [0, -8, 0, 0],
+          y: [0, 8, 0, 0],
           origin: [128, 128],
           duration: 0.55,
           ease: ["easeIn", "linear", "easeOut"],
@@ -912,11 +913,11 @@ export const essentials: AnimationSet = {
       duration: 0.6,
       parts: {
         0: {
-          scaleX: [1, 1.06, 0.78, 1.03, 1],
-          y: [0, -7, 12, -2, 0],
+          scaleX: [1, 1.05, 0.8, 1.05, 1],
+          y: [0, -7, 12, -7, 0],
           origin: [128, 48],
           times: [0, 0.2, 0.52, 0.78, 1],
-          ease: ["easeOut", [0.65, 0, 0.35, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
+          ease: ["easeIn", "linear", "linear", "easeOut"],
         },
       },
     },

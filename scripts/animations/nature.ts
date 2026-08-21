@@ -159,7 +159,7 @@ export const nature: AnimationSet = {
       parts: {
         0: {
           pathLength: [1, 0, 1, 1],
-          opacity: [0, 0, 1, 1],
+          opacity: [1, 0, 1, 1],
           times: [0, 0.45, 0.6, 1],
           ease: ["linear", "easeOut", "easeOut"],
           duration: 0.73,
@@ -171,10 +171,12 @@ export const nature: AnimationSet = {
       },
       whole: {
         duration: 0.55,
-        ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
-        scale: [1, 1.05, 0.95, 1, 0.95, 1],
-        rotate: [0, -8, 8, -8, 8, 0],
+        ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"],
+        scale: [1, 1.05, 0.95, 1, 0.95, 1, 1, 1],
+        rotate: [0, -8, 8, -8, 8, -4, 4, 0],
         origin: [128, 216],
+        x: [0, 0, 0, 0, 0, 0, 0, 0],
+        y: [0, 0, 0, 0, 0, 0, 0, 0],
       },
     },
   },
@@ -186,10 +188,9 @@ export const nature: AnimationSet = {
       duration: 0.7,
       parts: {
         0: {
-          pathLength: [0, 1, 1, 1, 1, 1],
-          duration: 0.55,
-          ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
-          rotate: [0, -8, 4, -2, 2, 0],
+          duration: 0.6,
+          ease: ["easeIn", "linear", "linear", "linear", "easeOut", "easeOut", "easeOut"],
+          rotate: [0, -8, 8, -8, 8, -4, 4, 0],
         },
         1: {
           pathLength: [0, 1],

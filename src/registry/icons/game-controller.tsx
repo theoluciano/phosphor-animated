@@ -32,11 +32,11 @@ const GEOMETRY: IconGeometry = {
 
 const STROKE: Choreography = {
   duration: 0.5,
-  whole: {
-    x: [0, -5, 2.6, -1.4, 0.7, 0],
-    rotate: [0, -1.5, 0.8, -0.4, 0.2, 0],
-    ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
-    duration: 0.55
+  whole: { rotate: [0, -4, 4, -4, 4, -2, 2, 0], ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"], duration: 0.55 },
+  parts: {
+    0: { opacity: [1, 0, 1, 1], ease: ["easeInOut", "easeInOut", "easeInOut"], delay: 0.25 },
+    1: { ease: ["easeInOut", "easeInOut", "easeInOut"], opacity: [1, 0, 1, 1] },
+    2: { ease: ["easeInOut", "easeInOut", "easeInOut"], opacity: [1, 0, 1, 1] }
   }
 };
 

@@ -31,17 +31,17 @@ const STROKE: Choreography = {
   duration: 0.6,
   parts: {
     0: {
-      x: [0, 7, -4, 0],
-      y: [0, -7, 4, 0],
+      x: [0, 7, 0, 0],
+      y: [0, -7, 0, 0],
       origin: [128, 128],
       duration: 0.55,
       ease: ["easeIn", "linear", "easeOut"],
-      times: [0, 0.4, 0.75, 1],
+      times: [0, 0.4, 0.751, 1],
       delay: 0.03
     },
     1: {
-      x: [0, -9, 5, 0],
-      y: [0, 9, -5, 0],
+      x: [0, -8, 0, 0],
+      y: [0, 8, 0, 0],
       origin: [128, 128],
       duration: 0.55,
       ease: ["easeIn", "linear", "easeOut"],

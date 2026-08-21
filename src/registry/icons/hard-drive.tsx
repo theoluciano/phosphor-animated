@@ -43,16 +43,10 @@ const STROKE: Choreography = {
   duration: 0.65,
   parts: {
     1: {
-      opacity: [1, 0.15, 1, 0.35, 1],
-      scale: [1, 1.2, 1, 1.1, 1],
+      opacity: [1, 0, 1, 0, 1],
       origin: [188, 128],
-      ease: [
-        [0.34, 1.56, 0.64, 1],
-        "easeInOut",
-        "easeInOut",
-        [0.22, 1, 0.36, 1]
-      ],
-      times: [0, 0.25, 0.5, 0.7, 1]
+      ease: ["linear", "linear", "linear", "linear"],
+      duration: 0.6
     }
   }
 };

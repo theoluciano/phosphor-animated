@@ -16,11 +16,10 @@ export const devices: AnimationSet = {
     stroke: {
       duration: 0.6,
       whole: {
-        x: [0, -7, 3.6, -1.9, 1, 0],
         origin: [128, 128],
-        duration: 0.9,
-        ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
-        times: [0, 0.12, 0.36, 0.6, 0.8, 1],
+        duration: 0.6,
+        ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"],
+        rotate: [0, -8, 8, -8, 8, -4, 4, 0],
       },
     },
   },
@@ -133,10 +132,24 @@ export const devices: AnimationSet = {
     stroke: {
       duration: 0.5,
       whole: {
-        x: [0, -5, 2.6, -1.4, 0.7, 0],
-        rotate: [0, -1.5, 0.8, -0.4, 0.2, 0],
-        ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
+        rotate: [0, -4, 4, -4, 4, -2, 2, 0],
+        ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"],
         duration: 0.55,
+      },
+      parts: {
+        0: {
+          opacity: [1, 0, 1, 1],
+          ease: ["easeInOut", "easeInOut", "easeInOut"],
+          delay: 0.25,
+        },
+        1: {
+          ease: ["easeInOut", "easeInOut", "easeInOut"],
+          opacity: [1, 0, 1, 1],
+        },
+        2: {
+          ease: ["easeInOut", "easeInOut", "easeInOut"],
+          opacity: [1, 0, 1, 1],
+        },
       },
     },
   },
@@ -315,11 +328,10 @@ export const devices: AnimationSet = {
       duration: 0.65,
       parts: {
         1: {
-          opacity: [1, 0.15, 1, 0.35, 1],
-          scale: [1, 1.2, 1, 1.1, 1],
+          opacity: [1, 0, 1, 0, 1],
           origin: [188, 128],
-          ease: [[0.34, 1.56, 0.64, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
-          times: [0, 0.25, 0.5, 0.7, 1],
+          ease: ["linear", "linear", "linear", "linear"],
+          duration: 0.6,
         },
       },
     },

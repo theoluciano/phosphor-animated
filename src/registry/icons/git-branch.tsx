@@ -34,33 +34,39 @@ const STROKE: Choreography = {
   duration: 0.85,
   parts: {
     0: {
-      pathLength: [0, 1],
-      opacity: [0, 1],
+      pathLength: [1, 0, 1],
+      opacity: [1, 0, 1],
       duration: 0.25,
-      delay: 0.3,
-      ease: "easeOut"
+      delay: 0,
+      ease: ["easeOut", "easeOut"],
+      x: [0, 0, 0],
+      y: [0, 0, 0]
     },
     1: {
-      pathLength: [0, 1],
-      opacity: [0, 1],
+      opacity: [1, 0, 1],
       duration: 0.25,
-      delay: 0.3,
-      ease: "easeOut"
+      delay: 0,
+      ease: ["easeOut", "easeOut"],
+      x: [0, 0, 0],
+      y: [0, 0, 0]
+    },
+    2: {
+      opacity: [1, 0, 1, 1],
+      origin: [128, 78],
+      delay: 0,
+      duration: 0.55,
+      ease: ["easeOut", "easeInOut", "easeInOut"],
+      x: [0, 0, 0, 0],
+      y: [0, 0, 0, 0]
     },
     3: {
-      pathLength: [0, 1],
-      opacity: [0, 1],
-      duration: 0.25,
-      delay: 0.05,
-      ease: "easeOut"
+      opacity: [1, 0, 0, 1, 1],
+      duration: 0.55,
+      delay: 0,
+      ease: ["easeIn", "linear", "easeOut", "easeOut"],
+      times: [0, 0.051, 0.5, 0.75, 1]
     },
-    4: {
-      pathLength: [0, 1],
-      opacity: [0, 1],
-      duration: 0.25,
-      delay: 0.55,
-      ease: "easeOut"
-    }
+    4: { duration: 0.25, delay: 0, ease: ["easeOut"] }
   }
 };
 
