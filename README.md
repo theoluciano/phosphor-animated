@@ -1,10 +1,13 @@
 # phosphor-animated
 
-Animated [Phosphor](https://phosphoricons.com) icons for React, installed as source
-through the shadcn CLI.
+163 hand-animated [Phosphor](https://phosphoricons.com) icons for React, installed
+as source through the shadcn CLI. Five weights, ten categories, and no package to
+depend on — each icon arrives as a file in your repo that you own outright.
 
-Browse the set and copy install commands at
-[phosphor-animated.com](https://phosphor-animated.com).
+### [Browse the set → phosphor-animated.com](https://phosphor-animated.com)
+
+Hover anything to watch it move, search by name, switch weights, and copy the one
+command that installs it.
 
 ## Install
 
@@ -12,30 +15,40 @@ Browse the set and copy install commands at
 npx shadcn@latest add "https://phosphor-animated.com/r/bell.json"
 ```
 
-The icon lands in your project at `components/icons/bell.tsx`, alongside
-`animated-icon.tsx` — a small shared runtime that every icon reuses rather than
-duplicates. `motion` is added as a dependency.
+Two files land in your project: `components/icons/bell.tsx`, and
+`components/icons/animated-icon.tsx` — a small shared runtime every icon reuses
+rather than duplicates. `motion` is added as a dependency; nothing else is.
+
+Works with React 18 or 19. Colour comes from `currentColor` and size from a prop,
+so Tailwind is welcome but not required.
 
 ## Usage
 
 ```tsx
 import { Bell } from "@/components/icons/bell";
 
-<Bell className="size-6" />              // animates on hover
+<Bell className="size-6" />                  // animates on hover
 <Bell weight="duotone" trigger="in-view" />
+```
+
+Icons draw as strokes on an unfilled canvas. Where the drawing is a closed shape,
+passing `fill` gives you the solid half of an on/off pair:
+
+```tsx
+<Heart fill={liked ? "currentColor" : "none"} />
 ```
 
 ### Props
 
 | Prop | Type | Default | Notes |
 | --- | --- | --- | --- |
-| `weight` | `"thin" \| "light" \| "regular" \| "bold" \| "duotone"` | `"regular"` | |
-| `trigger` | `"hover" \| "click" \| "in-view" \| "loop" \| "none"` | `"hover"` | How the animation starts |
+| `weight` | `"thin" \| "light" \| "regular" \| "bold" \| "duotone"` | `"regular"` | Phosphor's six minus `fill` — use the `fill` prop above instead |
+| `trigger` | `"hover" \| "click" \| "in-view" \| "loop" \| "none"` | `"hover"` | What starts the animation |
 | `size` | `number \| string` | `24` | Width and height |
 | `speed` | `number` | `1` | Playback rate; `2` is twice as fast |
 
-Every other SVG prop passes through — `className`, `onClick`, `aria-label`, and so
-on. The stroke is `currentColor`, so colour comes from CSS.
+Every other SVG prop passes through — `className`, `fill`, `onClick`, `aria-label`,
+and so on.
 
 ### Animating on state changes
 
@@ -56,17 +69,26 @@ bell.current?.stop();
 
 ### Reduced motion
 
-`prefers-reduced-motion` is honoured without any configuration — icons render
-static for readers who ask for that.
+`prefers-reduced-motion` is honoured with no configuration — icons render static
+for readers who ask for that.
 
 ### Making it yours
 
-Each icon is a readable file whose keyframes are plain data. Retune the motion or
-replace it outright; nothing points back here.
+Each icon is a readable file whose choreography is plain data: a duration, an
+origin, and the values each part moves through. Retune it, or replace it outright;
+nothing points back here. The rules the set was tuned against are written down in
+[PRINCIPLES.md](./scripts/animations/PRINCIPLES.md).
 
----
+Full reference, with every weight and trigger running live, is at
+[phosphor-animated.com/usage](https://phosphor-animated.com/usage).
 
-Inspired by [hugeicons-animated](https://github.com/enesgules/hugeicons-animated) and [lucide-animated](https://github.com/pqoqubbw/icons)
+## License
 
-> Unofficial and independent. Not affiliated with or endorsed by Phosphor Icons.
-> Full attribution in [LICENSE](./LICENSE).
+MIT — see [LICENSE](./LICENSE).
+
+Inspired by [hugeicons-animated](https://github.com/enesgules/hugeicons-animated)
+and [lucide-animated](https://github.com/pqoqubbw/icons).
+
+> Unofficial and independent. Not affiliated with, endorsed by, or sponsored by
+> Phosphor Icons. Icon geometry is derived from Phosphor Icons under the MIT
+> License; full attribution in [LICENSE](./LICENSE).
