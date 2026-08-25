@@ -163,10 +163,6 @@ export const nature: AnimationSet = {
           ease: ["linear", "easeOut", "easeOut"],
           duration: 1.168,
         },
-        1: {
-          duration: 0.88,
-          ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
-        },
       },
       whole: {
         duration: 0.88,

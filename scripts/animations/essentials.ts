@@ -79,12 +79,6 @@ export const essentials: AnimationSet = {
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
       duration: 0.96,
-      whole: {
-        origin: [128, 48],
-        duration: 0.8,
-        ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
-        times: [0, 0.3, 0.65, 1],
-      },
       parts: {
         0: {
           pathLength: [0, 1],
@@ -416,26 +410,6 @@ export const essentials: AnimationSet = {
           duration: 0.56,
           ease: ["easeIn", "easeOut"],
           opacity: [1, 0, 1],
-        },
-        1: {
-          delay: 0.16,
-          duration: 0.56,
-          ease: ["easeOut"],
-        },
-        2: {
-          duration: 0.96,
-          ease: ["easeOut", "easeInOut"],
-          times: [0, 0.45, 1],
-        },
-        3: {
-          duration: 0.96,
-          ease: ["easeOut", "easeInOut"],
-          times: [0, 0.45, 1],
-        },
-        4: {
-          duration: 0.96,
-          ease: ["easeOut", "easeInOut"],
-          times: [0, 0.45, 1],
         },
       },
     },

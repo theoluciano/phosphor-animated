@@ -176,11 +176,6 @@ export const files: AnimationSet = {
           duration: 0.88,
           delay: 0.16,
         },
-        3: {
-          origin: [188, 116],
-          ease: ["easeOut", "easeInOut"],
-          duration: 0.72,
-        },
       },
     },
   },
@@ -197,12 +192,6 @@ export const files: AnimationSet = {
           duration: 0.88,
           ease: ["easeIn", "easeOut"],
           x: [0, 0, 0],
-        },
-        1: {
-          origin: [128, 208],
-          duration: 0.48,
-          ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.256,
         },
         2: {
           y: [0, 20, 0],
@@ -290,12 +279,6 @@ export const files: AnimationSet = {
     stroke: {
       duration: 0.992,
       parts: {
-        0: {
-          origin: [128, 128],
-          duration: 0.832,
-          ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
-          times: [0, 0.3, 0.6, 1],
-        },
         1: {
           pathLength: [1, 0, 1, 1],
           origin: [128, 184],

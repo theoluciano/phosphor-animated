@@ -62,19 +62,6 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 0.88,
   parts: {
-    0: {
-      duration: 0.704,
-      ease: ["easeOut", "easeOut"],
-      times: [0, 0.25, 1],
-      delay: 0.32
-    },
-    1: {
-      duration: 0.704,
-      ease: ["easeOut", "easeOut"],
-      times: [0, 0.25, 1],
-      delay: 0.224
-    },
-    2: { duration: 0.72, ease: ["easeOut", "easeOut"], times: [0, 0.25, 1] },
     3: {
       pathLength: [0, 0.3, 1],
       opacity: [0, 1, 1],

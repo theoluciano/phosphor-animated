@@ -98,11 +98,6 @@ export const development: AnimationSet = {
           ease: ["easeIn", "linear", "easeOut", "easeOut"],
           times: [0, 0.051, 0.5, 0.75, 1],
         },
-        4: {
-          duration: 0.4,
-          delay: 0,
-          ease: ["easeOut"],
-        },
       },
     },
   },
@@ -428,11 +423,6 @@ export const development: AnimationSet = {
     stroke: {
       duration: 1.04,
       parts: {
-        1: {
-          origin: [128, 194],
-          times: [0, 0.24, 0.52, 0.78, 1],
-          ease: ["easeOut", [0.34, 1.56, 0.64, 1], "easeInOut", [0.22, 1, 0.36, 1]],
-        },
         2: {
           pathLength: [1, 0, 1, 1],
           ease: ["easeIn", "linear", "easeOut"],

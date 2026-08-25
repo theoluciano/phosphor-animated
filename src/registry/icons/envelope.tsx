@@ -48,17 +48,6 @@ const STROKE: Choreography = {
       ],
       pathLength: [1, 0, 1, 1]
     },
-    1: {
-      origin: [128, 56],
-      duration: 0.88,
-      delay: 0,
-      ease: [
-        "easeOut",
-        [0.22, 1, 0.36, 1],
-        [0.22, 1, 0.36, 1]
-      ],
-      times: [0, 0.45, 0.75, 1]
-    },
     2: {
       origin: [128, 56],
       duration: 0.88,

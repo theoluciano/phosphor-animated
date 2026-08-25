@@ -65,8 +65,7 @@ const STROKE: Choreography = {
       delay: 0,
       ease: ["easeIn", "linear", "easeOut", "easeOut"],
       times: [0, 0.051, 0.5, 0.75, 1]
-    },
-    4: { duration: 0.4, delay: 0, ease: ["easeOut"] }
+    }
   }
 };
 

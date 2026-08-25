@@ -41,20 +41,6 @@ const STROKE: Choreography = {
       [0.34, 1.56, 0.64, 1]
     ],
     times: [0, 0.4, 1]
-  },
-  parts: {
-    0: {
-      origin: [164, 44],
-      duration: 0.704,
-      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      delay: 0.416
-    },
-    1: {
-      origin: [212, 92],
-      duration: 0.704,
-      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      delay: 0.512
-    }
   }
 };
 

@@ -93,21 +93,11 @@ export const feedback: AnimationSet = {
     stroke: {
       duration: 0.896,
       parts: {
-        0: {
-          origin: [128, 128],
-          ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
-          times: [0, 0.2, 0.5, 0.76, 1],
-        },
         1: {
           origin: [128, 176],
           ease: ["easeOut"],
           pathLength: [0, 1],
           duration: 0.7,
-        },
-        2: {
-          origin: [124, 84],
-          ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
-          times: [0, 0.2, 0.5, 0.76, 1],
         },
       },
       whole: {
@@ -124,18 +114,11 @@ export const feedback: AnimationSet = {
     stroke: {
       duration: 0.88,
       parts: {
-        0: {
-          duration: 0.976,
-          ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"],
-        },
         1: {
           origin: [128, 134],
           duration: 0.7,
           ease: ["easeOut"],
           pathLength: [0, 1],
-        },
-        2: {
-          ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
         },
       },
       whole: {

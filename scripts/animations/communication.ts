@@ -29,13 +29,6 @@ export const communication: AnimationSet = {
           ease: [[0.65, 0, 0.35, 1], [0.65, 0, 0.35, 1], [0.65, 0, 0.35, 1]],
           pathLength: [1, 0, 1, 1],
         },
-        1: {
-          origin: [128, 56],
-          duration: 0.88,
-          delay: 0,
-          ease: ["easeOut", [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
-          times: [0, 0.45, 0.75, 1],
-        },
         2: {
           origin: [128, 56],
           duration: 0.88,
@@ -73,18 +66,6 @@ export const communication: AnimationSet = {
           ease: ["easeOut", [0.65, 0, 0.35, 1]],
           x: [0, 0, 0],
           y: [0, 0, 0],
-        },
-        2: {
-          origin: [221.53, 205.74],
-          duration: 1.04,
-          ease: ["easeOut", [0.65, 0, 0.35, 1], [0.22, 1, 0.36, 1]],
-          times: [0, 0.4, 0.75, 1],
-        },
-        3: {
-          origin: [128, 96],
-          duration: 1.04,
-          ease: ["easeOut", [0.65, 0, 0.35, 1], [0.22, 1, 0.36, 1]],
-          times: [0, 0.4, 0.75, 1],
         },
       },
     },
