@@ -59,31 +59,31 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.62,
+  duration: 0.992,
   parts: {
     2: {
       x: [0, -8, 3, 0],
       origin: [208, 180],
-      duration: 0.52,
+      duration: 0.832,
       ease: [
         "easeOut",
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.4, 0.7, 1],
-      delay: 0.08
+      delay: 0.128
     },
     3: {
       x: [0, -8, 3, 0],
       origin: [172, 108],
-      duration: 0.52,
+      duration: 0.832,
       ease: [
         "easeOut",
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.4, 0.7, 1],
-      delay: 0.08
+      delay: 0.128
     }
   }
 };

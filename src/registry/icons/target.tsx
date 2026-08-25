@@ -34,12 +34,12 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.86,
+  duration: 1.376,
   parts: {
     0: {
       x: [0, 11, 11, 0],
       y: [0, -11, -11, 0],
-      duration: 0.55,
+      duration: 0.88,
       ease: [
         "easeOut",
         "linear",
@@ -50,26 +50,26 @@ const STROKE: Choreography = {
     1: {
       scale: [1, 1.09, 0.995, 1],
       origin: [128, 128],
-      duration: 0.44,
+      duration: 0.704,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.42, 0.7, 1],
-      delay: 0.42
+      delay: 0.672
     },
     2: {
       scale: [1, 1.32, 0.99, 1],
       origin: [128, 128],
-      duration: 0.44,
+      duration: 0.704,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.42, 0.7, 1],
-      delay: 0.38
+      delay: 0.608
     }
   }
 };

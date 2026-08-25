@@ -34,20 +34,20 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.84,
+  duration: 1.344,
   parts: {
     1: {
       rotate: [-360, 0],
       origin: [128, 136],
-      duration: 0.72,
+      duration: 1.152,
       ease: [0.22, 1, 0.36, 1],
-      delay: 0.12
+      delay: 0.192
     },
     2: {
       y: [0, 8, 0],
       scaleX: [1, 0.9, 1],
       origin: [128, 16],
-      duration: 0.3,
+      duration: 0.48,
       ease: [
         "easeOut",
         [0.34, 1.56, 0.64, 1]

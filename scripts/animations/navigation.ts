@@ -9,10 +9,10 @@ import { pop, spin, bounce, nudge, draw, wiggle, swing, OUT, INOUT } from "./rec
 
 /** Shaft/head pair, travelling in one direction. */
 const arrow = (dx: number, dy: number, shaft: number, head: number) => ({
-  duration: 0.5,
+  duration: 0.8,
   parts: {
     [head]: nudge(dx, dy),
-    [shaft]: nudge(dx * 0.65, dy * 0.65, { delay: 0.04 }),
+    [shaft]: nudge(dx * 0.65, dy * 0.65, { delay: 0.064 }),
   },
 });
 
@@ -21,18 +21,18 @@ export const navigation: AnimationSet = {
     description: "Recoils — the arrow draws back, then springs home.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           scaleX: [1, 0.78, 0.78, 1],
           origin: [40, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "linear", "easeOut"],
         },
         1: {
           x: [0, -22, -22, 0],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "linear", "easeOut"],
         },
       },
@@ -42,18 +42,18 @@ export const navigation: AnimationSet = {
     description: "Recoils — shaft retracting — then strikes back to the left.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.45,
+      duration: 0.72,
       parts: {
         0: {
           scaleX: [1, 0.83, 0.83, 1],
           origin: [216, 128],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeIn", "linear", "easeOut"],
         },
         1: {
           x: [0, 22, 22, 0],
           origin: [128, 128],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeIn", "linear", "easeOut"],
         },
       },
@@ -63,18 +63,18 @@ export const navigation: AnimationSet = {
     description: "Crouches — the arrow dips down, then springs back up.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           scaleY: [1, 0.78, 0.78, 1],
           origin: [128, 216],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "linear", "easeOut"],
         },
         1: {
           y: [0, 22, 22, 0],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "linear", "easeOut"],
         },
       },
@@ -84,18 +84,18 @@ export const navigation: AnimationSet = {
     description: "Recoils upward — shaft retracting — then strikes back down.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.45,
+      duration: 0.72,
       parts: {
         0: {
           scaleY: [1, 0.78, 0.78, 1],
           origin: [128, 40],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeIn", "linear", "easeOut"],
         },
         1: {
           y: [0, -22, -22, 0],
           origin: [128, 128],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeIn", "linear", "easeOut"],
         },
       },
@@ -106,11 +106,11 @@ export const navigation: AnimationSet = {
     description: "Refreshes — one clockwise turn, away fast and easing home.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       whole: {
         rotate: [-360, -340, -20, 0],
         origin: [128, 128],
-        duration: 0.7,
+        duration: 1.12,
         ease: ["linear", [0.22, 1, 0.36, 1], "linear"],
         times: [0, 0.14, 0.86, 1],
       },
@@ -120,11 +120,11 @@ export const navigation: AnimationSet = {
     description: "Undoes — one turn back, away fast and easing home.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       whole: {
         rotate: [360, 340, 20, 0],
         origin: [128, 128],
-        duration: 0.7,
+        duration: 1.12,
         ease: ["linear", [0.22, 1, 0.36, 1], "linear"],
         times: [0, 0.14, 0.86, 1],
       },
@@ -135,12 +135,12 @@ export const navigation: AnimationSet = {
     description: "Nudges downward, the way it points.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           y: [0, 10, 0],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.4, 1],
         },
@@ -151,12 +151,12 @@ export const navigation: AnimationSet = {
     description: "Nudges forward, the way it points.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           x: [0, 10, 0],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.4, 1],
         },
@@ -168,14 +168,14 @@ export const navigation: AnimationSet = {
     description: "Slips out — the arrow drifts toward the corner and recedes.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           x: [0, 10, 0],
           y: [0, -10, 0],
           scale: [1, 0.92, 1],
           origin: [216, 40],
-          duration: 0.5,
+          duration: 0.8,
           ease: "easeInOut",
           times: [0, 0.45, 1],
         },
@@ -184,7 +184,7 @@ export const navigation: AnimationSet = {
           y: [0, -10, 0],
           scale: [1, 0.92, 1],
           origin: [216, 40],
-          duration: 0.5,
+          duration: 0.8,
           ease: "easeInOut",
           times: [0, 0.45, 1],
         },
@@ -196,24 +196,24 @@ export const navigation: AnimationSet = {
     description: "Leaves — the arrow winds up and lunges out, the door recoiling behind it.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           x: [0, -3, 0],
-          duration: 0.35,
+          duration: 0.56,
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.1,
+          delay: 0.16,
         },
         1: {
           x: [0, -2, 10, 0],
-          duration: 0.61,
+          duration: 0.976,
           ease: ["easeInOut", [0.22, 1, 0.36, 1], "easeInOut"],
           times: [0, 0.18, 0.55, 1],
-          delay: 0.04,
+          delay: 0.064,
         },
         2: {
           x: [0, -3, 12, 0],
-          duration: 0.61,
+          duration: 0.976,
           ease: ["easeInOut", [0.22, 1, 0.36, 1], "easeInOut"],
           times: [0, 0.18, 0.55, 1],
         },
@@ -224,26 +224,26 @@ export const navigation: AnimationSet = {
     description: "Enters — the arrow lunges in through the door, which takes the bump.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           x: [0, 10, -5.2, 0],
-          duration: 0.55,
+          duration: 0.88,
           ease: [[0.22, 1, 0.36, 1], "easeInOut", "easeOut"],
           times: [0, 0.4, 0.72, 1],
-          delay: 0.04,
+          delay: 0.064,
         },
         1: {
           x: [0, 12, -6.2, 0],
-          duration: 0.55,
+          duration: 0.88,
           ease: [[0.22, 1, 0.36, 1], "easeInOut", "easeOut"],
           times: [0, 0.4, 0.72, 1],
         },
         2: {
           x: [0, 4, 0],
-          duration: 0.35,
+          duration: 0.56,
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.16,
+          delay: 0.256,
         },
       },
     },
@@ -253,19 +253,19 @@ export const navigation: AnimationSet = {
     description: "Hops off the map and stamps back down — the dot draws in as it lands.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       parts: {
         0: {
           y: [0, -14, -7.3, -3.8, 0],
           origin: [128, 104],
-          duration: 0.7,
+          duration: 1.12,
           ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
           times: [0, 0.3, 0.58, 0.78, 1],
         },
         1: {
           y: [0, -14, -7.3, -3.8, 0],
           origin: [128, 232],
-          duration: 0.7,
+          duration: 1.12,
           ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
           times: [0, 0.3, 0.58, 0.78, 1],
           pathLength: [1, 0, 0, 1, 1],
@@ -279,7 +279,7 @@ export const navigation: AnimationSet = {
     description: "Finds north — the needle whips a full turn, overshoots, and settles.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 1,
+      duration: 1.6,
       parts: {
         1: {
           rotate: [0, 180, 180, 180, 0],
@@ -294,31 +294,31 @@ export const navigation: AnimationSet = {
     description: "Draws itself — the rim first, then the meridian and parallels trace on.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.8,
+      duration: 1.28,
       parts: {
         0: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.35,
+          duration: 0.56,
           ease: "easeInOut",
         },
         1: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.45,
-          delay: 0.3,
+          duration: 0.72,
+          delay: 0.48,
           ease: "easeInOut",
         },
         2: {
           opacity: [0, 1],
-          duration: 0.4,
-          delay: 0.3,
+          duration: 0.64,
+          delay: 0.48,
           ease: ["easeInOut"],
         },
         3: {
           opacity: [0, 1],
-          duration: 0.4,
-          delay: 0.38,
+          duration: 0.64,
+          delay: 0.608,
           ease: ["easeInOut"],
         },
       },
@@ -329,7 +329,7 @@ export const navigation: AnimationSet = {
     description: "Gusts — the cloth lifts from the pole, billows, and settles to rest.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       parts: {
         1: {
           rotate: [0, -3, 1.6, -0.8, 0],
@@ -350,11 +350,11 @@ export const navigation: AnimationSet = {
     description: "Sways from its ring, the way a moored anchor rides the swell.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.9,
+      duration: 1.44,
       whole: {
         rotate: [0, 4.5, -2.3, 1.2, -0.6, 0],
         origin: [128, 32],
-        duration: 0.9,
+        duration: 1.44,
         ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         times: [0, 0.16, 0.42, 0.66, 0.85, 1],
       },

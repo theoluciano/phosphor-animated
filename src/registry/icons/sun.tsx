@@ -46,24 +46,24 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.79,
+  duration: 1.264,
   parts: {
     0: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.06
+      delay: 0.096
     },
     1: {
       scale: [1, 1.08, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.34, 1.56, 0.64, 1],
         [0.22, 1, 0.36, 1]
@@ -73,85 +73,85 @@ const STROKE: Choreography = {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.445
+      delay: 0.712
     },
     3: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.335
+      delay: 0.536
     },
     4: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.115
+      delay: 0.184
     },
     5: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.225
+      delay: 0.36
     },
     6: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.39
+      delay: 0.624
     },
     7: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.28
+      delay: 0.448
     },
     8: {
       opacity: [1, 0.4, 1],
       scale: [1, 1.09, 1],
       origin: [128, 128],
-      duration: 0.34,
+      duration: 0.544,
       ease: [
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.4, 1],
-      delay: 0.17
+      delay: 0.272
     }
   }
 };

@@ -43,28 +43,28 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.55,
+  duration: 0.88,
   parts: {
     1: {
       pathLength: [1, 0, 1, 1],
       origin: [128, 128],
-      duration: 0.45,
+      duration: 0.72,
       ease: ["easeIn", "linear", "easeOut"],
-      delay: 0.08
+      delay: 0.128
     },
     4: {
       origin: [128, 128],
-      duration: 0.5,
+      duration: 0.8,
       ease: ["easeOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.16
+      delay: 0.256
     },
     5: {
       origin: [128, 128],
-      duration: 0.5,
+      duration: 0.8,
       ease: ["easeOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.16
+      delay: 0.256
     }
   }
 };

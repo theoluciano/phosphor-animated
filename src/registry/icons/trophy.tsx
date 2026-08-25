@@ -31,7 +31,7 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.7,
+  duration: 1.12,
   whole: {
     y: [0, 2.5, -11, -9.5, 1.5, 0],
     ease: [
@@ -42,7 +42,7 @@ const STROKE: Choreography = {
       [0.22, 1, 0.36, 1]
     ],
     times: [0, 0.14, 0.38, 0.56, 0.8, 1],
-    duration: 0.79
+    duration: 1.264
   },
   parts: {
     4: {
@@ -55,7 +55,7 @@ const STROKE: Choreography = {
         "easeInOut"
       ],
       times: [0, 0.58, 0.73, 0.86, 1],
-      duration: 0.85
+      duration: 1.36
     }
   }
 };

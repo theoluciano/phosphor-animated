@@ -9,12 +9,12 @@ export const commerce: AnimationSet = {
     description: "Hops — added to the cart, so it bounces twice and lands on its wheels.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       whole: {
         y: [0, -7.82, -5.7, -3, 0],
         scale: [1, 1.04, 1, 1.03, 1],
         origin: [128, 204],
-        duration: 0.6,
+        duration: 0.96,
         ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
         times: [0, 0.24, 0.52, 0.74, 1],
       },
@@ -25,11 +25,11 @@ export const commerce: AnimationSet = {
     description: "Picked up — swings once from the handle and settles.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       whole: {
         rotate: [0, 5, -2.6, 1.4, 0],
         origin: [128, 60],
-        duration: 0.85,
+        duration: 1.36,
         ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         times: [0, 0.143, 0.429, 0.714, 1],
       },
@@ -40,7 +40,7 @@ export const commerce: AnimationSet = {
     description: "Swipes — the whole card slides through and the digits catch up.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       whole: {
         x: [0, -12, 6.2, 0],
         ease: ["easeOut", "easeInOut", "easeInOut"],
@@ -49,7 +49,7 @@ export const commerce: AnimationSet = {
       parts: {
         1: {
           origin: [184, 168],
-          duration: 0.5,
+          duration: 0.8,
           ease: [[0.22, 1, 0.36, 1], "easeInOut"],
           delay: 0,
           pathLength: [1, 0, 1],
@@ -57,7 +57,7 @@ export const commerce: AnimationSet = {
         },
         2: {
           origin: [128, 168],
-          duration: 0.5,
+          duration: 0.8,
           ease: [[0.22, 1, 0.36, 1], "easeInOut"],
           delay: 0,
           pathLength: [1, 0, 1],
@@ -71,12 +71,12 @@ export const commerce: AnimationSet = {
     description: "Draws itself — the curve sweeps through, then the bar strikes down.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           pathLength: [0, 1, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "easeOut"],
           delay: 0,
           times: [0.415, 0.786, 1],
@@ -85,7 +85,7 @@ export const commerce: AnimationSet = {
         1: {
           pathLength: [0, 1, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "easeOut"],
           opacity: [0, 1, 1],
         },
@@ -97,7 +97,7 @@ export const commerce: AnimationSet = {
     description: "Hefts — the whole wallet lifts, tips back, and drops into place.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       whole: {
         y: [0, -13, 6.8, 0],
         rotate: [0, -4, 2.1, 0],
@@ -112,7 +112,7 @@ export const commerce: AnimationSet = {
     description: "What's inside? — the box rocks from its base while the bows flutter.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       whole: {
         rotate: [0, -4, 4, -4, 4, -2, 2, 0],
         origin: [128, 128],
@@ -122,15 +122,15 @@ export const commerce: AnimationSet = {
         3: {
           rotate: [0, -9, 4.7, 0],
           origin: [128, 78],
-          delay: 0.08,
-          duration: 0.55,
+          delay: 0.128,
+          duration: 0.88,
           ease: ["easeOut", "easeInOut", "easeInOut"],
         },
         4: {
           rotate: [0, -9, 4.7, 0],
           origin: [128, 78],
-          delay: 0.08,
-          duration: 0.55,
+          delay: 0.128,
+          duration: 0.88,
           ease: ["easeOut", "easeInOut", "easeInOut"],
         },
       },
@@ -141,38 +141,38 @@ export const commerce: AnimationSet = {
     description: "Draws itself — the box outlines first, then its seams.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       parts: {
         0: {
           pathLength: [0, 0.3, 1],
           opacity: [0, 1, 1],
-          duration: 0.44,
+          duration: 0.704,
           ease: ["easeOut", "easeOut"],
           times: [0, 0.25, 1],
-          delay: 0.2,
+          delay: 0.32,
         },
         1: {
           pathLength: [0, 0.3, 1],
           opacity: [0, 1, 1],
-          duration: 0.44,
+          duration: 0.704,
           ease: ["easeOut", "easeOut"],
           times: [0, 0.25, 1],
-          delay: 0.14,
+          delay: 0.224,
         },
         2: {
           pathLength: [0, 0.3, 1],
           opacity: [0, 1, 1],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeOut", "easeOut"],
           times: [0, 0.25, 1],
         },
         3: {
           pathLength: [0, 0.3, 1],
           opacity: [0, 1, 1],
-          duration: 0.44,
+          duration: 0.704,
           ease: ["easeOut", "easeOut"],
           times: [0, 0.25, 1],
-          delay: 0.2,
+          delay: 0.32,
         },
       },
     },
@@ -182,7 +182,7 @@ export const commerce: AnimationSet = {
     description: "Jounces — the body bobs on its springs while the wheels stay planted.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         0: {
           y: [0, -4, -2.1, -1.1, 0],
@@ -217,13 +217,13 @@ export const commerce: AnimationSet = {
     description: "Itemises — the lines ink themselves in, top to bottom.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         0: {
           pathLength: [0, 0.25, 1],
           opacity: [0, 1, 1],
           times: [0, 0.15, 1],
-          duration: 0.73,
+          duration: 1.168,
           ease: [[0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
           delay: 0,
         },
@@ -231,9 +231,9 @@ export const commerce: AnimationSet = {
           pathLength: [0, 0.25, 1],
           opacity: [0, 1, 1],
           times: [0, 0.15, 1],
-          duration: 0.73,
+          duration: 1.168,
           ease: [[0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
-          delay: 0.18,
+          delay: 0.288,
         },
       },
     },
@@ -243,12 +243,12 @@ export const commerce: AnimationSet = {
     description: "Ripples — the awning scallops flap in turn, left to right.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.58,
+      duration: 0.928,
       parts: {
         2: {
           scaleY: [1, 1.16, 0.97, 1],
           origin: [64, 96],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.34, 0.62, 1],
           delay: 0,
@@ -256,18 +256,18 @@ export const commerce: AnimationSet = {
         3: {
           scaleY: [1, 1.16, 0.97, 1],
           origin: [128, 96],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.34, 0.62, 1],
-          delay: 0.08,
+          delay: 0.128,
         },
         4: {
           scaleY: [1, 1.16, 0.97, 1],
           origin: [192, 96],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.34, 0.62, 1],
-          delay: 0.16,
+          delay: 0.256,
         },
       },
     },

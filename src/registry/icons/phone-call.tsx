@@ -37,38 +37,38 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   parts: {
     0: {
       scale: [1, 0.8, 0.8, 1],
       opacity: [1, 0, 0, 1],
       origin: [140, 92],
-      duration: 0.55,
+      duration: 0.88,
       ease: [
         "easeOut",
         "linear",
         [0.34, 1.56, 0.64, 1]
       ],
       times: [0, 0.22, 0.5, 1],
-      delay: 0.2
+      delay: 0.32
     },
     1: {
       scale: [1, 0.8, 0.8, 1],
       opacity: [1, 0, 0, 1],
       origin: [140, 92],
-      duration: 0.55,
+      duration: 0.88,
       ease: [
         "easeOut",
         "linear",
         [0.34, 1.56, 0.64, 1]
       ],
       times: [0, 0.22, 0.5, 1],
-      delay: 0.1
+      delay: 0.16
     },
     2: {
       rotate: [0, -7, 3.6, -1.9, 0],
       origin: [124, 132],
-      duration: 0.75,
+      duration: 1.2,
       ease: [
         "easeOut",
         "easeInOut",

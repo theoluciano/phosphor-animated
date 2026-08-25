@@ -54,21 +54,21 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     1: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.4,
+      duration: 0.64,
       ease: [0.65, 0, 0.35, 1],
-      delay: 0.1
+      delay: 0.16
     },
     2: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.4,
+      duration: 0.64,
       ease: [0.65, 0, 0.35, 1],
-      delay: 0.22
+      delay: 0.352
     }
   }
 };

@@ -32,19 +32,19 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.5,
+  duration: 0.8,
   parts: {
     0: {
       pathLength: [1, 0, 1, 1],
       opacity: [1, 0, 1, 1],
       times: [0, 0.45, 0.6, 1],
       ease: ["linear", "easeOut", "easeOut"],
-      duration: 0.73
+      duration: 1.168
     },
-    1: { duration: 0.55, ease: ["easeIn", "linear", "linear", "linear", "easeOut"] }
+    1: { duration: 0.88, ease: ["easeIn", "linear", "linear", "linear", "easeOut"] }
   },
   whole: {
-    duration: 0.55,
+    duration: 0.88,
     ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"],
     scale: [1, 1.05, 0.95, 1, 0.95, 1, 1, 1],
     rotate: [0, -8, 8, -8, 8, -4, 4, 0],

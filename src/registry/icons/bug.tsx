@@ -68,13 +68,13 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   whole: {
     rotate: [0, -3, 0.5, 3, 0],
     x: [0, 8, -2, -8, 0],
     y: [0, -10, -2, -10, 0],
     origin: [128, 132],
-    duration: 0.8,
+    duration: 1.28,
     ease: ["easeIn", "linear", "linear", "easeOut"],
     times: [0, 0.2, 0.45, 0.7, 1]
   },
@@ -82,7 +82,7 @@ const STROKE: Choreography = {
     4: {
       rotate: [0, -8, 9, -4, 0],
       origin: [203, 171],
-      duration: 0.75,
+      duration: 1.2,
       ease: [
         "easeOut",
         "easeInOut",
@@ -90,12 +90,12 @@ const STROKE: Choreography = {
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.18, 0.5, 0.75, 1],
-      delay: 0.06
+      delay: 0.096
     },
     5: {
       rotate: [0, 10, -5.2, 2.7, 0],
       origin: [203, 84],
-      duration: 0.75,
+      duration: 1.2,
       ease: [
         "easeOut",
         "easeInOut",
@@ -107,7 +107,7 @@ const STROKE: Choreography = {
     6: {
       rotate: [0, -9, 4.7, -2.4, 0],
       origin: [52, 84],
-      duration: 0.9,
+      duration: 1.44,
       ease: [
         "easeOut",
         "easeInOut",
@@ -115,12 +115,12 @@ const STROKE: Choreography = {
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.12, 0.42, 0.7, 1],
-      delay: 0.03
+      delay: 0.048
     },
     7: {
       rotate: [0, 7, -9, 4, 0],
       origin: [52, 171],
-      duration: 0.75,
+      duration: 1.2,
       ease: [
         "easeOut",
         "easeInOut",
@@ -128,7 +128,7 @@ const STROKE: Choreography = {
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.2, 0.48, 0.76, 1],
-      delay: 0.09
+      delay: 0.144
     }
   }
 };

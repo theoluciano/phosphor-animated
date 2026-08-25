@@ -28,11 +28,11 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     1: { ease: [
         [0.34, 1.56, 0.64, 1]
-      ], duration: 0.6, rotate: [0, 90] }
+      ], duration: 0.96, rotate: [0, 90] }
   }
 };
 

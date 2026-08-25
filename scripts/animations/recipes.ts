@@ -84,7 +84,7 @@ export const swing = (deg = 14, o: Opts = {}): PartAnimation => {
   return {
     rotate,
     origin: o.origin ?? [128, 40],
-    duration: 0.85,
+    duration: 1.36,
     ease: struck(rotate.length),
     times: decayTimes(rotate.length),
     ...o,
@@ -97,7 +97,7 @@ export const wiggle = (deg = 10, o: Opts = {}): PartAnimation => {
   return {
     rotate,
     origin: o.origin ?? CENTRE,
-    duration: 0.75,
+    duration: 1.2,
     ease: struck(rotate.length),
     times: decayTimes(rotate.length),
     ...o,
@@ -110,7 +110,7 @@ export const shake = (dist = 8, o: Opts = {}): PartAnimation => {
   return {
     x,
     origin: o.origin ?? CENTRE,
-    duration: 0.68,
+    duration: 1.088,
     ease: struck(x.length),
     times: decayTimes(x.length),
     ...o,
@@ -123,7 +123,7 @@ export const tip = (deg = 12, o: Opts = {}): PartAnimation => {
   return {
     rotate,
     origin: o.origin ?? [128, 208],
-    duration: 0.7,
+    duration: 1.12,
     ease: struck(rotate.length),
     times: decayTimes(rotate.length),
     ...o,
@@ -137,7 +137,7 @@ export const tip = (deg = 12, o: Opts = {}): PartAnimation => {
 export const beat = (amount = 0.18, o: Opts = {}): PartAnimation => ({
   scale: [1, 1 + amount, 1 + amount * 0.35, 1 + amount * 0.72, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.9,
+  duration: 1.44,
   ease: ["easeOut", INOUT, "easeOut", OUT],
   times: [0, 0.14, 0.28, 0.42, 1],
   ...o,
@@ -147,7 +147,7 @@ export const beat = (amount = 0.18, o: Opts = {}): PartAnimation => ({
 export const pop = (amount = 0.22, o: Opts = {}): PartAnimation => ({
   scale: [1, 1 + amount, 1 - amount * 0.14, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.5,
+  duration: 0.8,
   ease: [OVERSHOOT, INOUT, OUT],
   times: [0, 0.4, 0.66, 1],
   ...o,
@@ -157,7 +157,7 @@ export const pop = (amount = 0.22, o: Opts = {}): PartAnimation => ({
 export const spin = (turns = 1, o: Opts = {}): PartAnimation => ({
   rotate: [0, 360 * turns],
   origin: o.origin ?? CENTRE,
-  duration: 0.9,
+  duration: 1.44,
   ease: OUT,
   ...o,
 });
@@ -166,7 +166,7 @@ export const spin = (turns = 1, o: Opts = {}): PartAnimation => ({
 export const rotateForever = (o: Opts = {}): PartAnimation => ({
   rotate: [0, 360],
   origin: o.origin ?? CENTRE,
-  duration: 1,
+  duration: 1.6,
   ease: "linear",
   ...o,
 });
@@ -175,7 +175,7 @@ export const rotateForever = (o: Opts = {}): PartAnimation => ({
 export const bounce = (dist = 14, o: Opts = {}): PartAnimation => ({
   y: [0, -dist, 0, -dist * 0.28, 0],
   origin: o.origin ?? CENTRE,
-  duration: 0.7,
+  duration: 1.12,
   ease: ["easeOut", GRAVITY_UP, "easeOut", GRAVITY_UP],
   times: [0, 0.3, 0.58, 0.76, 1],
   ...o,
@@ -186,7 +186,7 @@ export const nudge = (dx = 10, dy = 0, o: Opts = {}): PartAnimation => ({
   ...(dx ? { x: [0, dx, 0] } : null),
   ...(dy ? { y: [0, dy, 0] } : null),
   origin: o.origin ?? CENTRE,
-  duration: 0.5,
+  duration: 0.8,
   ease: [OUT, INOUT],
   times: [0, 0.45, 1],
   ...o,
@@ -198,7 +198,7 @@ export const traverse = (dx = 0, dy = 0, o: Opts = {}): PartAnimation => ({
   ...(dy ? { y: [0, dy, -dy, 0] } : null),
   opacity: [1, 0, 0, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.85,
+  duration: 1.36,
   ease: ["easeIn", "linear", "easeOut"],
   times: [0, 0.42, 0.5, 1],
   ...o,
@@ -208,7 +208,7 @@ export const traverse = (dx = 0, dy = 0, o: Opts = {}): PartAnimation => ({
 export const draw = (o: Opts = {}): PartAnimation => ({
   pathLength: [0, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.55,
+  duration: 0.88,
   ease: [0.65, 0, 0.35, 1],
   ...o,
 });
@@ -217,7 +217,7 @@ export const draw = (o: Opts = {}): PartAnimation => ({
 export const hinge = (deg: number, origin: [number, number], o: Opts = {}): PartAnimation => ({
   rotate: [0, deg, 0],
   origin,
-  duration: 0.6,
+  duration: 0.96,
   ease: [OUT, INOUT],
   times: [0, 0.42, 1],
   ...o,
@@ -227,7 +227,7 @@ export const hinge = (deg: number, origin: [number, number], o: Opts = {}): Part
 export const dim = (to = 0.25, o: Opts = {}): PartAnimation => ({
   opacity: [1, to, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.55,
+  duration: 0.88,
   ease: [INOUT, INOUT],
   times: [0, 0.4, 1],
   ...o,
@@ -237,7 +237,7 @@ export const dim = (to = 0.25, o: Opts = {}): PartAnimation => ({
 export const blink = (o: Opts = {}): PartAnimation => ({
   scaleY: [1, 0.08, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.5,
+  duration: 0.8,
   ease: ["easeIn", "easeOut"],
   times: [0, 0.45, 1],
   ...o,
@@ -248,7 +248,7 @@ export const pulse = (amount = 0.12, o: Opts = {}): PartAnimation => ({
   scale: [1, 1 + amount, 1],
   opacity: [1, 0.72, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.9,
+  duration: 1.44,
   ease: [INOUT, INOUT],
   times: [0, 0.5, 1],
   ...o,
@@ -264,7 +264,7 @@ export const flare = (amount = 0.3, o: Opts = {}): PartAnimation => ({
   scale: [1, 1 + amount, 1],
   opacity: [1, 0.4, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.7,
+  duration: 1.12,
   ease: [OUT, INOUT],
   times: [0, 0.38, 1],
   ...o,
@@ -279,7 +279,7 @@ export const squash = (amount = 0.3, o: Opts = {}): PartAnimation => ({
   scaleY: [1, 1 + amount, 1 - amount * 0.33, 1 + amount * 0.17, 1],
   scaleX: [1, 1 - amount * 0.33, 1 + amount * 0.33, 1 - amount * 0.17, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.6,
+  duration: 0.96,
   ease: ["easeOut", INOUT, INOUT, OUT],
   times: [0, 0.28, 0.52, 0.74, 1],
   ...o,
@@ -293,7 +293,7 @@ export const orbit = (radius = 10, o: Opts = {}): PartAnimation => ({
   x: [0, -radius, 0, radius, 0],
   y: [0, -radius * 0.6, -radius, -radius * 0.6, 0],
   origin: o.origin ?? CENTRE,
-  duration: 1,
+  duration: 1.6,
   ease: [INOUT, INOUT, INOUT, INOUT],
   times: [0, 0.25, 0.5, 0.75, 1],
   ...o,
@@ -307,7 +307,7 @@ export const orbit = (radius = 10, o: Opts = {}): PartAnimation => ({
 export const erase = (to = 0.5, o: Opts = {}): PartAnimation => ({
   pathLength: [1, to, 1],
   origin: o.origin ?? CENTRE,
-  duration: 1.2,
+  duration: 1.92,
   ease: [INOUT, INOUT],
   times: [0, 0.5, 1],
   ...o,
@@ -321,7 +321,7 @@ export const ring = (deg = 16, o: Opts = {}): PartAnimation => ({
   rotate: [0, deg, -deg * 0.75, deg * 0.4, 0],
   scale: [1, 1.08, 1, 1.02, 1],
   origin: o.origin ?? CENTRE,
-  duration: 0.8,
+  duration: 1.28,
   ease: ["easeOut", INOUT, INOUT, OUT],
   times: [0, 0.16, 0.44, 0.72, 1],
   ...o,
@@ -331,7 +331,7 @@ export const ring = (deg = 16, o: Opts = {}): PartAnimation => ({
 export const stagger = (
   indices: number[],
   make: (i: number) => PartAnimation,
-  step = 0.07,
+  step = 0.112,
 ): Record<number, PartAnimation> =>
   Object.fromEntries(
     indices.map((partIndex, n) => {

@@ -29,31 +29,31 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     0: {
       x: [0, -3, 0],
-      duration: 0.35,
+      duration: 0.56,
       ease: [
         "easeOut",
         [0.22, 1, 0.36, 1]
       ],
-      delay: 0.1
+      delay: 0.16
     },
     1: {
       x: [0, -2, 10, 0],
-      duration: 0.61,
+      duration: 0.976,
       ease: [
         "easeInOut",
         [0.22, 1, 0.36, 1],
         "easeInOut"
       ],
       times: [0, 0.18, 0.55, 1],
-      delay: 0.04
+      delay: 0.064
     },
     2: {
       x: [0, -3, 12, 0],
-      duration: 0.61,
+      duration: 0.976,
       ease: [
         "easeInOut",
         [0.22, 1, 0.36, 1],

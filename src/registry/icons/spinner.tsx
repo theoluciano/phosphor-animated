@@ -34,12 +34,12 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.5,
+  duration: 0.8,
   parts: {
     0: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
       delay: 0
@@ -47,58 +47,58 @@ const STROKE: Choreography = {
     1: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.055
+      delay: 0.088
     },
     2: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.11
+      delay: 0.176
     },
     3: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.165
+      delay: 0.264
     },
     4: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.22
+      delay: 0.352
     },
     5: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.275
+      delay: 0.44
     },
     6: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.33
+      delay: 0.528
     },
     7: {
       opacity: [1, 0.15, 1],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeInOut", "easeInOut"],
       times: [0, 0.4, 1],
-      delay: 0.385
+      delay: 0.616
     }
   }
 };

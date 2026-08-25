@@ -49,39 +49,39 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.42,
+  duration: 0.672,
   parts: {
     0: {
       y: [0, -12, 6.2, 0],
       scale: [1, 1.15, 0.96, 1],
       origin: [128, 128],
-      duration: 0.42,
+      duration: 0.672,
       ease: [
         "easeOut",
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.4, 0.72, 1],
-      delay: 0.08
+      delay: 0.128
     },
     1: {
       y: [0, -12, 6.2, 0],
       scale: [1, 1.15, 0.96, 1],
       origin: [196, 128],
-      duration: 0.42,
+      duration: 0.672,
       ease: [
         "easeOut",
         "easeInOut",
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.4, 0.72, 1],
-      delay: 0.16
+      delay: 0.256
     },
     2: {
       y: [0, -12, 6.2, 0],
       scale: [1, 1.15, 0.96, 1],
       origin: [60, 128],
-      duration: 0.42,
+      duration: 0.672,
       ease: [
         "easeOut",
         "easeInOut",

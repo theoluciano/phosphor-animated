@@ -66,42 +66,42 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   parts: {
     0: {
       scale: [1, 1.25, 1],
       origin: [64, 128],
-      duration: 0.4,
+      duration: 0.64,
       ease: ["easeOut", "easeInOut"],
       times: [0, 0.45, 1]
     },
     1: {
       scale: [1, 1.25, 1],
       origin: [176, 200],
-      duration: 0.4,
+      duration: 0.64,
       ease: ["easeOut", "easeInOut"],
       times: [0, 0.45, 1],
-      delay: 0.36
+      delay: 0.576
     },
     2: {
       scale: [1, 1.25, 1],
       origin: [176, 56],
-      duration: 0.4,
+      duration: 0.64,
       ease: ["easeOut", "easeInOut"],
       times: [0, 0.45, 1],
-      delay: 0.28
+      delay: 0.448
     },
     3: {
       pathLength: [0, 1],
-      duration: 0.35,
+      duration: 0.56,
       ease: "easeOut",
-      delay: 0.1
+      delay: 0.16
     },
     4: {
       pathLength: [0, 1],
-      duration: 0.35,
+      duration: 0.56,
       ease: "easeOut",
-      delay: 0.1
+      delay: 0.16
     }
   }
 };

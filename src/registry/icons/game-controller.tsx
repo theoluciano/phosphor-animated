@@ -31,10 +31,10 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.5,
-  whole: { rotate: [0, -4, 4, -4, 4, -2, 2, 0], ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"], duration: 0.55 },
+  duration: 0.8,
+  whole: { rotate: [0, -4, 4, -4, 4, -2, 2, 0], ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"], duration: 0.88 },
   parts: {
-    0: { opacity: [1, 0, 1, 1], ease: ["easeInOut", "easeInOut", "easeInOut"], delay: 0.25 },
+    0: { opacity: [1, 0, 1, 1], ease: ["easeInOut", "easeInOut", "easeInOut"], delay: 0.4 },
     1: { ease: ["easeInOut", "easeInOut", "easeInOut"], opacity: [1, 0, 1, 1] },
     2: { ease: ["easeInOut", "easeInOut", "easeInOut"], opacity: [1, 0, 1, 1] }
   }

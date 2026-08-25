@@ -28,20 +28,20 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.55,
+  duration: 0.88,
   parts: {
     0: {
       pathLength: [0, 1, 1],
       opacity: [0, 1, 1],
       origin: [128, 128],
-      duration: 0.4,
+      duration: 0.64,
       ease: ["easeIn", "easeOut"],
-      delay: 0.1
+      delay: 0.16
     },
     1: {
       scale: [1, 0.97, 1.02, 1],
       origin: [128, 128],
-      duration: 0.5,
+      duration: 0.8,
       ease: [
         "easeOut",
         [0.23, 1, 0.32, 1],

@@ -39,10 +39,10 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   whole: {
     origin: [128, 48],
-    duration: 0.5,
+    duration: 0.8,
     ease: [
       "easeOut",
       "easeInOut",
@@ -53,9 +53,9 @@ const STROKE: Choreography = {
   parts: {
     0: {
       pathLength: [0, 1],
-      duration: 0.35,
+      duration: 0.56,
       ease: "easeOut",
-      delay: 0.1
+      delay: 0.16
     }
   }
 };

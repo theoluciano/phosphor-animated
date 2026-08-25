@@ -28,12 +28,12 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.55,
+  duration: 0.88,
   parts: {
     0: {
       scaleX: [1, 1.15, 0.94, 1],
       origin: [128, 128],
-      duration: 0.5,
+      duration: 0.8,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.32, 0.68, 1],
       delay: 0
@@ -41,10 +41,10 @@ const STROKE: Choreography = {
     1: {
       scaleY: [1, 1.15, 0.94, 1],
       origin: [128, 128],
-      duration: 0.5,
+      duration: 0.8,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.32, 0.68, 1],
-      delay: 0.06
+      delay: 0.096
     }
   }
 };

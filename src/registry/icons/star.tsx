@@ -27,13 +27,13 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     0: {
       scale: [1, 1.14, 0.995, 1.05, 1],
       rotate: [0, 10, -5.2, 2.7, 0],
       origin: [128, 128],
-      duration: 0.6,
+      duration: 0.96,
       ease: [
         "easeOut",
         "easeInOut",

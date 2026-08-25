@@ -55,7 +55,7 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.56,
+  duration: 0.896,
   parts: {
     0: { origin: [128, 128], ease: [
         "easeOut",
@@ -75,7 +75,7 @@ const STROKE: Choreography = {
         [0.23, 1, 0.32, 1]
       ], times: [0, 0.2, 0.5, 0.76, 1] }
   },
-  whole: { scale: [1, 1, 1, 1.1, 0.97, 1], duration: 0.61, ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"] }
+  whole: { scale: [1, 1, 1, 1.1, 0.97, 1], duration: 0.976, ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"] }
 };
 
 export const Info = createAnimatedIcon(

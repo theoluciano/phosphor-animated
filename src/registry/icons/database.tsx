@@ -29,30 +29,30 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.38,
+  duration: 0.608,
   parts: {
     0: {
       origin: [128, 128],
       ease: ["easeIn", "easeOut"],
       delay: 0,
       opacity: [0, 1, 1],
-      duration: 0.5,
+      duration: 0.8,
       x: [0, 0, 0],
       y: [0, 0, 0]
     },
     1: {
       origin: [128, 128],
       ease: ["easeIn", "easeOut"],
-      delay: 0.12,
+      delay: 0.192,
       opacity: [0, 1, 1],
-      duration: 0.5
+      duration: 0.8
     },
     2: {
       origin: [128, 128],
       ease: ["easeIn", "easeOut"],
-      delay: 0.24,
+      delay: 0.384,
       opacity: [0, 1, 1],
-      duration: 0.5
+      duration: 0.8
     }
   }
 };

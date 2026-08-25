@@ -28,19 +28,19 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.7,
+  duration: 1.12,
   parts: {
     0: {
       y: [0, -14, -7.3, -3.8, 0],
       origin: [128, 104],
-      duration: 0.7,
+      duration: 1.12,
       ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
       times: [0, 0.3, 0.58, 0.78, 1]
     },
     1: {
       y: [0, -14, -7.3, -3.8, 0],
       origin: [128, 232],
-      duration: 0.7,
+      duration: 1.12,
       ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
       times: [0, 0.3, 0.58, 0.78, 1],
       pathLength: [1, 0, 0, 1, 1],

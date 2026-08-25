@@ -38,43 +38,43 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.7,
+  duration: 1.12,
   parts: {
     0: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.5,
+      duration: 0.8,
       ease: "easeInOut"
     },
     1: {
       x: [0, 7, 0],
-      duration: 0.28,
+      duration: 0.448,
       ease: [
         [0.34, 1.56, 0.64, 1],
         "easeInOut"
       ],
-      delay: 0.46
+      delay: 0.736
     },
     2: {
       x: [0, 7, 0],
-      duration: 0.28,
+      duration: 0.448,
       ease: [
         [0.34, 1.56, 0.64, 1],
         "easeInOut"
       ],
-      delay: 0.42
+      delay: 0.672
     },
     3: {
       pathLength: [0, 0, 1],
       opacity: [0, 0, 1],
-      duration: 0.5,
+      duration: 0.8,
       ease: ["linear", "easeInOut"],
       times: [0, 0.5, 1]
     },
     4: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.22,
+      duration: 0.352,
       ease: "easeOut"
     }
   }

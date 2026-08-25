@@ -14,11 +14,11 @@ export const essentials: AnimationSet = {
     description: "Rings — the whole bell swings wide from its mount, left first.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       whole: {
         rotate: [0, -4.4, 2.3, -1.2, 0],
         origin: [128, 48],
-        duration: 0.6,
+        duration: 0.96,
         ease: ["easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         times: [0, 0.22, 0.5, 0.78, 1],
       },
@@ -26,8 +26,8 @@ export const essentials: AnimationSet = {
         0: {
           rotate: [0, -4.8, 2.5, -1.3, 0],
           origin: [128, 48],
-          delay: 0.04,
-          duration: 0.65,
+          delay: 0.064,
+          duration: 1.04,
           times: [0, 0.22, 0.5, 0.78, 1],
           ease: ["easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         },
@@ -39,34 +39,34 @@ export const essentials: AnimationSet = {
     description: "Rings out loud — the bell whips from its mount and sound draws off both sides.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.8,
+      duration: 1.28,
       parts: {
         0: {
           rotate: [0, -4.8, 2.5, -1.3, 0],
           origin: [128, 48],
-          duration: 0.65,
+          duration: 1.04,
           ease: ["easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.22, 0.5, 0.78, 1],
-          delay: 0.04,
+          delay: 0.064,
         },
         1: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.35,
+          duration: 0.56,
           ease: [0.22, 1, 0.36, 1],
-          delay: 0.12,
+          delay: 0.192,
         },
         2: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.35,
+          duration: 0.56,
           ease: [0.22, 1, 0.36, 1],
-          delay: 0.18,
+          delay: 0.288,
         },
         3: {
           rotate: [0, -4.3, 2.2, -1.2, 0],
           origin: [128, 48],
-          duration: 0.65,
+          duration: 1.04,
           ease: ["easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.22, 0.5, 0.78, 1],
         },
@@ -78,19 +78,19 @@ export const essentials: AnimationSet = {
     description: "Silenced — a token shake dies as the slash strikes through.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       whole: {
         origin: [128, 48],
-        duration: 0.5,
+        duration: 0.8,
         ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
         times: [0, 0.3, 0.65, 1],
       },
       parts: {
         0: {
           pathLength: [0, 1],
-          duration: 0.35,
+          duration: 0.56,
           ease: "easeOut",
-          delay: 0.1,
+          delay: 0.16,
         },
       },
     },
@@ -100,7 +100,7 @@ export const essentials: AnimationSet = {
     description: "Opens — the lid lifts clear of the bin, which absorbs it on the way down.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       parts: {
         0: {
           y: [0, 2, -20, 0, 0, 0],
@@ -108,28 +108,28 @@ export const essentials: AnimationSet = {
           origin: [216, 56],
           ease: ["easeOut", [0.22, 1, 0.36, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.14, 0.36, 0.55, 0.82, 1],
-          duration: 0.79,
+          duration: 1.264,
         },
         1: {
           scaleY: [1, 1, 1, 1, 1],
           origin: [128, 216],
           ease: ["linear", "easeOut", [0.22, 1, 0.36, 1], "easeInOut"],
           times: [0, 0.56, 0.72, 0.86, 1],
-          duration: 0.79,
+          duration: 1.264,
         },
         2: {
           scaleY: [1, 1, 1, 1, 1],
           origin: [128, 216],
           ease: ["linear", "easeOut", [0.22, 1, 0.36, 1], "easeInOut"],
           times: [0, 0.56, 0.72, 0.86, 1],
-          duration: 0.79,
+          duration: 1.264,
         },
         3: {
           scaleY: [1, 1, 1, 1, 1],
           origin: [128, 216],
           ease: ["linear", "easeOut", [0.22, 1, 0.36, 1], "easeInOut"],
           times: [0, 0.56, 0.72, 0.86, 1],
-          duration: 0.79,
+          duration: 1.264,
         },
         4: {
           y: [0, 2, -23, 0, 0, 0],
@@ -137,7 +137,7 @@ export const essentials: AnimationSet = {
           origin: [216, 56],
           ease: ["easeOut", [0.22, 1, 0.36, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.14, 0.36, 0.55, 0.82, 1],
-          duration: 0.79,
+          duration: 1.264,
         },
       },
     },
@@ -147,13 +147,13 @@ export const essentials: AnimationSet = {
     description: "Lifts — the lid and its handle hop straight off the bin and drop back.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           rotate: [0, 0, -7, 0, 0, 0],
           y: [0, 0, -20, 0, 0, 0],
           origin: [216, 56],
-          duration: 0.79,
+          duration: 1.264,
           times: [0, 0.14, 0.36, 0.55, 0.82, 1],
           ease: ["easeOut", [0.22, 1, 0.36, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           x: [0, 0, 0, 0, 0, 0],
@@ -162,7 +162,7 @@ export const essentials: AnimationSet = {
           rotate: [0, 0.6, -8, 0.5, 0, 0],
           y: [0, 2, -23, 0, 0, 0],
           origin: [216, 56],
-          duration: 0.79,
+          duration: 1.264,
           times: [0, 0.14, 0.36, 0.55, 0.82, 1],
           ease: ["easeOut", [0.22, 1, 0.36, 1], "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         },
@@ -174,14 +174,14 @@ export const essentials: AnimationSet = {
     description: "Lub-dub — a quick squeeze, then two beats, the second softer.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.72,
+      duration: 1.152,
       parts: {
         0: {
           scale: [1, 0.96, 1.14, 0.96, 1.09, 1],
           origin: [128, 128],
           ease: ["easeOut", [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
           times: [0, 0.12, 0.32, 0.48, 0.68, 1],
-          duration: 0.9,
+          duration: 1.44,
         },
       },
     },
@@ -191,13 +191,13 @@ export const essentials: AnimationSet = {
     description: "Catches the light — stretches its points, settles, then glimmers once more.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           scale: [1, 1.14, 0.995, 1.05, 1],
           rotate: [0, 10, -5.2, 2.7, 0],
           origin: [128, 128],
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.28, 0.55, 0.8, 1],
         },
@@ -209,12 +209,12 @@ export const essentials: AnimationSet = {
     description: "Stamps in — the check draws on while scaling up to size.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.45,
+      duration: 0.72,
       parts: {
         0: {
           pathLength: [0, 0.6, 1],
           origin: [132, 136],
-          duration: 0.45,
+          duration: 0.72,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.35, 1],
         },
@@ -226,20 +226,20 @@ export const essentials: AnimationSet = {
     description: "Confirms — the check rewrites itself and the ring nods.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       parts: {
         0: {
           pathLength: [0, 1, 1],
           opacity: [0, 1, 1],
           origin: [128, 128],
-          duration: 0.4,
+          duration: 0.64,
           ease: ["easeIn", "easeOut"],
-          delay: 0.1,
+          delay: 0.16,
         },
         1: {
           scale: [1, 0.97, 1.02, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
           times: [0, 0.3, 0.62, 1],
         },
@@ -251,26 +251,26 @@ export const essentials: AnimationSet = {
     description: "Struck out — two strokes cross in turn, and the pair lands with a snap.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.52,
+      duration: 0.832,
       parts: {
         0: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.34,
+          duration: 0.544,
           ease: [0.65, 0, 0.35, 1],
         },
         1: {
           pathLength: [0, 1],
           opacity: [0, 1],
-          duration: 0.34,
+          duration: 0.544,
           ease: [0.65, 0, 0.35, 1],
-          delay: 0.18,
+          delay: 0.288,
         },
       },
       whole: {
         scale: [1, 1, 1.05, 1],
         origin: [128, 128],
-        duration: 0.79,
+        duration: 1.264,
         ease: ["linear", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
         times: [0, 0.72, 0.86, 1],
       },
@@ -281,13 +281,13 @@ export const essentials: AnimationSet = {
     description: "Rejects — the cross twists in and pops while the ring pulses around it.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.5,
+      duration: 0.8,
       parts: {
         0: {
           rotate: [0, -10, 5.2, 0],
           scale: [1, 0.88, 1.08, 1],
           origin: [128, 128],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.3, 0.62, 1],
         },
@@ -295,14 +295,14 @@ export const essentials: AnimationSet = {
           rotate: [0, -10, 5.2, 0],
           scale: [1, 0.88, 1.08, 1],
           origin: [128, 128],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.3, 0.62, 1],
         },
         2: {
           scale: [1, 0.96, 1.025, 1],
           origin: [128, 128],
-          duration: 0.48,
+          duration: 0.768,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.34, 0.66, 1],
         },
@@ -314,12 +314,12 @@ export const essentials: AnimationSet = {
     description: "Pinches to the centre, then snaps back to full width.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.45,
+      duration: 0.72,
       parts: {
         0: {
           scaleX: [1, 0.15, 1.08, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.42, 0.78, 1],
         },
@@ -331,12 +331,12 @@ export const essentials: AnimationSet = {
     description: "Stamps — each stroke overshoots long, pinches short, and settles.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       parts: {
         0: {
           scaleX: [1, 1.15, 0.94, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: "easeInOut",
           times: [0, 0.32, 0.68, 1],
           delay: 0,
@@ -344,10 +344,10 @@ export const essentials: AnimationSet = {
         1: {
           scaleY: [1, 1.15, 0.94, 1],
           origin: [128, 128],
-          duration: 0.5,
+          duration: 0.8,
           ease: "easeInOut",
           times: [0, 0.32, 0.68, 1],
-          delay: 0.06,
+          delay: 0.096,
         },
       },
     },
@@ -357,11 +357,11 @@ export const essentials: AnimationSet = {
     description: "Winds up, then turns a tooth counter-clockwise and eases in.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         1: {
           ease: [[0.34, 1.56, 0.64, 1]],
-          duration: 0.6,
+          duration: 0.96,
           rotate: [0, 90],
         },
       },
@@ -372,12 +372,12 @@ export const essentials: AnimationSet = {
     description: "Turns a tooth clockwise, overshoots, and clicks into place.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.7,
+      duration: 1.12,
       parts: {
         1: {
           rotate: [0, 60],
           ease: [[0.34, 1.56, 0.64, 1]],
-          duration: 0.6,
+          duration: 0.96,
         },
       },
     },
@@ -387,7 +387,7 @@ export const essentials: AnimationSet = {
     description: "Blinks — the lid closes as the pupil contracts behind it.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.4,
+      duration: 0.64,
       parts: {
         0: {
           scaleY: [1, 0.05, 1],
@@ -408,32 +408,32 @@ export const essentials: AnimationSet = {
     description: "Hidden — the slash sweeps across as the eye dims behind it.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           pathLength: [1, 0, 1],
-          delay: 0.1,
-          duration: 0.35,
+          delay: 0.16,
+          duration: 0.56,
           ease: ["easeIn", "easeOut"],
           opacity: [1, 0, 1],
         },
         1: {
-          delay: 0.1,
-          duration: 0.35,
+          delay: 0.16,
+          duration: 0.56,
           ease: ["easeOut"],
         },
         2: {
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeOut", "easeInOut"],
           times: [0, 0.45, 1],
         },
         3: {
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeOut", "easeInOut"],
           times: [0, 0.45, 1],
         },
         4: {
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeOut", "easeInOut"],
           times: [0, 0.45, 1],
         },
@@ -445,12 +445,12 @@ export const essentials: AnimationSet = {
     description: "Clicks shut — the shackle presses in and the body shudders tight.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         2: {
           y: [0, -11, 0],
           origin: [128, 128],
-          duration: 0.3,
+          duration: 0.48,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.4, 1],
           scaleY: [1, 0.7, 1],
@@ -460,8 +460,8 @@ export const essentials: AnimationSet = {
         rotate: [0, -3, 1.6, -0.8, 0],
         scale: [1, 0.965, 1.04, 0.99, 1],
         origin: [128, 128],
-        duration: 0.6,
-        delay: 0.06,
+        duration: 0.96,
+        delay: 0.096,
         ease: ["easeIn", "linear", "linear", "easeOut"],
         times: [0.261, 0.41, 0.538, 0.78, 1],
       },
@@ -472,13 +472,13 @@ export const essentials: AnimationSet = {
     description: "Springs — the shackle flicks wider while the whole lock jolts.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         2: {
           scaleY: [1, 0.7, 1],
           y: [0, -3, 0],
           origin: [128, 128],
-          duration: 0.3,
+          duration: 0.48,
           times: [0, 0.4, 1],
           ease: ["easeIn", "easeOut"],
           rotate: [0, 20, 0],
@@ -490,8 +490,8 @@ export const essentials: AnimationSet = {
         rotate: [0, -3, 1.6, -0.8, 0],
         scale: [1, 0.965, 1.04, 0.99, 1],
         origin: [128, 128],
-        delay: 0.06,
-        duration: 0.6,
+        delay: 0.096,
+        duration: 0.96,
         times: [0.261, 0.41, 0.538, 0.78, 1],
         ease: ["easeIn", "linear", "linear", "easeOut"],
       },
@@ -502,7 +502,7 @@ export const essentials: AnimationSet = {
     description: "Turns in the lock — deep, a small rebound, then lets go.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.75,
+      duration: 1.2,
       whole: {
         origin: [160, 96],
         ease: ["easeOut", [0.22, 1, 0.36, 1], "easeInOut", [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
@@ -515,12 +515,12 @@ export const essentials: AnimationSet = {
     description: "Re-verifies — the shield braces while the check pops in and redraws.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         0: {
           scale: [1, 0.95, 1.04, 1],
           origin: [128, 128],
-          duration: 0.55,
+          duration: 0.88,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.3, 0.62, 1],
         },
@@ -529,9 +529,9 @@ export const essentials: AnimationSet = {
           opacity: [0, 1],
           scale: [0.5, 1],
           origin: [128, 132],
-          duration: 0.45,
+          duration: 0.72,
           ease: [0.22, 1, 0.36, 1],
-          delay: 0.12,
+          delay: 0.192,
         },
       },
     },
@@ -541,10 +541,10 @@ export const essentials: AnimationSet = {
     description: "Hops once — a welcoming little bounce.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       whole: {
         ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"],
-        duration: 0.61,
+        duration: 0.976,
         scale: [1, 1, 1, 1.1, 0.97, 1],
       },
     },
@@ -554,22 +554,22 @@ export const essentials: AnimationSet = {
     description: "Draws itself — the head sketches in first, the shoulders follow.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         0: {
           pathLength: [0, 1],
           scale: [0.5, 1],
           origin: [128, 96],
-          duration: 0.42,
+          duration: 0.672,
           ease: [0.22, 1, 0.36, 1],
         },
         1: {
           pathLength: [0, 1],
           opacity: [0, 1],
           origin: [128, 188],
-          duration: 0.38,
+          duration: 0.608,
           ease: [0.65, 0, 0.35, 1],
-          delay: 0.22,
+          delay: 0.352,
         },
       },
     },
@@ -583,23 +583,23 @@ export const essentials: AnimationSet = {
     // moment a hover began. Head and shoulders share one amplitude so the figure
     // stays rigid, and 8 units keeps its strokes clear of the first figure's.
     stroke: {
-      duration: 0.62,
+      duration: 0.992,
       parts: {
         2: {
           x: [0, -8, 3, 0],
           origin: [208, 180],
-          duration: 0.52,
+          duration: 0.832,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.4, 0.7, 1],
-          delay: 0.08,
+          delay: 0.128,
         },
         3: {
           x: [0, -8, 3, 0],
           origin: [172, 108],
-          duration: 0.52,
+          duration: 0.832,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.4, 0.7, 1],
-          delay: 0.08,
+          delay: 0.128,
         },
       },
     },
@@ -609,12 +609,12 @@ export const essentials: AnimationSet = {
     description: "Sweeps a slow arc, the way you search a page.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.9,
+      duration: 1.44,
       whole: {
         x: [0, -20, 20, 20, -20, 0],
         y: [0, -20, -20, 20, 20, 0],
         origin: [112, 112],
-        duration: 0.75,
+        duration: 1.2,
         ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
       },
     },
@@ -624,11 +624,11 @@ export const essentials: AnimationSet = {
     description: "Saved — stretches down, squashes, and settles into place.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           origin: [128, 40],
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeOut", "easeOut", "easeOut", "easeOut"],
           times: [0, 0.28, 0.52, 0.76, 1],
           rotate: [0, -4.4, 2.3, -1.2, 0],
@@ -642,7 +642,7 @@ export const essentials: AnimationSet = {
     description: "Swings — nudged, the tag rocks on its eyelet and settles.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.8,
+      duration: 1.28,
       whole: {
         rotate: [0, 5, -2.6, 1.4, -0.7, 0],
         origin: [84, 84],
@@ -656,14 +656,14 @@ export const essentials: AnimationSet = {
     description: "Writes — the nib travels a quick scribble while the shaft tilts.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.65,
+      duration: 1.04,
       parts: {
         0: {
           rotate: [0, -3.4, 1.8, -0.9, 0],
           x: [0, -7, 3.6, -1.9, 0],
           y: [0, 7, -3.6, 1.9, 0],
           origin: [44, 210],
-          duration: 0.65,
+          duration: 1.04,
           ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.25, 0.55, 0.8, 1],
         },
@@ -672,7 +672,7 @@ export const essentials: AnimationSet = {
           x: [0, -7, 3.6, -1.9, 0],
           y: [0, 7, -3.6, 1.9, 0],
           origin: [44, 210],
-          duration: 0.65,
+          duration: 1.04,
           ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.25, 0.55, 0.8, 1],
         },
@@ -684,7 +684,7 @@ export const essentials: AnimationSet = {
     description: "Edits — the pencil scribbles a quick stroke against the note.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           rotate: [0, -5, 2.6, -1.4, 0],
@@ -706,22 +706,22 @@ export const essentials: AnimationSet = {
     description: "Duplicates — the sheets spring apart, then snap back into a stack.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           x: [0, 7, 0, 0],
           y: [0, -7, 0, 0],
           origin: [128, 128],
-          duration: 0.55,
+          duration: 0.88,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.4, 0.751, 1],
-          delay: 0.03,
+          delay: 0.048,
         },
         1: {
           x: [0, -8, 0, 0],
           y: [0, 8, 0, 0],
           origin: [128, 128],
-          duration: 0.55,
+          duration: 0.88,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.4, 0.75, 1],
         },
@@ -733,12 +733,12 @@ export const essentials: AnimationSet = {
     description: "Snaps — the clip pops up and claps back down; the board takes the hit.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           y: [0, -12, 0],
           origin: [128, 224],
-          duration: 0.45,
+          duration: 0.72,
           delay: 0,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.4, 1],
@@ -746,7 +746,7 @@ export const essentials: AnimationSet = {
         1: {
           y: [0, -12, 0],
           origin: [128, 48],
-          duration: 0.55,
+          duration: 0.88,
           ease: ["easeIn", "easeOut"],
           times: [0, 0.4, 1],
         },
@@ -758,13 +758,13 @@ export const essentials: AnimationSet = {
     description: "Tugs — the two halves pull apart, then snap back past centre.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           x: [0, 3, -3.6, 0],
           y: [0, -3, 3.6, 0],
           origin: [128, 128],
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.4, 0.75, 1],
         },
@@ -772,7 +772,7 @@ export const essentials: AnimationSet = {
           x: [0, -3, 3.6, 0],
           y: [0, 3, -3.6, 0],
           origin: [128, 128],
-          duration: 0.6,
+          duration: 0.96,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.4, 0.75, 1],
         },
@@ -784,31 +784,31 @@ export const essentials: AnimationSet = {
     description: "Hops — each dot pops up in turn, left to right.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.42,
+      duration: 0.672,
       parts: {
         0: {
           y: [0, -12, 6.2, 0],
           scale: [1, 1.15, 0.96, 1],
           origin: [128, 128],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.4, 0.72, 1],
-          delay: 0.08,
+          delay: 0.128,
         },
         1: {
           y: [0, -12, 6.2, 0],
           scale: [1, 1.15, 0.96, 1],
           origin: [196, 128],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.4, 0.72, 1],
-          delay: 0.16,
+          delay: 0.256,
         },
         2: {
           y: [0, -12, 6.2, 0],
           scale: [1, 1.15, 0.96, 1],
           origin: [60, 128],
-          duration: 0.42,
+          duration: 0.672,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.4, 0.72, 1],
           delay: 0,
@@ -821,20 +821,20 @@ export const essentials: AnimationSet = {
     description: "Scans — each row's right edge sweeps in and snaps back, top to bottom.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.55,
+      duration: 0.88,
       parts: {
         0: {
           scaleX: [1, 0.6, 1.02, 1],
           origin: [40, 128],
-          duration: 0.46,
+          duration: 0.736,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.42, 0.76, 1],
-          delay: 0.08,
+          delay: 0.128,
         },
         1: {
           scaleX: [1, 0.6, 1.02, 1],
           origin: [40, 64],
-          duration: 0.46,
+          duration: 0.736,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.42, 0.76, 1],
           delay: 0,
@@ -842,10 +842,10 @@ export const essentials: AnimationSet = {
         2: {
           scaleX: [1, 0.6, 1.02, 1],
           origin: [40, 192],
-          duration: 0.46,
+          duration: 0.736,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.42, 0.76, 1],
-          delay: 0.16,
+          delay: 0.256,
         },
       },
     },
@@ -855,7 +855,7 @@ export const essentials: AnimationSet = {
     description: "Adjusts — the knobs take turns sliding along their tracks.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           y: [0, 14, 0],
@@ -864,12 +864,12 @@ export const essentials: AnimationSet = {
         1: {
           y: [0, -12, 0],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.06,
+          delay: 0.096,
         },
         2: {
           y: [0, 10, 0],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.12,
+          delay: 0.192,
         },
         3: {
           scaleY: [1, 1.194, 1],
@@ -880,13 +880,13 @@ export const essentials: AnimationSet = {
           scaleY: [1, 1.096, 1],
           origin: [200, 40],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.12,
+          delay: 0.192,
         },
         5: {
           scaleY: [1, 0.5, 1],
           origin: [128, 40],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.06,
+          delay: 0.096,
         },
         6: {
           scaleY: [1, 0.75, 1],
@@ -897,13 +897,13 @@ export const essentials: AnimationSet = {
           scaleY: [1, 0.583, 1],
           origin: [200, 216],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.12,
+          delay: 0.192,
         },
         8: {
           scaleY: [1, 1.115, 1],
           origin: [128, 216],
           ease: ["easeOut", [0.22, 1, 0.36, 1]],
-          delay: 0.06,
+          delay: 0.096,
         },
       },
     },
@@ -913,7 +913,7 @@ export const essentials: AnimationSet = {
     description: "Squeezes — pinches in and pushes down, forcing everything through.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 0.6,
+      duration: 0.96,
       parts: {
         0: {
           scaleX: [1, 1.05, 0.8, 1.05, 1],

@@ -46,14 +46,14 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   parts: {
     0: {
       rotate: [0, -6, 3.1, 0],
       x: [0, -5, 2.6, 0],
       y: [0, 5, -2.6, 0],
       origin: [45, 210],
-      duration: 0.6,
+      duration: 0.96,
       ease: [
         "easeOut",
         [0.22, 1, 0.36, 1],
@@ -66,7 +66,20 @@ const STROKE: Choreography = {
       x: [0, -50, 0, 0, 0],
       y: [0, 47, 0, 0, 0],
       origin: [192, 48],
-      duration: 0.55,
+      duration: 0.88,
+      ease: [
+        [0.34, 1.56, 0.64, 1],
+        "linear",
+        "easeOut",
+        "easeOut"
+      ],
+      delay: 0.128
+    },
+    2: {
+      scale: [1, 0, 1, 1, 1],
+      y: [0, 56, 0, 0, 0],
+      origin: [144, 28],
+      duration: 0.88,
       ease: [
         [0.34, 1.56, 0.64, 1],
         "linear",
@@ -75,52 +88,39 @@ const STROKE: Choreography = {
       ],
       delay: 0.08
     },
-    2: {
-      scale: [1, 0, 1, 1, 1],
-      y: [0, 56, 0, 0, 0],
-      origin: [144, 28],
-      duration: 0.55,
-      ease: [
-        [0.34, 1.56, 0.64, 1],
-        "linear",
-        "easeOut",
-        "easeOut"
-      ],
-      delay: 0.05
-    },
     3: {
       scale: [1, 0, 1, 1, 1],
       x: [0, -60, 0, 0, 0],
       origin: [224, 120],
-      duration: 0.55,
+      duration: 0.88,
       ease: [
         [0.34, 1.56, 0.64, 1],
         "linear",
         "easeOut",
         "easeOut"
       ],
-      delay: 0.14
+      delay: 0.224
     },
     4: {
       scale: [1, 0, 1, 1, 1],
       x: [0, -70, 0, 0, 0],
       y: [0, 26, 0, 0, 0],
       origin: [228, 76],
-      duration: 0.55,
+      duration: 0.88,
       ease: [
         [0.34, 1.56, 0.64, 1],
         "linear",
         "easeOut",
         "easeOut"
       ],
-      delay: 0.11
+      delay: 0.176
     },
     5: {
       rotate: [0, -6, 3.1, 0],
       x: [0, -5, 2.6, 0],
       y: [0, 5, -2.6, 0],
       origin: [45, 210],
-      duration: 0.6,
+      duration: 0.96,
       ease: [
         "easeOut",
         [0.22, 1, 0.36, 1],
@@ -133,7 +133,7 @@ const STROKE: Choreography = {
       x: [0, -5, 2.6, 0],
       y: [0, 5, -2.6, 0],
       origin: [45, 210],
-      duration: 0.6,
+      duration: 0.96,
       ease: [
         "easeOut",
         [0.22, 1, 0.36, 1],

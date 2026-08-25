@@ -40,7 +40,7 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   whole: {
     rotate: [0, 5, -2.6, 1.4, -0.7, 0],
     origin: [84, 84],

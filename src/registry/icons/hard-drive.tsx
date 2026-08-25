@@ -40,13 +40,13 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.65,
+  duration: 1.04,
   parts: {
     1: {
       opacity: [1, 0, 1, 0, 1],
       origin: [188, 128],
       ease: ["linear", "linear", "linear", "linear"],
-      duration: 0.6
+      duration: 0.96
     }
   }
 };

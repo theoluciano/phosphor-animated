@@ -27,8 +27,8 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.55,
-  whole: { ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"], duration: 0.61, scale: [1, 1, 1, 1.1, 0.97, 1] }
+  duration: 0.88,
+  whole: { ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"], duration: 0.976, scale: [1, 1, 1, 1.1, 0.97, 1] }
 };
 
 export const House = createAnimatedIcon(

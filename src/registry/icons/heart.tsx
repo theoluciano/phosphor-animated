@@ -27,7 +27,7 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.72,
+  duration: 1.152,
   parts: {
     0: {
       scale: [1, 0.96, 1.14, 0.96, 1.09, 1],
@@ -40,7 +40,7 @@ const STROKE: Choreography = {
         [0.22, 1, 0.36, 1]
       ],
       times: [0, 0.12, 0.32, 0.48, 0.68, 1],
-      duration: 0.9
+      duration: 1.44
     }
   }
 };

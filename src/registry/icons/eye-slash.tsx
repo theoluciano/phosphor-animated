@@ -45,19 +45,19 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     0: {
       pathLength: [1, 0, 1],
-      delay: 0.1,
-      duration: 0.35,
+      delay: 0.16,
+      duration: 0.56,
       ease: ["easeIn", "easeOut"],
       opacity: [1, 0, 1]
     },
-    1: { delay: 0.1, duration: 0.35, ease: ["easeOut"] },
-    2: { duration: 0.6, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] },
-    3: { duration: 0.6, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] },
-    4: { duration: 0.6, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] }
+    1: { delay: 0.16, duration: 0.56, ease: ["easeOut"] },
+    2: { duration: 0.96, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] },
+    3: { duration: 0.96, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] },
+    4: { duration: 0.96, ease: ["easeOut", "easeInOut"], times: [0, 0.45, 1] }
   }
 };
 

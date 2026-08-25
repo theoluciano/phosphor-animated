@@ -35,13 +35,13 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     0: {
       x: [0, 3, -3.6, 0],
       y: [0, -3, 3.6, 0],
       origin: [128, 128],
-      duration: 0.6,
+      duration: 0.96,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.75, 1]
     },
@@ -49,7 +49,7 @@ const STROKE: Choreography = {
       x: [0, -3, 3.6, 0],
       y: [0, 3, -3.6, 0],
       origin: [128, 128],
-      duration: 0.6,
+      duration: 0.96,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.75, 1]
     }

@@ -28,7 +28,7 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.56,
+  duration: 0.896,
   whole: {
     rotate: [0, -5, 2.6, 0],
     y: [0, -8.26, 6.2, 0],

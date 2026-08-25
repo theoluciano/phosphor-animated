@@ -31,11 +31,11 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.65,
+  duration: 1.04,
   whole: {
     x: [0, -7, 0],
     y: [0, 7, 0],
-    duration: 0.45,
+    duration: 0.72,
     ease: [
       "easeInOut",
       [0.34, 1.56, 0.64, 1]
@@ -46,16 +46,16 @@ const STROKE: Choreography = {
     0: {
       opacity: [1, 0.3, 1, 0.6, 1],
       origin: [164, 44],
-      duration: 0.44,
+      duration: 0.704,
       ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      delay: 0.26
+      delay: 0.416
     },
     1: {
       opacity: [1, 0.3, 1, 0.6, 1],
       origin: [212, 92],
-      duration: 0.44,
+      duration: 0.704,
       ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      delay: 0.32
+      delay: 0.512
     }
   }
 };

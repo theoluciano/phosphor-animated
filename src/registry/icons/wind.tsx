@@ -37,26 +37,26 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   parts: {
     0: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.44,
+      duration: 0.704,
       ease: "easeInOut",
-      delay: 0.16
+      delay: 0.256
     },
     1: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.44,
+      duration: 0.704,
       ease: "easeInOut",
-      delay: 0.32
+      delay: 0.512
     },
     2: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.44,
+      duration: 0.704,
       ease: "easeInOut"
     }
   }

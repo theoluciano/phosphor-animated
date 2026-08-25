@@ -162,7 +162,7 @@ export type IconSpec = {
 
 type InternalProps = AnimatedIconProps & { spec: IconSpec };
 
-const DEFAULT_DURATION = 0.6;
+const DEFAULT_DURATION = 0.96;
 const IDENTITY: Record<string, number> = {
   rotate: 0, scale: 1, scaleX: 1, scaleY: 1, x: 0, y: 0, opacity: 1, pathLength: 1,
 };

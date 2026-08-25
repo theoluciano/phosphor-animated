@@ -30,31 +30,31 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.8,
+  duration: 1.28,
   parts: {
     0: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.35,
+      duration: 0.56,
       ease: "easeInOut"
     },
     1: {
       pathLength: [0, 1],
       opacity: [0, 1],
-      duration: 0.45,
-      delay: 0.3,
+      duration: 0.72,
+      delay: 0.48,
       ease: "easeInOut"
     },
     2: {
       opacity: [0, 1],
-      duration: 0.4,
-      delay: 0.3,
+      duration: 0.64,
+      delay: 0.48,
       ease: ["easeInOut"]
     },
     3: {
       opacity: [0, 1],
-      duration: 0.4,
-      delay: 0.38,
+      duration: 0.64,
+      delay: 0.608,
       ease: ["easeInOut"]
     }
   }

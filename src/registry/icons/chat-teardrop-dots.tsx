@@ -52,28 +52,28 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.65,
+  duration: 1.04,
   parts: {
     1: {
       opacity: [1, 0, 0, 1],
-      duration: 0.45,
+      duration: 0.72,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.3, 0.55, 1],
-      delay: 0.09
+      delay: 0.144
     },
     2: {
       opacity: [1, 0, 0, 1],
-      duration: 0.45,
+      duration: 0.72,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.3, 0.55, 1],
       delay: 0
     },
     3: {
       opacity: [1, 0, 0, 1],
-      duration: 0.45,
+      duration: 0.72,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.3, 0.55, 1],
-      delay: 0.18
+      delay: 0.288
     }
   }
 };

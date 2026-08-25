@@ -28,22 +28,22 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.6,
+  duration: 0.96,
   parts: {
     0: {
       x: [0, 7, 0, 0],
       y: [0, -7, 0, 0],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.751, 1],
-      delay: 0.03
+      delay: 0.048
     },
     1: {
       x: [0, -8, 0, 0],
       y: [0, 8, 0, 0],
       origin: [128, 128],
-      duration: 0.55,
+      duration: 0.88,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.75, 1]
     }

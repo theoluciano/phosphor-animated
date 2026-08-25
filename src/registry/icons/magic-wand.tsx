@@ -34,11 +34,11 @@ const GEOMETRY: IconGeometry = {
 };
 
 const STROKE: Choreography = {
-  duration: 0.7,
+  duration: 1.12,
   whole: {
     rotate: [0, -4.4, 2.3, 0],
     origin: [58, 198],
-    duration: 0.55,
+    duration: 0.88,
     ease: ["easeOut", "easeInOut", "easeInOut"],
     times: [0, 0.3, 0.6, 1]
   },
@@ -47,55 +47,55 @@ const STROKE: Choreography = {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [216, 152],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.22
+      delay: 0.352
     },
     1: {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [216, 152],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.22
+      delay: 0.352
     },
     2: {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [80, 64],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.12
+      delay: 0.192
     },
     3: {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [80, 64],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.12
+      delay: 0.192
     },
     4: {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [168, 200],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.32
+      delay: 0.512
     },
     5: {
       scale: [1, 0.4, 1.25, 1],
       opacity: [1, 0.4, 1, 1],
       origin: [168, 200],
-      duration: 0.38,
+      duration: 0.608,
       ease: ["easeOut", "easeInOut", "easeInOut"],
       times: [0, 0.35, 0.7, 1],
-      delay: 0.32
+      delay: 0.512
     }
   }
 };
