@@ -36,30 +36,21 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 0.65,
   parts: {
-    1: {
-      y: [0, 3, -4, 1, 0],
-      scaleX: [1, 0.97, 1.045, 0.995, 1],
-      scaleY: [1, 0.94, 1.06, 0.99, 1],
-      origin: [128, 194],
-      times: [0, 0.24, 0.52, 0.78, 1],
-      ease: [
+    1: { origin: [128, 194], times: [0, 0.24, 0.52, 0.78, 1], ease: [
         "easeOut",
         [0.34, 1.56, 0.64, 1],
         "easeInOut",
         [0.22, 1, 0.36, 1]
-      ]
-    },
+      ] },
     2: {
-      pathLength: [1, 0.2, 1],
-      times: [0, 0.35, 1],
-      ease: [
-        "easeOut",
-        [0.22, 1, 0.36, 1]
-      ],
+      pathLength: [1, 0, 1, 1],
+      ease: ["easeIn", "linear", "easeOut"],
       duration: 0.5,
-      delay: 0.05
+      delay: 0.05,
+      opacity: [1, 0, 1, 1]
     }
-  }
+  },
+  whole: { rotate: [0, -4, 4, -4, 4, -2, 2, 0], ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"] }
 };
 
 export const Lightbulb = createAnimatedIcon(

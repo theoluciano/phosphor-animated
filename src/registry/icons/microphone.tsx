@@ -37,10 +37,11 @@ const STROKE: Choreography = {
   duration: 0.6,
   parts: {
     0: {
-      y: [0, -10, -5.2, -2.7, 0],
+      y: [0, -10, 8, -4, 0],
       origin: [128, 96],
       duration: 0.6,
-      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"]
+      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
+      x: [0, 0, 0, 0, 0]
     }
   }
 };

@@ -57,42 +57,25 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 0.56,
   parts: {
-    0: {
-      scale: [1, 0.975, 1.02, 0.996, 1],
-      origin: [128, 128],
-      ease: [
+    0: { origin: [128, 128], ease: [
         "easeOut",
         [0.23, 1, 0.32, 1],
         [0.23, 1, 0.32, 1],
         [0.23, 1, 0.32, 1]
-      ],
-      times: [0, 0.2, 0.5, 0.76, 1]
-    },
-    1: {
-      y: [0, 5, -7, 2, 0],
-      scaleY: [1, 0.78, 1.08, 0.98, 1],
-      origin: [128, 176],
-      ease: [
+      ], times: [0, 0.2, 0.5, 0.76, 1] },
+    1: { origin: [128, 176], ease: [
+        "easeOut",
+        [0.23, 1, 0.32, 1],
+        [0.23, 1, 0.32, 1]
+      ], pathLength: [1, 0, 1, 1] },
+    2: { origin: [124, 84], ease: [
         "easeOut",
         [0.23, 1, 0.32, 1],
         [0.23, 1, 0.32, 1],
         [0.23, 1, 0.32, 1]
-      ],
-      times: [0, 0.2, 0.5, 0.76, 1]
-    },
-    2: {
-      y: [0, 6, -12, 2, 0],
-      scale: [1, 0.9, 1.15, 0.94, 1],
-      origin: [124, 84],
-      ease: [
-        "easeOut",
-        [0.23, 1, 0.32, 1],
-        [0.23, 1, 0.32, 1],
-        [0.23, 1, 0.32, 1]
-      ],
-      times: [0, 0.2, 0.5, 0.76, 1]
-    }
-  }
+      ], times: [0, 0.2, 0.5, 0.76, 1] }
+  },
+  whole: { scale: [1, 1, 1, 1.1, 0.97, 1], duration: 0.61, ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"] }
 };
 
 export const Info = createAnimatedIcon(

@@ -294,7 +294,7 @@ export const communication: AnimationSet = {
     stroke: {
       duration: 0.7,
       whole: {
-        rotate: [0, 4.5, -2.3, 1.2, 0],
+        rotate: [0, -7.6, 4, -2.1, 0],
         origin: [180, 200],
         ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
         times: [0, 0.18, 0.48, 0.74, 1],

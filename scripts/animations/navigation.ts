@@ -257,7 +257,6 @@ export const navigation: AnimationSet = {
       parts: {
         0: {
           y: [0, -14, -7.3, -3.8, 0],
-          pathLength: [0, 0, 1, 1, 1],
           origin: [128, 104],
           duration: 0.7,
           ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
@@ -269,6 +268,8 @@ export const navigation: AnimationSet = {
           duration: 0.7,
           ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
           times: [0, 0.3, 0.58, 0.78, 1],
+          pathLength: [1, 0, 0, 1, 1],
+          opacity: [1, 0, 0, 1, 1],
         },
       },
     },

@@ -30,14 +30,10 @@ const STROKE: Choreography = {
   duration: 0.45,
   parts: {
     0: {
-      scaleX: [1, 0.35, 1.08, 1],
+      scaleX: [1, 0.15, 1.08, 1],
       origin: [128, 128],
       duration: 0.5,
-      ease: [
-        "easeIn",
-        "easeOut",
-        [0.22, 1, 0.36, 1]
-      ],
+      ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.42, 0.78, 1]
     }
   }

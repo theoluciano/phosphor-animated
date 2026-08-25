@@ -38,19 +38,19 @@ const STROKE: Choreography = {
   duration: 0.6,
   parts: {
     0: {
-      x: [0, 7, -3.6, 0],
-      y: [0, -7, 3.6, 0],
+      x: [0, 3, -3.6, 0],
+      y: [0, -3, 3.6, 0],
       origin: [128, 128],
       duration: 0.6,
-      ease: ["easeOut", "easeInOut", "easeInOut"],
+      ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.75, 1]
     },
     1: {
-      x: [0, -7, 3.6, 0],
-      y: [0, 7, -3.6, 0],
+      x: [0, -3, 3.6, 0],
+      y: [0, 3, -3.6, 0],
       origin: [128, 128],
       duration: 0.6,
-      ease: ["easeOut", "easeInOut", "easeInOut"],
+      ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.75, 1]
     }
   }

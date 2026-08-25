@@ -30,7 +30,7 @@ const STROKE: Choreography = {
   duration: 0.8,
   parts: {
     0: {
-      rotate: [0, -7.7, 4, -2.1, 0],
+      rotate: [0, -7.6, 4, -2.1, 0],
       origin: [128, 128],
       duration: 0.8,
       ease: [

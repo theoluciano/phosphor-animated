@@ -284,10 +284,11 @@ export const media: AnimationSet = {
       duration: 0.6,
       parts: {
         0: {
-          y: [0, -10, -5.2, -2.7, 0],
+          y: [0, -10, 8, -4, 0],
           origin: [128, 96],
           duration: 0.6,
           ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
+          x: [0, 0, 0, 0, 0],
         },
       },
     },
@@ -300,14 +301,13 @@ export const media: AnimationSet = {
       duration: 0.55,
       parts: {
         1: {
-          pathLength: [0, 1],
+          pathLength: [1, 0, 1, 1],
           origin: [128, 128],
           duration: 0.45,
-          ease: [0.65, 0, 0.35, 1],
+          ease: ["easeIn", "linear", "easeOut"],
           delay: 0.08,
         },
         4: {
-          opacity: [1, 0.35, 1],
           origin: [128, 128],
           duration: 0.5,
           ease: ["easeOut", "easeInOut"],
@@ -315,7 +315,6 @@ export const media: AnimationSet = {
           delay: 0.16,
         },
         5: {
-          opacity: [1, 0.35, 1],
           origin: [128, 128],
           duration: 0.5,
           ease: ["easeOut", "easeInOut"],
@@ -380,6 +379,7 @@ export const media: AnimationSet = {
           origin: [185, 178],
           ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
           times: [0, 0.38, 0.76, 1],
+          rotate: [0, -2, 1, 0],
         },
         3: {
           y: [0, 4, -2.1, 0],
@@ -387,6 +387,7 @@ export const media: AnimationSet = {
           origin: [112, 208],
           ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
           times: [0, 0.38, 0.76, 1],
+          rotate: [0, -2, 1, 0],
         },
       },
     },
