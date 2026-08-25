@@ -25,12 +25,12 @@ export const development: AnimationSet = {
     description: "Recompiles — the slash slips off down-left and a fresh one drops in from above.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
-      duration: 1.12,
+      duration: 0.56,
       parts: {
         2: {
           origin: [128, 128],
           duration: 0.7,
-          ease: ["easeIn"],
+          ease: ["easeInOut"],
           pathLength: [0, 1],
         },
       },
