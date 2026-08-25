@@ -37,10 +37,9 @@ export const devices: AnimationSet = {
           ease: ["easeIn", "linear", "easeOut"],
         },
         2: {
-          opacity: [1, 0, 0, 0, 1],
-          ease: ["easeIn", "linear", "linear", "easeOut"],
-          y: [0, 88, 88, 88, 0],
-          times: [0, 0.25, 0.283, 0.305, 1],
+          opacity: [0, 0, 0, 1],
+          ease: ["easeIn", "linear", "linear"],
+          times: [0, 0.732, 0.888, 1],
         },
       },
     },
