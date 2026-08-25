@@ -44,15 +44,7 @@ const GEOMETRY: IconGeometry = {
 
 const STROKE: Choreography = {
   duration: 1.2,
-  whole: { origin: [160, 96], ease: [
-      "easeOut",
-      [0.22, 1, 0.36, 1],
-      "easeInOut",
-      [0.22, 1, 0.36, 1],
-      [0.22, 1, 0.36, 1],
-      [0.22, 1, 0.36, 1],
-      [0.22, 1, 0.36, 1]
-    ], rotate: [0, -4, 4, -4, 4, -2, 2, 0] }
+  whole: { origin: [160, 96], ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"], rotate: [0, -4, 4, -4, 4, -2, 2, 0] }
 };
 
 export const Key = createAnimatedIcon(

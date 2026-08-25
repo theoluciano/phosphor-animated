@@ -107,7 +107,7 @@ export const devices: AnimationSet = {
       duration: 0.56,
       whole: {
         origin: [128, 128],
-        duration: 1.12,
+        duration: 0.7,
         ease: ["easeIn", "linear", "linear", "easeOut"],
         times: [0, 0.5, 0.64, 0.86, 1],
         rotate: [0, -7.6, 4, -2.1, 0],
@@ -115,7 +115,7 @@ export const devices: AnimationSet = {
       parts: {
         1: {
           origin: [128, 112],
-          duration: 1.264,
+          duration: 0.7,
           ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
           pathLength: [1, 0, 1, 1],
         },
@@ -282,7 +282,18 @@ export const devices: AnimationSet = {
         scale: [1, 0.9, 1.05, 1],
         origin: [128, 128],
         times: [0, 0.38, 0.72, 1],
-        ease: ["easeOut", [0.34, 1.56, 0.64, 1], [0.22, 1, 0.36, 1]],
+        ease: ["easeIn", "linear", "easeOut"],
+      },
+      parts: {
+        0: {
+          ease: ["easeInOut"],
+          pathLength: [0, 1],
+        },
+        1: {
+          ease: ["easeInOut"],
+          pathLength: [0, 1],
+          duration: 0.7,
+        },
       },
     },
   },
@@ -293,22 +304,20 @@ export const devices: AnimationSet = {
     stroke: {
       duration: 1.04,
       whole: {
-        x: [0, -7, 0],
-        y: [0, 7, 0],
+        x: [0, -20, 0],
+        y: [0, 20, 0],
         duration: 0.72,
         ease: ["easeInOut", [0.34, 1.56, 0.64, 1]],
         times: [0, 0.4, 1],
       },
       parts: {
         0: {
-          opacity: [1, 0.3, 1, 0.6, 1],
           origin: [164, 44],
           duration: 0.704,
           ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
           delay: 0.416,
         },
         1: {
-          opacity: [1, 0.3, 1, 0.6, 1],
           origin: [212, 92],
           duration: 0.704,
           ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],

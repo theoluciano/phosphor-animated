@@ -49,21 +49,16 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 0.88,
   parts: {
-    0: {
-      rotate: [0, -10, 5.2, -2.7, 0],
-      origin: [128, 134],
-      duration: 0.88,
-      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      times: [0, 0.28, 0.55, 0.8, 1]
-    },
+    0: { duration: 0.976, ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"] },
     1: {
-      rotate: [0, -10, 5.2, -2.7, 0],
       origin: [128, 134],
-      duration: 0.88,
-      ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-      times: [0, 0.28, 0.55, 0.8, 1]
-    }
-  }
+      duration: 0.7,
+      ease: ["easeOut"],
+      pathLength: [0, 1]
+    },
+    2: { ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"] }
+  },
+  whole: { scale: [1, 1, 1, 1.1, 0.97, 1], ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"], duration: 0.7 }
 };
 
 export const Question = createAnimatedIcon(

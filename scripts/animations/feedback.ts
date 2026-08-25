@@ -100,8 +100,8 @@ export const feedback: AnimationSet = {
         },
         1: {
           origin: [128, 176],
-          ease: ["easeOut", [0.23, 1, 0.32, 1], [0.23, 1, 0.32, 1]],
-          pathLength: [1, 0, 1, 1],
+          ease: ["easeOut"],
+          pathLength: [0, 1],
         },
         2: {
           origin: [124, 84],
@@ -124,19 +124,23 @@ export const feedback: AnimationSet = {
       duration: 0.88,
       parts: {
         0: {
-          rotate: [0, -10, 5.2, -2.7, 0],
-          origin: [128, 134],
-          duration: 0.88,
-          ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-          times: [0, 0.28, 0.55, 0.8, 1],
+          duration: 0.976,
+          ease: ["easeOut", "easeIn", "easeOut", "easeIn", "easeIn"],
         },
         1: {
-          rotate: [0, -10, 5.2, -2.7, 0],
           origin: [128, 134],
-          duration: 0.88,
-          ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut"],
-          times: [0, 0.28, 0.55, 0.8, 1],
+          duration: 0.7,
+          ease: ["easeOut"],
+          pathLength: [0, 1],
         },
+        2: {
+          ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
+        },
+      },
+      whole: {
+        scale: [1, 1, 1, 1.1, 0.97, 1],
+        ease: ["easeInOut", "easeInOut", "easeInOut", "easeInOut", "easeInOut"],
+        duration: 0.7,
       },
     },
   },

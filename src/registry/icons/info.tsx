@@ -63,11 +63,7 @@ const STROKE: Choreography = {
         [0.23, 1, 0.32, 1],
         [0.23, 1, 0.32, 1]
       ], times: [0, 0.2, 0.5, 0.76, 1] },
-    1: { origin: [128, 176], ease: [
-        "easeOut",
-        [0.23, 1, 0.32, 1],
-        [0.23, 1, 0.32, 1]
-      ], pathLength: [1, 0, 1, 1] },
+    1: { origin: [128, 176], ease: ["easeOut"], pathLength: [0, 1] },
     2: { origin: [124, 84], ease: [
         "easeOut",
         [0.23, 1, 0.32, 1],

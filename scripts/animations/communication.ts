@@ -161,11 +161,11 @@ export const communication: AnimationSet = {
       duration: 1.28,
       parts: {
         0: {
-          rotate: [0, -7.1, 3.7, -1.9, 1, 0],
-          scale: [1, 1.08, 1.03, 1.01, 1, 1],
+          rotate: [0, 8.9, -5.3, 3.1, -3, 0],
+          scale: [1, 1.13, 1.03, 1.01, 1, 1],
           origin: [128, 128],
           duration: 1.28,
-          ease: ["easeOut", "easeInOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
+          ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
           times: [0, 0.15, 0.35, 0.58, 0.8, 1],
         },
       },
@@ -179,7 +179,6 @@ export const communication: AnimationSet = {
       duration: 1.28,
       parts: {
         0: {
-          scale: [1, 0.8, 0.8, 1],
           opacity: [1, 0, 0, 1],
           origin: [140, 92],
           duration: 0.88,
@@ -188,7 +187,6 @@ export const communication: AnimationSet = {
           delay: 0.32,
         },
         1: {
-          scale: [1, 0.8, 0.8, 1],
           opacity: [1, 0, 0, 1],
           origin: [140, 92],
           duration: 0.88,
@@ -203,6 +201,14 @@ export const communication: AnimationSet = {
           ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.18, 0.45, 0.72, 1],
         },
+      },
+      whole: {
+        rotate: [0, 8.9, -5.3, 3.1, -3, 0],
+        scale: [1, 1.13, 1.03, 1.01, 1, 1],
+        origin: [128, 128],
+        duration: 1.28,
+        times: [0, 0.15, 0.35, 0.58, 0.8, 1],
+        ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
       },
     },
   },
@@ -296,7 +302,7 @@ export const communication: AnimationSet = {
       whole: {
         rotate: [0, -7.6, 4, -2.1, 0],
         origin: [180, 200],
-        ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
+        ease: ["easeIn", "linear", "linear", "easeOut"],
         times: [0, 0.18, 0.48, 0.74, 1],
       },
     },

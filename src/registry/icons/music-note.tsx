@@ -30,21 +30,15 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 1.28,
   whole: {
-    rotate: [0, -3.5, 1.8, -0.9, 0],
-    y: [0, -3, -1.6, -0.8, 0],
-    origin: [128, 224],
-    duration: 1.28,
-    ease: [
-      "easeOut",
-      [0.65, 0, 0.35, 1],
-      [0.65, 0, 0.35, 1],
-      [0.22, 1, 0.36, 1]
-    ],
-    times: [0, 0.28, 0.58, 0.8, 1]
+    scale: [1, 0.96, 1.14, 0.96, 1.09, 1],
+    origin: [128, 128],
+    duration: 1.44,
+    times: [0, 0.12, 0.32, 0.48, 0.68, 1],
+    ease: ["easeIn", "linear", "linear", "linear", "easeOut"],
+    rotate: [0, -7.6, 4, -2.1, 0, 0]
   },
   parts: {
     0: {
-      scale: [1, 1.18, 1, 1.08, 1],
       origin: [88, 184],
       duration: 1.28,
       ease: [

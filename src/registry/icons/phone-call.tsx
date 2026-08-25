@@ -40,7 +40,6 @@ const STROKE: Choreography = {
   duration: 1.28,
   parts: {
     0: {
-      scale: [1, 0.8, 0.8, 1],
       opacity: [1, 0, 0, 1],
       origin: [140, 92],
       duration: 0.88,
@@ -53,7 +52,6 @@ const STROKE: Choreography = {
       delay: 0.32
     },
     1: {
-      scale: [1, 0.8, 0.8, 1],
       opacity: [1, 0, 0, 1],
       origin: [140, 92],
       duration: 0.88,
@@ -77,6 +75,14 @@ const STROKE: Choreography = {
       ],
       times: [0, 0.18, 0.45, 0.72, 1]
     }
+  },
+  whole: {
+    rotate: [0, 8.9, -5.3, 3.1, -3, 0],
+    scale: [1, 1.13, 1.03, 1.01, 1, 1],
+    origin: [128, 128],
+    duration: 1.28,
+    times: [0, 0.15, 0.35, 0.58, 0.8, 1],
+    ease: ["easeIn", "linear", "linear", "linear", "easeOut"]
   }
 };
 

@@ -63,28 +63,18 @@ const STROKE: Choreography = {
   duration: 0.88,
   parts: {
     0: {
-      pathLength: [0, 0.3, 1],
-      opacity: [0, 1, 1],
       duration: 0.704,
       ease: ["easeOut", "easeOut"],
       times: [0, 0.25, 1],
       delay: 0.32
     },
     1: {
-      pathLength: [0, 0.3, 1],
-      opacity: [0, 1, 1],
       duration: 0.704,
       ease: ["easeOut", "easeOut"],
       times: [0, 0.25, 1],
       delay: 0.224
     },
-    2: {
-      pathLength: [0, 0.3, 1],
-      opacity: [0, 1, 1],
-      duration: 0.72,
-      ease: ["easeOut", "easeOut"],
-      times: [0, 0.25, 1]
-    },
+    2: { duration: 0.72, ease: ["easeOut", "easeOut"], times: [0, 0.25, 1] },
     3: {
       pathLength: [0, 0.3, 1],
       opacity: [0, 1, 1],
@@ -93,7 +83,8 @@ const STROKE: Choreography = {
       times: [0, 0.25, 1],
       delay: 0.32
     }
-  }
+  },
+  whole: { rotate: [0, -7.6, 4, -2.1, 0], ease: ["easeIn", "linear", "linear", "easeOut"] }
 };
 
 export const Package = createAnimatedIcon(

@@ -31,32 +31,16 @@ const STROKE: Choreography = {
   duration: 1.04,
   parts: {
     0: {
-      rotate: [0, -3.4, 1.8, -0.9, 0],
-      x: [0, -7, 3.6, -1.9, 0],
-      y: [0, 7, -3.6, 1.9, 0],
-      origin: [44, 210],
-      duration: 1.04,
-      ease: [
-        "easeOut",
-        "easeInOut",
-        "easeInOut",
-        [0.22, 1, 0.36, 1]
-      ],
-      times: [0, 0.25, 0.55, 0.8, 1]
+      rotate: [0, -5, 2.6, -1.4, 0],
+      x: [0, -10, 5.2, -2.7, 0],
+      origin: [104, 152],
+      ease: ["easeIn", "linear", "linear", "easeOut"]
     },
     1: {
-      rotate: [0, -4, 2.1, -1.1, 0],
-      x: [0, -7, 3.6, -1.9, 0],
-      y: [0, 7, -3.6, 1.9, 0],
-      origin: [44, 210],
-      duration: 1.04,
-      ease: [
-        "easeOut",
-        "easeInOut",
-        "easeInOut",
-        [0.22, 1, 0.36, 1]
-      ],
-      times: [0, 0.25, 0.55, 0.8, 1]
+      rotate: [0, -5, 2.6, -1.4, 0],
+      x: [0, -10, 5.2, -2.7, 0],
+      origin: [104, 152],
+      ease: ["easeIn", "linear", "linear", "easeOut"]
     }
   }
 };

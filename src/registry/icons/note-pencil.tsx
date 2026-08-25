@@ -40,23 +40,13 @@ const STROKE: Choreography = {
       rotate: [0, -5, 2.6, -1.4, 0],
       x: [0, -10, 5.2, -2.7, 0],
       origin: [104, 152],
-      ease: [
-        "easeOut",
-        [0.65, 0, 0.35, 1],
-        [0.65, 0, 0.35, 1],
-        [0.65, 0, 0.35, 1]
-      ]
+      ease: ["easeIn", "linear", "linear", "easeOut"]
     },
     1: {
       rotate: [0, -5, 2.6, -1.4, 0],
       x: [0, -10, 5.2, -2.7, 0],
       origin: [104, 152],
-      ease: [
-        "easeOut",
-        [0.65, 0, 0.35, 1],
-        [0.65, 0, 0.35, 1],
-        [0.65, 0, 0.35, 1]
-      ]
+      ease: ["easeIn", "linear", "linear", "easeOut"]
     }
   }
 };

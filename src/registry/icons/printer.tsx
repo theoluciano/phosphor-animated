@@ -50,28 +50,21 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 1.12,
   parts: {
-    0: { y: [0, 9, 0], ease: [
-        "easeOut",
-        [0.22, 1, 0.36, 1]
-      ], duration: 0.8 },
+    0: {
+      y: [0, -19, 0],
+      ease: ["easeIn", "easeOut"],
+      duration: 0.8,
+      scaleY: [1, 0.55, 1]
+    },
     1: {
-      y: [0, 12, 0],
-      scaleY: [1, 1.1, 1],
+      y: [0, 9, 0],
+      scaleY: [1, 1.2, 1],
       origin: [128, 152],
-      ease: [
-        "easeOut",
-        [0.22, 1, 0.36, 1]
-      ],
+      ease: ["easeIn", "easeOut"],
       duration: 0.88,
       delay: 0.16
     },
-    3: {
-      opacity: [1, 0.2, 1],
-      scale: [1, 1.3, 1],
-      origin: [188, 116],
-      ease: ["easeOut", "easeInOut"],
-      duration: 0.72
-    }
+    3: { origin: [188, 116], ease: ["easeOut", "easeInOut"], duration: 0.72 }
   }
 };
 
