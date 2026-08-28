@@ -505,7 +505,7 @@
       "name": "eye-slash",
       "type": "registry:component",
       "title": "EyeSlash",
-      "description": "Hidden — the slash sweeps across as the eye dims behind it.",
+      "description": "Hidden — the slash draws itself across the eye.",
       "dependencies": [
         "motion"
       ],
@@ -1825,7 +1825,7 @@
       "name": "microphone-slash",
       "type": "registry:component",
       "title": "MicrophoneSlash",
-      "description": "Muted — the slash draws across and the capsule dims.",
+      "description": "Muted — the slash draws itself across the capsule.",
       "dependencies": [
         "motion"
       ],
@@ -2185,7 +2185,7 @@
       "name": "shopping-cart",
       "type": "registry:component",
       "title": "ShoppingCart",
-      "description": "Hops — added to the cart, so it bounces twice and lands on its wheels.",
+      "description": "Hops — added to the cart, so it bounces four times and lands on its wheels.",
       "dependencies": [
         "motion"
       ],
@@ -2209,7 +2209,7 @@
       "name": "shopping-bag",
       "type": "registry:component",
       "title": "ShoppingBag",
-      "description": "Picked up — swings once from the handle and settles.",
+      "description": "Picked up — the handle lifts over the top edge as the bag rocks once and settles.",
       "dependencies": [
         "motion"
       ],

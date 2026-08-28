@@ -3,7 +3,7 @@
   "name": "shopping-cart",
   "type": "registry:component",
   "title": "ShoppingCart",
-  "description": "Hops — added to the cart, so it bounces twice and lands on its wheels.",
+  "description": "Hops — added to the cart, so it bounces four times and lands on its wheels.",
   "dependencies": [
     "motion"
   ],
@@ -15,7 +15,7 @@
       "path": "components/icons/shopping-cart.tsx",
       "type": "registry:component",
       "target": "components/icons/shopping-cart.tsx",
-      "content": "\"use client\";\n\n/**\n * ShoppingCart — animated Phosphor icon.\n *\n * Hops — added to the cart, so it bounces twice and lands on its wheels.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M188,184H91.17a16,16,0,0,1-15.74-13.14L48.73,24H24\" }],\n    [\"circle\", { cx: \"92\", cy: \"204\", r: \"20\" }],\n    [\"circle\", { cx: \"188\", cy: \"204\", r: \"20\" }],\n    [\"path\", { d: \"M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.96,\n  whole: {\n    y: [0, -7.82, -5.7, -3, 0],\n    scale: [1, 1.04, 1, 1.03, 1],\n    origin: [128, 204],\n    duration: 0.96,\n    ease: [\"easeOut\", \"easeIn\", \"easeOut\", \"easeIn\"],\n    times: [0, 0.24, 0.52, 0.74, 1]\n  }\n};\n\nexport const ShoppingCart = createAnimatedIcon(\n  \"ShoppingCart\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ShoppingCart;\n"
+      "content": "\"use client\";\n\n/**\n * ShoppingCart — animated Phosphor icon.\n *\n * Hops — added to the cart, so it bounces four times and lands on its wheels.\n *\n * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:\n * the keyframes below are ordinary data, so retune or replace them freely.\n */\n\nimport {\n  createAnimatedIcon,\n  type Choreography,\n  type IconGeometry,\n} from \"./animated-icon\";\n\nconst GEOMETRY: IconGeometry = {\n  regular: [\n    [\"path\", { d: \"M188,184H91.17a16,16,0,0,1-15.74-13.14L48.73,24H24\" }],\n    [\"circle\", { cx: \"92\", cy: \"204\", r: \"20\" }],\n    [\"circle\", { cx: \"188\", cy: \"204\", r: \"20\" }],\n    [\"path\", { d: \"M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56\" }],\n  ],\n  backdrop: {\n    duotone: [\n      [\"path\", { d: \"M70.55,144H196.1a16,16,0,0,0,15.74-13.14L224,64H56Z\", opacity: \"0.2\" }],\n    ],\n  },\n};\n\nconst STROKE: Choreography = {\n  duration: 0.96,\n  whole: {\n    y: [0, -12.82, 0, -12.82, 0, -12.82, 0, -12.82, 0],\n    origin: [128, 204],\n    duration: 1,\n    ease: [\n      \"easeIn\",\n      [0.22, 1, 0.36, 1],\n      [0.22, 1, 0.36, 1],\n      [0.22, 1, 0.36, 1],\n      [0.22, 1, 0.36, 1],\n      [0.22, 1, 0.36, 1],\n      [0.22, 1, 0.36, 1],\n      \"easeOut\"\n    ]\n  }\n};\n\nexport const ShoppingCart = createAnimatedIcon(\n  \"ShoppingCart\",\n  GEOMETRY,\n  STROKE,\n);\n\nexport default ShoppingCart;\n"
     }
   ],
   "meta": {

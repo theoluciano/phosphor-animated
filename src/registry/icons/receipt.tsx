@@ -57,6 +57,12 @@ const STROKE: Choreography = {
         [0.22, 1, 0.36, 1]
       ],
       delay: 0.288
+    },
+    2: {
+      delay: 0,
+      duration: 0.6,
+      ease: ["easeIn", "easeOut"],
+      scaleY: [1, 1.3, 1]
     }
   }
 };

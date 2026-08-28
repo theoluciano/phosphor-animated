@@ -6,32 +6,38 @@ import { pop, spin, wiggle, bounce, nudge, draw, swing, stagger } from "./recipe
 
 export const commerce: AnimationSet = {
   "shopping-cart": {
-    description: "Hops — added to the cart, so it bounces twice and lands on its wheels.",
+    description: "Hops — added to the cart, so it bounces four times and lands on its wheels.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
       duration: 0.96,
       whole: {
-        y: [0, -7.82, -5.7, -3, 0],
-        scale: [1, 1.04, 1, 1.03, 1],
+        y: [0, -12.82, 0, -12.82, 0, -12.82, 0, -12.82, 0],
         origin: [128, 204],
-        duration: 0.96,
-        ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
-        times: [0, 0.24, 0.52, 0.74, 1],
+        duration: 1,
+        ease: ["easeIn", [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1], "easeOut"],
       },
     },
   },
 
   "shopping-bag": {
-    description: "Picked up — swings once from the handle and settles.",
+    description: "Picked up — the handle lifts over the top edge as the bag rocks once and settles.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
       duration: 1.12,
       whole: {
-        rotate: [0, 5, -2.6, 1.4, 0],
+        rotate: [0, 7, -2.6, 1.4, 0],
         origin: [128, 60],
         duration: 1.36,
-        ease: ["easeOut", "easeInOut", "easeInOut", [0.22, 1, 0.36, 1]],
+        ease: ["easeIn", "linear", "linear", "easeOut"],
         times: [0, 0.143, 0.429, 0.714, 1],
+      },
+      parts: {
+        1: {
+          origin: [128, 83],
+          duration: 0.8,
+          ease: ["easeIn", "easeOut"],
+          scaleY: [1, -1, 1],
+        },
       },
     },
   },
@@ -215,6 +221,12 @@ export const commerce: AnimationSet = {
           duration: 1.168,
           ease: [[0.22, 1, 0.36, 1], [0.22, 1, 0.36, 1]],
           delay: 0.288,
+        },
+        2: {
+          delay: 0,
+          duration: 0.6,
+          ease: ["easeIn", "easeOut"],
+          scaleY: [1, 1.3, 1],
         },
       },
     },

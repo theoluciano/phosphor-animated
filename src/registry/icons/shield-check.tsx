@@ -31,24 +31,23 @@ const STROKE: Choreography = {
   duration: 1.04,
   parts: {
     0: {
-      scale: [1, 0.95, 1.04, 1],
+      scale: [1, 0.97, 1.02, 1],
       origin: [128, 128],
-      duration: 0.88,
+      duration: 0.8,
+      times: [0, 0.3, 0.62, 1],
       ease: [
         "easeOut",
-        "easeInOut",
-        [0.22, 1, 0.36, 1]
-      ],
-      times: [0, 0.3, 0.62, 1]
+        [0.23, 1, 0.32, 1],
+        [0.23, 1, 0.32, 1]
+      ]
     },
     1: {
-      pathLength: [0, 1],
-      opacity: [0, 1],
-      scale: [0.5, 1],
-      origin: [128, 132],
-      duration: 0.72,
-      ease: [0.22, 1, 0.36, 1],
-      delay: 0.192
+      opacity: [0, 1, 1],
+      pathLength: [0, 1, 1],
+      origin: [128, 128],
+      delay: 0.16,
+      duration: 0.64,
+      ease: ["easeIn", "easeOut"]
     }
   }
 };

@@ -153,11 +153,11 @@ export const media: AnimationSet = {
     stroke: {
       duration: 1.28,
       whole: {
-        rotate: [0, 369, 360],
+        rotate: [-360, 9, 0],
         origin: [128, 128],
-        duration: 1.28,
+        duration: 1,
         times: [0, 0.72, 1],
-        ease: [[0.65, 0, 0.35, 1], [0.22, 1, 0.36, 1]],
+        ease: ["easeIn", "easeOut"],
       },
     },
   },
@@ -284,17 +284,16 @@ export const media: AnimationSet = {
   },
 
   "microphone-slash": {
-    description: "Muted — the slash draws across and the capsule dims.",
+    description: "Muted — the slash draws itself across the capsule.",
     // Tuned in the studio; values are explicit rather than recipe calls.
     stroke: {
       duration: 0.88,
       parts: {
         1: {
-          pathLength: [1, 0, 1, 1],
-          origin: [128, 128],
-          duration: 0.72,
-          ease: ["easeIn", "linear", "easeOut"],
-          delay: 0.128,
+          delay: 0,
+          duration: 0.6,
+          ease: ["easeInOut"],
+          pathLength: [0, 1],
         },
       },
     },

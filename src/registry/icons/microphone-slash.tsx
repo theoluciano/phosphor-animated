@@ -3,7 +3,7 @@
 /**
  * MicrophoneSlash — animated Phosphor icon.
  *
- * Muted — the slash draws across and the capsule dims.
+ * Muted — the slash draws itself across the capsule.
  *
  * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
  * the keyframes below are ordinary data, so retune or replace them freely.
@@ -46,11 +46,10 @@ const STROKE: Choreography = {
   duration: 0.88,
   parts: {
     1: {
-      pathLength: [1, 0, 1, 1],
-      origin: [128, 128],
-      duration: 0.72,
-      ease: ["easeIn", "linear", "easeOut"],
-      delay: 0.128
+      delay: 0,
+      duration: 0.6,
+      ease: ["easeInOut"],
+      pathLength: [0, 1]
     }
   }
 };

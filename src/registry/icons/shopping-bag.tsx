@@ -3,7 +3,7 @@
 /**
  * ShoppingBag — animated Phosphor icon.
  *
- * Picked up — swings once from the handle and settles.
+ * Picked up — the handle lifts over the top edge as the bag rocks once and settles.
  *
  * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
  * the keyframes below are ordinary data, so retune or replace them freely.
@@ -30,16 +30,19 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 1.12,
   whole: {
-    rotate: [0, 5, -2.6, 1.4, 0],
+    rotate: [0, 7, -2.6, 1.4, 0],
     origin: [128, 60],
     duration: 1.36,
-    ease: [
-      "easeOut",
-      "easeInOut",
-      "easeInOut",
-      [0.22, 1, 0.36, 1]
-    ],
+    ease: ["easeIn", "linear", "linear", "easeOut"],
     times: [0, 0.143, 0.429, 0.714, 1]
+  },
+  parts: {
+    1: {
+      origin: [128, 83],
+      duration: 0.8,
+      ease: ["easeIn", "easeOut"],
+      scaleY: [1, -1, 1]
+    }
   }
 };
 

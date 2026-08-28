@@ -3,7 +3,7 @@
 /**
  * ShoppingCart — animated Phosphor icon.
  *
- * Hops — added to the cart, so it bounces twice and lands on its wheels.
+ * Hops — added to the cart, so it bounces four times and lands on its wheels.
  *
  * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
  * the keyframes below are ordinary data, so retune or replace them freely.
@@ -32,12 +32,19 @@ const GEOMETRY: IconGeometry = {
 const STROKE: Choreography = {
   duration: 0.96,
   whole: {
-    y: [0, -7.82, -5.7, -3, 0],
-    scale: [1, 1.04, 1, 1.03, 1],
+    y: [0, -12.82, 0, -12.82, 0, -12.82, 0, -12.82, 0],
     origin: [128, 204],
-    duration: 0.96,
-    ease: ["easeOut", "easeIn", "easeOut", "easeIn"],
-    times: [0, 0.24, 0.52, 0.74, 1]
+    duration: 1,
+    ease: [
+      "easeIn",
+      [0.22, 1, 0.36, 1],
+      [0.22, 1, 0.36, 1],
+      [0.22, 1, 0.36, 1],
+      [0.22, 1, 0.36, 1],
+      [0.22, 1, 0.36, 1],
+      [0.22, 1, 0.36, 1],
+      "easeOut"
+    ]
   }
 };
 

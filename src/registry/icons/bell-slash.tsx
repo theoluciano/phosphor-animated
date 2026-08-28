@@ -43,9 +43,9 @@ const STROKE: Choreography = {
   parts: {
     0: {
       pathLength: [0, 1],
-      duration: 0.56,
-      ease: "easeOut",
-      delay: 0.16
+      delay: 0,
+      duration: 0.6,
+      ease: ["easeInOut"]
     }
   }
 };

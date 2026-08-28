@@ -3,7 +3,7 @@
 /**
  * EyeSlash — animated Phosphor icon.
  *
- * Hidden — the slash sweeps across as the eye dims behind it.
+ * Hidden — the slash draws itself across the eye.
  *
  * Geometry from Phosphor Icons (MIT, (c) 2023 Phosphor Icons). This file is yours:
  * the keyframes below are ordinary data, so retune or replace them freely.
@@ -48,11 +48,10 @@ const STROKE: Choreography = {
   duration: 0.96,
   parts: {
     0: {
-      pathLength: [1, 0, 1],
-      delay: 0.16,
-      duration: 0.56,
-      ease: ["easeIn", "easeOut"],
-      opacity: [1, 0, 1]
+      delay: 0,
+      duration: 0.6,
+      ease: ["easeInOut"],
+      pathLength: [0, 1]
     }
   }
 };

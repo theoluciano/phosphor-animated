@@ -34,12 +34,9 @@ const STROKE: Choreography = {
   whole: {
     rotate: [-360, 9, 0],
     origin: [128, 128],
-    duration: 1.28,
+    duration: 1,
     times: [0, 0.72, 1],
-    ease: [
-      [0.65, 0, 0.35, 1],
-      [0.22, 1, 0.36, 1]
-    ]
+    ease: ["easeIn", "easeOut"]
   }
 };
 

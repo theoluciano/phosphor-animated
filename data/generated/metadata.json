@@ -123,7 +123,7 @@
     "name": "eye-slash",
     "component": "EyeSlash",
     "category": "Essentials",
-    "description": "Hidden — the slash sweeps across as the eye dims behind it."
+    "description": "Hidden — the slash draws itself across the eye."
   },
   {
     "name": "lock",
@@ -453,7 +453,7 @@
     "name": "microphone-slash",
     "component": "MicrophoneSlash",
     "category": "Media",
-    "description": "Muted — the slash draws across and the capsule dims."
+    "description": "Muted — the slash draws itself across the capsule."
   },
   {
     "name": "camera",
@@ -543,13 +543,13 @@
     "name": "shopping-cart",
     "component": "ShoppingCart",
     "category": "Commerce",
-    "description": "Hops — added to the cart, so it bounces twice and lands on its wheels."
+    "description": "Hops — added to the cart, so it bounces four times and lands on its wheels."
   },
   {
     "name": "shopping-bag",
     "component": "ShoppingBag",
     "category": "Commerce",
-    "description": "Picked up — swings once from the handle and settles."
+    "description": "Picked up — the handle lifts over the top edge as the bag rocks once and settles."
   },
   {
     "name": "credit-card",

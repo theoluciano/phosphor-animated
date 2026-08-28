@@ -43,7 +43,7 @@ const STROKE: Choreography = {
     }
   },
   whole: {
-    duration: 0.88,
+    duration: 1,
     ease: ["easeIn", "linear", "linear", "linear", "linear", "linear", "easeOut"],
     scale: [1, 1.05, 0.95, 1, 0.95, 1, 1, 1],
     rotate: [0, -8, 8, -8, 8, -4, 4, 0],
