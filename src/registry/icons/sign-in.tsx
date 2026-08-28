@@ -33,7 +33,7 @@ const STROKE: Choreography = {
   parts: {
     0: {
       x: [0, 16, -5.2, 0],
-      duration: 0.88,
+      duration: 0.6,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.72, 1],
       delay: 0,
@@ -41,7 +41,7 @@ const STROKE: Choreography = {
     },
     1: {
       x: [0, 20, -6.2, 0],
-      duration: 0.88,
+      duration: 0.6,
       ease: ["easeIn", "linear", "easeOut"],
       times: [0, 0.4, 0.72, 1],
       y: [0, 0, 0, 0]

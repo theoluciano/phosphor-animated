@@ -240,11 +240,9 @@ export const nature: AnimationSet = {
     stroke: {
       duration: 0.8,
       whole: {
-        rotate: [0, -5, 2.6, -1.4, 0],
-        origin: [128, 128],
-        times: [0, 0.28, 0.55, 0.8, 1],
-        ease: ["easeOut", [0.65, 0, 0.35, 1], [0.65, 0, 0.35, 1], [0.22, 1, 0.36, 1]],
-        duration: 0.88,
+        rotate: [0, 120],
+        duration: 0.7,
+        ease: ["easeInOut"],
       },
     },
   },

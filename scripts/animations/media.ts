@@ -308,14 +308,14 @@ export const media: AnimationSet = {
         0: {
           scale: [1, 1, 1.05, 1],
           origin: [128, 128],
-          duration: 0.96,
+          duration: 0.7,
           ease: ["easeIn", "linear", "easeOut"],
           times: [0, 0.5, 0.7, 1],
         },
         1: {
           scale: [1, 1, 1.2, 1],
           origin: [128, 132],
-          duration: 0.96,
+          duration: 0.7,
           ease: ["easeOut", "easeInOut", [0.22, 1, 0.36, 1]],
           times: [0, 0.35, 0.68, 1],
           x: [0, 0, 0, 0],
