@@ -95,13 +95,12 @@ export function Gallery({
         </p>
       ) : (
         /*
-         * Dock height plus its offset. Only the footer sits below the grid now,
-         * and it is shorter than the dock is tall, so without this the last row
-         * would still be under the dock at the bottom of the scroll. Two values
-         * because the dock is one line wide and three lines on a phone.
+         * Plain breathing room before the footer. The dock's clearance is
+         * reserved below the footer instead (see `.dock-clearance`), which is
+         * what the bottom of the scroll actually ends on.
          */
         <div
-          className="icon-grid grid min-h-[70svh] content-start pb-[152px] dock:pb-[104px]"
+          className="icon-grid grid min-h-[70svh] content-start pb-16"
           style={{
             /*
              * Two floors. The 140px one is the name: below roughly 32px the cell

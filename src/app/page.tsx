@@ -45,7 +45,13 @@ export default function Page() {
         <Gallery icons={icons} categories={categories} registryUrl={REGISTRY_URL} />
       </main>
 
-      <div className="mx-auto w-full max-w-6xl px-4 md:px-6">
+      {/*
+       * The dock is fixed and stays up while any of the directory is on screen —
+       * which it still is when the page is scrolled all the way down — so the
+       * footer reserves the dock's own height beneath itself to keep its text
+       * out from under it.
+       */}
+      <div className="dock-clearance mx-auto w-full max-w-6xl px-4 md:px-6">
         <Footer />
       </div>
     </div>

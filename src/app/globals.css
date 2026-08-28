@@ -152,6 +152,21 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+/*
+ * Room under the footer for the floating dock to sit in. The dock is fixed and
+ * visible for as long as any of the directory is on screen, so at the bottom of
+ * the scroll it would otherwise cover the footer's fine print. Two values: the
+ * dock is one line wide and three lines on a phone. Height plus its 16px offset.
+ */
+.dock-clearance {
+  padding-bottom: 152px;
+}
+@media (width >= 900px) {
+  .dock-clearance {
+    padding-bottom: 104px;
+  }
+}
+
 /* Each rotation of the hero's install line fades up rather than popping. */
 @keyframes command-swap {
   from {
